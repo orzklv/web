@@ -3,32 +3,32 @@ import Link from '@components/link'
 
 const About = () => {
   return (
-    <Page description="Hi, I'm Paco. Frontend developer and designer, mechanical keyboard enthusiast, practicing minimalist, and trance lover in search of flow.">
+    <Page description="Hi, I'm UwUssimo. Senior UwU Developer, Linux enthusiast, practicing minimalist, and electronic lover in search of good dota team without aggressive russian kids.">
       <article>
-        <h1>Paco Coursey</h1>
+        <h1>UwUssimo Robinson</h1>
 
         <p>
-          Frontend developer and designer,{' '}
+          Senior UwU Developer,{' '}
           <Link underline href="/keyboards">
-            mechanical keyboard
+            Linux
           </Link>{' '}
           enthusiast, practicing minimalist, and{' '}
           <Link underline href="/music">
-            trance lover
+            electronic lover
           </Link>{' '}
-          in search of flow.{' '}
+          in search of good dota team without <u>aggressive russian kids</u>.{' '}
           <Link underline href="/blog">
             Writing
           </Link>{' '}
-          about design and code.
+          about my coding style and some extra shit.
         </p>
 
         <p>
-          Working with{' '}
-          <Link underline href="https://vercel.com" external>
-            ▲ Vercel
+          Working at{' '}
+          <Link underline href="https://www.cer.uz/en/" external>
+            CERR
           </Link>{' '}
-          to build better ways to deploy websites.
+          to make Uzbekistan more survivable.
         </p>
       </article>
     </Page>

@@ -30,7 +30,7 @@ import {
   Lightbulb,
   ArrowRight,
   GitHub,
-  Twitter
+  Telegram
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -88,7 +88,7 @@ const CommandMenu = memo(() => {
       'g i': () => router.push('/ideas'),
       // Social
       'g t': () => () =>
-        window.open('https://twitter.com/pacocoursey', '_blank')
+        window.open('https://t.me/uwublog', '_blank')
     }
   }, [router, setPages])
 
@@ -288,15 +288,15 @@ const DefaultItems = () => {
           value="GitHub"
           icon={<GitHub />}
           callback={() =>
-            window.open('https://github.com/pacocoursey', '_blank')
+            window.open('https://github.com/uwussimo', '_blank')
           }
         />
         <Item
-          value="Twitter"
-          icon={<Twitter />}
+          value="Telegram"
+          icon={<Telegram />}
           keybind="g t"
           callback={() =>
-            window.open('https://twitter.com/pacocoursey', '_blank')
+            window.open('https://t.me/uwublog', '_blank')
           }
         />
       </Group>
