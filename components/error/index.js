@@ -25,7 +25,7 @@ const Error = ({ status }) => {
               <footer>
                 — CryPTON32,{' '}
                 <Link external href="https://t.me/CryPTON32">
-                  <cite>Life Quotes</cite>
+                  <cite>The Ass Hacker</cite>
                 </Link>
               </footer>
             </blockquote>
