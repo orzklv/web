@@ -30,6 +30,10 @@ const About = () => {
           </Link>{' '}
           to make Uzbekistan more survivable.
         </p>
+
+        <p align="center">
+          command + K to let the dark magic happen...
+        </p>
       </article>
     </Page>
   )
