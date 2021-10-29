@@ -87,8 +87,7 @@ const CommandMenu = memo(() => {
       'g w': () => router.push('/words'),
       'g i': () => router.push('/ideas'),
       // Social
-      'g t': () => () =>
-        window.open('https://t.me/uwublog', '_blank')
+      'g t': () => () => window.open('https://t.me/uwublog', '_blank')
     }
   }, [router, setPages])
 
@@ -287,17 +286,13 @@ const DefaultItems = () => {
         <Item
           value="GitHub"
           icon={<GitHub />}
-          callback={() =>
-            window.open('https://github.com/uwussimo', '_blank')
-          }
+          callback={() => window.open('https://github.com/uwussimo', '_blank')}
         />
         <Item
           value="Telegram"
           icon={<Telegram />}
           keybind="g t"
-          callback={() =>
-            window.open('https://t.me/uwublog', '_blank')
-          }
+          callback={() => window.open('https://t.me/uwublog', '_blank')}
         />
       </Group>
     </>

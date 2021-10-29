@@ -7,9 +7,9 @@ const About = () => {
         <h1>UwUssimo Robinson</h1>
 
         <p>
-          Senior UwU Developer. I make software, minimal websites
-          using modern technologies. I specialize in design systems and
-          component based UI libraries.
+          Senior UwU Developer. I make software, minimal websites using modern
+          technologies. I specialize in design systems and component based UI
+          libraries.
         </p>
       </article>
     </Page>

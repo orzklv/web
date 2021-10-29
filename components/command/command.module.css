@@ -154,6 +154,10 @@
   will-change: height;
 }
 
+.container::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   border-top: 1px solid var(--lighter-gray);
 }
