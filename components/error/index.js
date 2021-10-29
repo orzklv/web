@@ -18,14 +18,14 @@ const Error = ({ status }) => {
           <p>
             <blockquote cite="http://www.aaronsw.com/weblog/visitingmit">
               <p>
-                It doesn’t exist, it never has. I’m nostalgic for a place that
-                never existed.
+                If your DDoS is not succeeding, then you are hacking the wrong
+                ass...
               </p>
 
               <footer>
-                — Aaron Swartz,{' '}
+                — CryPTON32,{' '}
                 <Link external href="http://www.aaronsw.com/weblog/visitingmit">
-                  <cite>I Love the University</cite>
+                  <cite>Life Quotes</cite>
                 </Link>
               </footer>
             </blockquote>
