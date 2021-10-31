@@ -1,14 +1,13 @@
 import NextHead from 'next/head'
 import { useTheme } from 'next-themes'
 
-const defaultOgImage =
-  'https://uwussimo.vercel.app/og.png'
+const defaultOgImage = 'https://uwussimo.vercel.app/og.png'
 
 const Head = ({
   title = 'UwUssimo Robinson',
   description = "Hi, I'm UwUssimo. Senior UwU Developer from Uzbekistan.",
   image = defaultOgImage,
-  children
+  children,
 }) => {
   const { systemTheme } = useTheme()
 
