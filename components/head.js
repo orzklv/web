@@ -2,7 +2,7 @@ import NextHead from 'next/head'
 import { useTheme } from 'next-themes'
 
 const defaultOgImage =
-  'https://res.cloudinary.com/dsdlhtnpw/image/upload/v1572673557/og-image_budbm8.png'
+  'https://uwussimo.vercel.app/og.png'
 
 const Head = ({
   title = 'UwUssimo Robinson',
