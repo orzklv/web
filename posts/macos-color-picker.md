@@ -1,5 +1,5 @@
 ---
-title: macOS Color Picker
+title: macOS Color Pickers
 description: Simple color picker on macOS
 slug: macos-color-picker
 date: June 26, 2020
