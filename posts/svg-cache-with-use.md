@@ -206,7 +206,7 @@ You can still customize each icon, because the props apply to the outer svg elem
 
 ---
 
-Here's a [live demo](https://svgcache.vercel.app) and the [demo source code](https://github.com/pacocoursey/svgcache).
+Here's a [live demo](https://svgcache.vercel.app) and the [demo source code](https://github.com/uwussimo/svgcache).
 
 <div id="footnote"></div>
 

@@ -31,7 +31,7 @@ I want to use Styled System with [styled-jsx](https://github.com/zeit/styled-jsx
 
 ## styled-jsx-system
 
-[styled-jsx-system](https://github.com/pacocoursey/styled-jsx-system) lets you use Styled System with styled-jsx.
+[styled-jsx-system](https://github.com/uwussimo/styled-jsx-system) lets you use Styled System with styled-jsx.
 
 ```bash
 $ yarn add styled-jsx-system
@@ -66,9 +66,9 @@ That's it! You can now use Styled System props with your Box component:
 <Box color={['#000', '#666', '#fff']}>Hello</Box>
 ```
 
-Other Styled System features like compose, system, and themeing are supported too. Check out the [repository](https://github.com/pacocoursey/styled-jsx-system) for more information.
+Other Styled System features like compose, system, and themeing are supported too. Check out the [repository](https://github.com/uwussimo/styled-jsx-system) for more information.
 
-Cool. [Let me know](https://twitter.com/pacocoursey) if you end up using it.
+Cool. [Let me know](https://twitter.com/uwussimo) if you end up using it.
 
 ---
 

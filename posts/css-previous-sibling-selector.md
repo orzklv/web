@@ -63,7 +63,7 @@ Now you can select the prefix using the sibling selector:
   </div>
 </div>
 
-In the case of an input, the simple solution is to use [`:focus-within`](https://caniuse.com/#search=focus-within), which has good browser support but is still experimental. Maybe you have other use cases for this trick though, [let me know](https://twitter.com/pacocoursey)!
+In the case of an input, the simple solution is to use [`:focus-within`](https://caniuse.com/#search=focus-within), which has good browser support but is still experimental. Maybe you have other use cases for this trick though, [let me know](https://twitter.com/uwussimo)!
 
 ---
 

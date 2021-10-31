@@ -111,7 +111,7 @@ Lastly, this approach also supports multi-line text:
   </div>
 </div>
 
-[Let me know](https://twitter.com/pacocoursey) if you end up using this, or read more about other approaches in "[Crafting link underlines on Medium.](https://medium.design/crafting-link-underlines-on-medium-7c03a9274f9)"
+[Let me know](https://twitter.com/uwussimo) if you end up using this, or read more about other approaches in "[Crafting link underlines on Medium.](https://medium.design/crafting-link-underlines-on-medium-7c03a9274f9)"
 
 ---
 
