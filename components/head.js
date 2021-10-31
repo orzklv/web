@@ -5,8 +5,8 @@ const defaultOgImage =
   'https://res.cloudinary.com/dsdlhtnpw/image/upload/v1572673557/og-image_budbm8.png'
 
 const Head = ({
-  title = 'Paco Coursey',
-  description = "Hi, I'm Paco. Frontend developer and designer.",
+  title = 'UwUssimo Robinson',
+  description = "Hi, I'm UwUssimo. Senior UwU Developer from Uzbekistan.",
   image = defaultOgImage,
   children
 }) => {
@@ -36,21 +36,21 @@ const Head = ({
       <meta name="og:image" content={image} />
 
       {/* URL */}
-      <meta name="og:url" content="https://paco.sh" />
+      <meta name="og:url" content="https://uwussi.moe" />
 
       {/* General */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@pacocoursey" />
-      <meta name="apple-mobile-web-app-title" content="Paco" />
-      <meta name="author" content="Paco Coursey" />
+      <meta name="twitter:site" content="@uwussimo" />
+      <meta name="apple-mobile-web-app-title" content="UwUssimo" />
+      <meta name="author" content="UwUssimo Robinson" />
 
       {/* RSS feed */}
       <link
         rel="alternate"
         type="application/rss+xml"
-        title="RSS Feed for paco.sh"
+        title="RSS Feed for uwussi.moe"
         href="/feed.xml"
       />
 
