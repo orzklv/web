@@ -21,8 +21,8 @@ export const getStaticProps = () => {
 
   return {
     props: {
-      posts,
-    },
+      posts
+    }
   }
 }
 

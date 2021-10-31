@@ -24,7 +24,7 @@ const Entry = ({ title, description, image, href, position }) => {
               ? 'none'
               : `url('${imagePrefix}/${encodeURIComponent(image)}')`
             : 'none',
-          backgroundPosition: position ? position : 'center',
+          backgroundPosition: position ? position : 'center'
         }}
       >
         <div>

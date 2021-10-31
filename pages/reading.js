@@ -15,7 +15,7 @@ const Reading = () => {
     >
       <article>
         <ul>
-          {items.map((entry) => {
+          {items.map(entry => {
             return (
               <Entry
                 key={entry.title}

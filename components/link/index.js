@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 import styles from './link.module.css'
 
-const canPrefetch = (href) => {
+const canPrefetch = href => {
   if (!href || !href.startsWith('/')) {
     return false
   }
@@ -27,7 +27,7 @@ const Link = ({
 }) => {
   const c = cn(className, styles.reset, {
     [styles.gray]: gray,
-    [styles.underline]: underline,
+    [styles.underline]: underline
   })
 
   if (external) {

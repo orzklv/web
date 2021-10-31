@@ -31,10 +31,6 @@
         "no-dupe-class-members": "off",
         "no-undef": "off",
 
-        // New Rule
-        "react-hooks/rules-of-hooks": "error",
-        "react-hooks/exhaustive-deps": "warn",
-
         // Add TypeScript specific rules (and turn off ESLint equivalents)
         "@typescript-eslint/consistent-type-assertions": "warn",
         "no-array-constructor": "off",

@@ -6,8 +6,8 @@ import TextEntry from '@components/entry/text'
 import { data } from '@data/design.json'
 
 const Design = () => {
-  const imageItems = data.filter((x) => x.image)
-  const nonImageItems = data.filter((x) => !x.image)
+  const imageItems = data.filter(x => x.image)
+  const nonImageItems = data.filter(x => !x.image)
 
   return (
     <Page
@@ -15,7 +15,7 @@ const Design = () => {
       description="Collection of beautiful websites and portfolios that I admire."
     >
       <article>
-        {imageItems.map((entry) => {
+        {imageItems.map(entry => {
           return (
             <Entry
               key={`${entry.title}-${entry.url}`}
@@ -28,7 +28,7 @@ const Design = () => {
           )
         })}
 
-        {nonImageItems.map((entry) => {
+        {nonImageItems.map(entry => {
           return (
             <TextEntry
               key={`${entry.title}-${entry.url}`}
