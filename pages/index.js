@@ -10,7 +10,7 @@ const About = () => {
         <p>
           Senior UwU Developer,{' '}
           <Link underline href="/keyboards">
-            Linux
+            keyboard
           </Link>{' '}
           enthusiast, practicing minimalist, and{' '}
           <Link underline href="/music">
