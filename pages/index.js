@@ -31,7 +31,7 @@ const About = () => {
           to make Uzbekistan more survivable.
         </p>
 
-        <p align="center">⌘/ctrl + K to let the dark magic happen...</p>
+        <p align="center">⌘/ctrl + K to let the dark magic happen or press the ⌘ button on navigation menu...</p>
       </article>
     </Page>
   )
