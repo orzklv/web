@@ -1,10 +1,13 @@
 module.exports = {
-  async redirects() {
+  async rewrites() {
     return [
       {
-        source: "/waifurun",
-        destination: "/api/_wf",
-        permanent: true,
+        source: '/waifurun',
+        destination: '/api/_wf/',
+      },
+      {
+        source: '/waifurun/:path*',
+        destination: '/api/_wf/:path*',
       },
     ];
   },
