@@ -2,11 +2,11 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/waifurun',
+        source: '/waifu',
         destination: '/api/_wf/',
       },
       {
-        source: '/waifurun/:path*',
+        source: '/waifu/:path*',
         destination: '/api/_wf/:path*',
       },
     ];
