@@ -1,0 +1,104 @@
+ﬦ amass enum -v -src -ip -brute -min-for-recursive 2 -d korzinka.uz
+
+Querying AlienVault for korzinka.uz subdomains
+Querying Yahoo for korzinka.uz subdomains
+Querying HackerOne for korzinka.uz subdomains
+Querying AbuseIPDB for korzinka.uz subdomains
+Querying Censys for korzinka.uz subdomains
+Querying Digitorus for korzinka.uz subdomains
+Querying AnubisDB for korzinka.uz subdomains
+Querying Searchcode for korzinka.uz subdomains
+Querying CertSpotter for korzinka.uz subdomains
+Querying CommonCrawl for korzinka.uz subdomains
+Querying HackerTarget for korzinka.uz subdomains
+Querying Crtsh for korzinka.uz subdomains
+Querying DNSDumpster for korzinka.uz subdomains
+Querying HyperStat for korzinka.uz subdomains
+Querying ArchiveIt for korzinka.uz subdomains
+Querying IPv4Info for korzinka.uz subdomains
+Querying Arquivo for korzinka.uz subdomains
+Querying Maltiverse for korzinka.uz subdomains
+Querying Ask for korzinka.uz subdomains
+Querying Baidu for korzinka.uz subdomains
+Querying Bing for korzinka.uz subdomains
+Querying Brute Forcing for korzinka.uz subdomains
+Querying Sublist3rAPI for korzinka.uz subdomains
+Querying BufferOver for korzinka.uz subdomains
+Querying Searx for korzinka.uz subdomains
+Querying SonarSearch for korzinka.uz subdomains
+Querying SiteDossier for korzinka.uz subdomains
+Querying ThreatMiner for korzinka.uz subdomains
+Querying Gists for korzinka.uz subdomains
+Querying Wayback for korzinka.uz subdomains
+Querying GoogleCT for korzinka.uz subdomains
+Querying DuckDuckGo for korzinka.uz subdomains
+Querying URLScan for korzinka.uz subdomains
+Querying UKWebArchive for korzinka.uz subdomains
+Querying Mnemonic for korzinka.uz subdomains
+Querying Greynoise for korzinka.uz subdomains
+Querying Robtex for korzinka.uz subdomains
+Querying RapidDNS for korzinka.uz subdomains
+Querying Riddler for korzinka.uz subdomains
+Querying HAW for korzinka.uz subdomains
+Querying N45HT for korzinka.uz subdomains
+Querying FullHunt for korzinka.uz subdomains
+Querying ThreatCrowd for korzinka.uz subdomains
+Querying PKey for korzinka.uz subdomains
+[DNS]             korzinka.uz 185.183.243.93
+[Brute Forcing]   crm.korzinka.uz 185.183.242.145
+[SonarSearch]     mobile.korzinka.uz 151.101.1.195
+[SonarSearch]     inventory.korzinka.uz 185.183.243.90
+[SonarSearch]     audit.korzinka.uz 185.183.242.145
+[SonarSearch]     katalog.korzinka.uz 185.183.243.108
+[Brute Forcing]   app.korzinka.uz 185.183.243.22
+[Brute Forcing]   www.korzinka.uz 185.183.243.93
+[AlienVault]      rabota.korzinka.uz 185.183.243.35
+[Brute Forcing]   new.korzinka.uz 62.209.128.42,62.209.128.113
+[Brute Forcing]   catalog.korzinka.uz 89.249.60.89
+[SonarSearch]     axo.korzinka.uz 185.183.242.145
+[HackerTarget]    price.korzinka.uz 185.183.243.185
+[Brute Forcing]   monitoring.korzinka.uz 185.183.243.169
+[DuckDuckGo]      tabrik.korzinka.uz 185.183.243.93
+[DuckDuckGo]      devcatalog.korzinka.uz 185.183.243.108
+[HackerTarget]    market.korzinka.uz 185.183.242.145
+[DuckDuckGo]      devsite.korzinka.uz 185.183.243.93
+[HackerTarget]    postavshik.korzinka.uz 185.183.243.35
+[HackerTarget]    infokiosk.korzinka.uz 185.183.243.238
+[Brute Forcing]   qa.korzinka.uz 185.183.243.106
+[Brute Forcing]   db.korzinka.uz 185.183.243.212
+[CertSpotter]     workflow.korzinka.uz 54.194.41.141
+[AbuseIPDB]       www.postavshik.korzinka.uz 62.209.128.42
+[AbuseIPDB]       acc.korzinka.uz 213.230.110.49
+[AbuseIPDB]       vpn.sap.korzinka.uz 217.30.161.246
+[AbuseIPDB]       devapp.korzinka.uz 185.183.243.22
+[AbuseIPDB]       vpn-uz.sap.korzinka.uz 89.249.60.82
+[AbuseIPDB]       sip.korzinka.uz 2603:1037:0:15::c,2603:1037:0:2::b,2603:1037::b,2603:1037:0:7::b,2603:1037:0:a::b,2603:1037:0:e::f,2603:1037:0:c::f,52.112.192.139,2603:1037:0:4::b
+[AbuseIPDB]       lyncdiscover.korzinka.uz 2603:1027:0:48::21,52.112.192.142
+[AbuseIPDB]       push.korzinka.uz 185.183.243.212
+[Alterations]     testapp.korzinka.uz 217.30.161.239,89.249.60.90
+[Brute Forcing]   autodiscover.korzinka.uz 52.97.219.168,2603:1026:208:84::8,2603:1026:c03:64eb::8,52.97.162.8,52.97.151.56,2603:1026:c03:6804::8,2603:1026:c03:6495::8
+
+OWASP Amss v3.16.0
+--------------------------------------------------------------------------------
+33 names discovered - dns: 1, brute: 9, api: 10, scrape: 11, cert: 1, alt: 1
+--------------------------------------------------------------------------------
+ASN: 34718 - TPSUZ-AS
+        62.209.128.0/19         3    Subdomain Name(s)
+ASN: 8193 - BRM
+        89.249.60.0/22          3    Subdomain Name(s)
+        213.230.64.0/18         1    Subdomain Name(s)
+ASN: 16509 - AMAZON-02 - Amazon.com, Inc.
+        54.194.0.0/16           1    Subdomain Name(s)
+ASN: 39032 - ISPETC
+        217.30.160.0/20         2    Subdomain Name(s)
+ASN: 8075 - MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation
+        52.112.0.0/14           2    Subdomain Name(s)
+        52.96.0.0/14            3    Subdomain Name(s)
+        2603:1000::/26          13   Subdomain Name(s)
+ASN: 41202 - UNITEL
+        185.183.240.0/22        21   Subdomain Name(s)
+ASN: 54113 - FASTLY - Fastly
+        151.101.0.0/21          1    Subdomain Name(s)
+
+The enumeration has finished
+Discoveries are being migrated into the local databasea
