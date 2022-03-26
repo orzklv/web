@@ -6,25 +6,25 @@ const Projects = () => {
     <Page title="Projects" description="Collection of past and present work.">
       <article>
         <Entry
-          title="Vercel Design"
-          description="The Vercel Design System"
-          image="https://assets.zeit.co/image/upload/q_auto/front/assets/design/geist-card.png"
-          href="https://zeit.co/design"
+          title="Mad Maids"
+          description="An organization that helps young developers"
+          image="https://raw.githubusercontent.com/mad-maids/.github/main/profile/banners.png"
+          href="https://maid.uz"
         />
 
         <Entry
-          title="Dusk"
-          description="Simple application icons"
-          image="https://res.cloudinary.com/dsdlhtnpw/image/upload/v1572672667/dusk_o7qcsa.png"
-          href="https://dusk.now.sh"
+          title="Xinux Uzbekistan"
+          description="Linux community created in Uzbekistan to develop Linux"
+          image="https://assets.zeit.co/image/upload/q_auto/front/assets/design/geist-card.png"
+          href="https://xinux.uz/"
           position="top"
         />
 
         <Entry
-          title="Songbird"
-          description="Website for Songbird Healing Studio"
-          image="https://res.cloudinary.com/dsdlhtnpw/image/upload/v1572672667/songbird_sb0kon.png"
-          href="http://songbirdhealingstudio.com/"
+          title="Osmon"
+          description="A programming language created for Uzbek audience"
+          image="https://www.osmon.dev/og.png"
+          href="https://osmon.dev"
           position="top"
         />
       </article>
