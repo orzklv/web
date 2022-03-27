@@ -1,4 +1,12 @@
-Words that I read but didn't understand.
+Words that I read but didn't understand or created by myself.
+
+**uwussimo**
+_adjective_
+cutest but more superlative
+
+**genemator**
+_noun_
+the only existing black immortal king
 
 **diaspora**
 _noun_
