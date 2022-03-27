@@ -110,6 +110,13 @@
       "key": "rap"
     },
     {
+      "title": "Tell Your World X Something Comforting",
+      "description": "Porter Robinson",
+      "image": "https://i.ytimg.com/vi/HyWIpW6D_-c/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=HyWIpW6D_-c",
+      "key": "electronic"
+    },
+    {
       "title": "Secret Sky Set (2020)",
       "description": "Porter Robinson",
       "image": "https://i.ytimg.com/vi/4KGsgpFiswQ/maxresdefault.jpg",
@@ -136,6 +143,13 @@
       "image": "https://i.ytimg.com/vi/R8jWgJingW8/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=R8jWgJingW8",
       "key": "rap"
+    },
+    {
+      "title": "NEON",
+      "description": "LXST CXNTURY",
+      "image": "https://i.ytimg.com/vi/WVuCfbVcxOQ/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=WVuCfbVcxOQ",
+      "key": "phonk"
     },
     {
       "title": "TEKKEN",
