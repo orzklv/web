@@ -15,7 +15,7 @@ const Projects = () => {
         <Entry
           title="Xinux Uzbekistan"
           description="Linux community created in Uzbekistan to develop Linux"
-          image="https://assets.zeit.co/image/upload/q_auto/front/assets/design/geist-card.png"
+          image="https://repository-images.githubusercontent.com/331039158/a3990580-848a-11eb-974b-412c7e313f33"
           href="https://xinux.uz/"
           position="top"
         />
