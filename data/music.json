@@ -103,6 +103,13 @@
       "key": "electronic"
     },
     {
+      "title": "Hikaru Nara",
+      "description": "Goose House",
+      "image": "https://i.ytimg.com/vi/p5kc8hJ3GcA/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=p5kc8hJ3GcA",
+      "key": "rap"
+    },
+    {
       "title": "Secret Sky Set (2020)",
       "description": "Porter Robinson",
       "image": "https://i.ytimg.com/vi/4KGsgpFiswQ/maxresdefault.jpg",
@@ -129,6 +136,13 @@
       "image": "https://i.ytimg.com/vi/R8jWgJingW8/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=R8jWgJingW8",
       "key": "rap"
+    },
+    {
+      "title": "TEKKEN",
+      "description": "OSKALIZATOR",
+      "image": "https://i.ytimg.com/vi/qxan21rPWPU/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=qxan21rPWPU",
+      "key": "phonk"
     }
   ]
 }
