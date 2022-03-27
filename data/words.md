@@ -2,7 +2,7 @@ Words that I read but didn't understand or created by myself.
 
 **uwussimo**
 _adjective_
-cutest but more superlative
+the cutest but more superlative
 
 **genemator**
 _noun_
