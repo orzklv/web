@@ -9,8 +9,12 @@
       "color": "blue"
     },
     {
-      "name": "phonk",
+      "name": "rap",
       "color": "indigo"
+    },
+    {
+      "name": "phonk",
+      "color": "gray"
     }
   ],
   "data": [
@@ -83,6 +87,48 @@
       "image": "https://i.ytimg.com/vi/N9XIaxhe_EM/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=N9XIaxhe_EM",
       "key": "electronic"
+    },
+    {
+      "title": "Christ",
+      "description": "Abuse with Hatsune Miku",
+      "image": "https://i.ytimg.com/vi/WaMK5QKGhc4/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=WaMK5QKGhc4",
+      "key": "electronic"
+    },
+    {
+      "title": "dogdog/虻瀬",
+      "description": "Abuse",
+      "image": "https://i.ytimg.com/vi/mGGjRtSZrMo/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=mGGjRtSZrMo",
+      "key": "electronic"
+    },
+    {
+      "title": "Secret Sky Set (2020)",
+      "description": "Porter Robinson",
+      "image": "https://i.ytimg.com/vi/4KGsgpFiswQ/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=4KGsgpFiswQ",
+      "key": "rap"
+    },
+    {
+      "title": "Secret Sky Set (2021)",
+      "description": "Porter Robinson",
+      "image": "https://i.ytimg.com/vi/THjekE5p2aw/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=THjekE5p2aw",
+      "key": "rap"
+    },
+    {
+      "title": "ARCHON",
+      "description": "HAARPER (Prod. Noxygen)",
+      "image": "https://i.ytimg.com/vi/f3mLfJgnVTQ/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=f3mLfJgnVTQ",
+      "key": "rap"
+    },
+    {
+      "title": "WWIII",
+      "description": "HAARPER",
+      "image": "https://i.ytimg.com/vi/R8jWgJingW8/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=R8jWgJingW8",
+      "key": "rap"
     }
   ]
 }
