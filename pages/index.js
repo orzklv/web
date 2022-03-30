@@ -16,8 +16,7 @@ const About = () => {
           <Link underline href="/music">
             electronic lover
           </Link>{' '}
-          in search of good dota team without <u>aggressive russian kids</u>.{' '}
-          (Anvar, ward qani?){" "}
+          in search of good dota team without <u>ANVAR WARD QANI?!</u>.{' '}
           <Link underline href="/blog">
             Writing
           </Link>{' '}
