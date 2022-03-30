@@ -17,6 +17,7 @@ const About = () => {
             electronic lover
           </Link>{' '}
           in search of good dota team without <u>aggressive russian kids</u>.{' '}
+          (Anvar, ward qani?){" "}
           <Link underline href="/blog">
             Writing
           </Link>{' '}
