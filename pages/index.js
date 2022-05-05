@@ -16,7 +16,7 @@ const About = () => {
           <Link underline href="/music">
             electronic lover
           </Link>{' '}
-          in search of good dota team without <a href={"https://t.me/StandPower"}>ANVAR WARD QANI?!</a>{' '}
+          in search of good Rust macro.{' '}
           <Link underline href="/blog">
             Writing
           </Link>{' '}
@@ -25,13 +25,16 @@ const About = () => {
 
         <p>
           Working at{' '}
-          <Link underline href="https://www.cer.uz/en/" external>
-            CERR
+          <Link underline href="https://uzinfocom.uz/uz/" external>
+            Uzinfocom
           </Link>{' '}
           to make Uzbekistan more survivable.
         </p>
 
-        <p align="center">⌘/ctrl + K to let the dark magic happen or press the ⌘ button on navigation menu...</p>
+        <p align="center">
+          ⌘K or Alt+K to let the dark magic happen or press the ⌘ button on
+          navigation menu...
+        </p>
       </article>
     </Page>
   )

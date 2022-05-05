@@ -87,7 +87,7 @@ const CommandMenu = memo(() => {
       'g w': () => router.push('/words'),
       'g i': () => router.push('/ideas'),
       // Social
-      'g t': () => () => window.open('https://t.me/uwublog', '_blank')
+      'g s': () => () => window.open('https://t.me/uwublog', '_blank')
     }
   }, [router, setPages])
 
@@ -95,7 +95,8 @@ const CommandMenu = memo(() => {
   useEffect(() => {
     const unsubs = [
       tinykeys(window, keymap, { ignoreFocus: true }),
-      tinykeys(window, { '$mod+k': () => setOpen(o => !o) })
+      tinykeys(window, { '$mod+k': () => setOpen(o => !o) }),
+      tinykeys(window, { 'Alt+k': () => setOpen(o => !o) })
     ]
     return () => {
       unsubs.forEach(unsub => unsub())
@@ -291,7 +292,7 @@ const DefaultItems = () => {
         <Item
           value="Telegram"
           icon={<Telegram />}
-          keybind="g t"
+          keybind="g s"
           callback={() => window.open('https://t.me/uwublog', '_blank')}
         />
       </Group>
