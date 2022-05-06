@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Page description="Hi, I'm UwUssimo. Senior UwU Developer, Linux enthusiast, practicing minimalist, and electronic lover in search of good dota team without aggressive russian kids.">
       <article>
-        <h1>UwUssimo Robinson (๑╹ω╹๑)</h1>
+        <h1 className="hero">UwUssimo Robinson (๑╹ω╹๑)</h1>
 
         <p>
           Senior UwU Developer,{' '}
