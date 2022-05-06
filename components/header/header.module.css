@@ -34,6 +34,7 @@
   position: sticky;
   padding: var(--gap) 0;
   top: 0;
+  background: var(--pattern);
   background-color: var(--header-bg);
   backdrop-filter: saturate(180%) blur(20px);
 }
