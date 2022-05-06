@@ -1,6 +1,5 @@
 import Page from '@components/page'
 import getMarkdown from '@lib/get-markdown'
-import Link from '@components/link' // eslint-disable-line
 
 const Quotes = ({ html }) => {
   return (
