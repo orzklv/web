@@ -7,9 +7,10 @@
 ### Blog
 
 - [x] Write it down
-- [ ] Port all posts from telegram to website
+
 
 ### Dropped
 
-- [x] ~~Deploy cloud bulut with SDK~~
-- [x] ~~Release the first stable version of osmon~~
+- [ ] ~~Port all posts from telegram to website~~
+- [ ] ~~Deploy cloud bulut with SDK~~
+- [ ] ~~Release the first stable version of osmon~~

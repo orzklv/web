@@ -9,3 +9,4 @@ packages/
 yalc.lock
 .yalc
 .idea
+yarn-error.log
