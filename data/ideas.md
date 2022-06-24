@@ -11,5 +11,5 @@
 
 ### Dropped
 
-- [ ] Deploy cloud bulut with SDK
-- [ ] Release the first stable version of osmon
+- [x] ~~Deploy cloud bulut with SDK~~
+- [x] ~~Release the first stable version of osmon~~
