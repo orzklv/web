@@ -31,6 +31,7 @@ const About = () => {
       <Page description="Hey, would you like to join my Minecraft server?">
         <article>
           <h1 align="center">Sad, seems like server is offline...</h1>
+          <p align="center">I don't remember installing python, php or apache to my server 🤔</p>
         </article>
       </Page>
     )
