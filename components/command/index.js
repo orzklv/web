@@ -30,7 +30,8 @@ import {
   Lightbulb,
   ArrowRight,
   GitHub,
-  Telegram, Play
+  Telegram,
+  Play
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
