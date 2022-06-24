@@ -26,6 +26,15 @@ const About = () => {
       </Page>
     )
 
+  if (!data.online)
+    return (
+      <Page description="Hey, would you like to join my Minecraft server?">
+        <article>
+          <h1 align="center">Sad, seems like server is offline...</h1>
+        </article>
+      </Page>
+    )
+
   return (
     <Page description="Hey, would you like to join my Minecraft server?">
       <article>
