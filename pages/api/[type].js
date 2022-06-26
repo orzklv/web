@@ -2,6 +2,7 @@ import design from '@data/design.json'
 import reading from '@data/reading.json'
 import music from '@data/music.json'
 import blog from '@data/blog.json'
+import getStatus from '@lib/get-status'
 
 export default async function handler(req, res) {
   switch (req.query.type) {
@@ -14,10 +15,8 @@ export default async function handler(req, res) {
     case 'blog':
       return res.status(200).json(blog)
     case 'minecraft':
-      const data = await fetch(
-        'https://api.mcsrvstat.us/2/owo.uwussi.moe:25565'
-      )
-      return res.json(await data.json())
+      await getStatus(res)
+      break
     default:
       return res.status(404).json({ message: 'Unknown service' })
   }

@@ -2182,6 +2182,18 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
+minecraft-motd-util@^1.1.9:
+  version "1.1.12"
+  resolved "https://registry.yarnpkg.com/minecraft-motd-util/-/minecraft-motd-util-1.1.12.tgz#b1e3627329a770c015e5c32261510eb9ff0a2f81"
+  integrity sha512-5TuTRjrRupSTruea0nRC37r0FdhkS1O4wIJKAYfwJRCQd/X4Zyl/dVIs96h9UVW6N8jhIuz9pNkrDsqyN7VBdA==
+
+minecraft-server-util@^5.2.10:
+  version "5.2.10"
+  resolved "https://registry.yarnpkg.com/minecraft-server-util/-/minecraft-server-util-5.2.10.tgz#4d3bab677358c2d6ba4388fdd236d3f932babe6a"
+  integrity sha512-ittectNMBpOm2dmyzMGXBx2PeGcusJ6Ksc6VA24D3ZxEeHl4y+8bpmFYED14hW9G3ucP4JxgJ070R9KUxmdjkw==
+  dependencies:
+    minecraft-motd-util "^1.1.9"
+
 minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
