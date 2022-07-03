@@ -1,6 +1,6 @@
 import Page from '@components/page'
 
-const About = () => {
+const uwu = () => {
   return (
     <Page description="Hi, I'm UwUssimo. Senior UwU Developer, Linux enthusiast, practicing minimalist, and electronic lover in search of good dota team without aggressive russian kids.">
       <article>
@@ -16,4 +16,4 @@ const About = () => {
   )
 }
 
-export default About
+export default uwu

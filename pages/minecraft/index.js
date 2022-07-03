@@ -13,7 +13,7 @@ const players = list => {
   )
 }
 
-const About = () => {
+const Minecraft = () => {
   const { data, error } = useSWR('/api/minecraft', fetcher, {
     refreshInterval: 2000
   })
@@ -51,7 +51,11 @@ const About = () => {
   return (
     <Page description="Hey, would you like to join my Minecraft server?">
       <article>
-        <img src={data.content.favicon} alt="Minecraft Server Icon" />
+        <img
+          src="/favicons/uwucraft.png"
+          alt="UwUcraft Server Icon"
+          height="100"
+        />
 
         <p>
           Recently, I created my own Minecraft Server to enjoy my free time on
@@ -63,10 +67,17 @@ const About = () => {
           of my minecraft server where I synchronise all my changes.
         </p>
 
+        <blockquote>
+          Don't forget to read the rules of my server to avoid getting banned
+          all of sudden. Rules are located at{' '}
+          <a href="/minecraft/rules">/minecraft/rules</a> page
+        </blockquote>
+
         <pre>
           <b>Online:</b> {data.status ? 'Yup' : 'Nope'}
           <br />
-          <b>Players:</b> {data.content.players.online}/{data.content.players.max}
+          <b>Players:</b> {data.content.players.online}/
+          {data.content.players.max}
           <br />
           <b>Address:</b> owo.uwussi.moe:25565
           <br />
@@ -88,4 +99,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Minecraft
