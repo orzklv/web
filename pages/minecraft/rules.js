@@ -13,7 +13,7 @@ const Rules = () => {
         <p>
           <blockquote>
             Everything seems beautiful when the one and only beautiful law
-            exist...
+            exists...
             <br />
             <div align="right">© UwUssimo Robinson</div>
           </blockquote>
