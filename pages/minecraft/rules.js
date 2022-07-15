@@ -55,8 +55,8 @@ const Rules = () => {
           </li>
           <li>
             If someone gets admin stats, he/she isn't allowed to put blocks
-            anymore or interact with the world. Only watch and protect rights
-            of players.
+            anymore or interact with the world. Only watch and protect rights of
+            players.
           </li>
         </ul>
       </article>

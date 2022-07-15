@@ -3,6 +3,7 @@ import reading from '@data/reading.json'
 import music from '@data/music.json'
 import blog from '@data/blog.json'
 import getStatus from '@lib/get-status'
+import skyline from '@lib/skyline'
 
 export default async function handler(req, res) {
   switch (req.query.type) {
@@ -17,6 +18,8 @@ export default async function handler(req, res) {
     case 'minecraft':
       await getStatus(res)
       break
+    case 'skyline':
+      return res.redirect(encodeURI(skyline))
     default:
       return res.status(404).json({ message: 'Unknown service' })
   }
