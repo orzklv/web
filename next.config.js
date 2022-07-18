@@ -10,5 +10,8 @@ module.exports = {
   },
   typescript: {
     ignoreDevErrors: true
+  },
+  experimental: {
+    outputStandalone: true
   }
 }
