@@ -11,7 +11,7 @@
     "build": "pnpm rss && next build",
     "rss": "node lib/rss",
     "new": "node lib/db",
-    "docker": "docker build -t uwusite ."
+    "docker": "docker build -t ghcr.io/uwussimo/uwusite:test ."
   },
   "pre-commit": "lint",
   "license": "MIT",
