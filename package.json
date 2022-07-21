@@ -8,7 +8,7 @@
     "fmt": "prettier --check \"*.js\" \"*.json\" \"{util,public,pages,components}/**/*.{js,tsx}\" \"{util,public,pages,components}/*.{js,tsx}\" --loglevel warn",
     "fmt:fix": "prettier --check --write \"*.js\" \"*.json\" \"{util,public,pages,components}/**/*.{js,tsx}\" \"{util,public,pages,components}/*.{js,tsx}\" --loglevel warn",
     "dev": "next -p 3003",
-    "build": "yarn rss && next build",
+    "build": "pnpm rss && next build",
     "rss": "node lib/rss",
     "new": "node lib/db",
     "docker": "docker build -t uwusite ."
