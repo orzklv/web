@@ -1,4 +1,5 @@
 module.exports = {
+  swcMinify: true,
   async redirects() {
     return [
       {
@@ -11,7 +12,5 @@ module.exports = {
   typescript: {
     ignoreDevErrors: true
   },
-  experimental: {
-    outputStandalone: true
-  }
+  output: 'standalone'
 }

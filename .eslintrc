@@ -1,0 +1,35 @@
+{
+  "extends": ["next/core-web-vitals", "prettier"],
+  "root": true,
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "import/no-anonymous-default-export": "off"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "impliedStrict": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "globals": {
+    "VERSION": true,
+    "IMAGE_ASSETS_URL": true,
+    "VIDEO_ASSETS_URL": true,
+    "RAW_ASSETS_URL": true
+  },
+  "ignorePatterns": ["**/node_modules/**/*", "**/.next/**/*"]
+}

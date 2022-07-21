@@ -1,5 +1,7 @@
 import useSWR from 'swr'
 import Page from '@components/page'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
@@ -7,7 +9,7 @@ const players = list => {
   return (
     <ul>
       {list.map(p => (
-        <li>{p.name}</li>
+        <li key={p.name}>{p.name}</li>
       ))}
     </ul>
   )
@@ -31,7 +33,7 @@ const Minecraft = () => {
     return (
       <Page description="Hey, would you like to join my Minecraft server?">
         <article>
-          <h1 align="center">Hold on, I'm loading...</h1>
+          <h1 align="center">Hold on, I&#39;m loading...</h1>
         </article>
       </Page>
     )
@@ -42,7 +44,7 @@ const Minecraft = () => {
         <article>
           <h1 align="center">Sad, seems like server is offline...</h1>
           <p align="center">
-            I don't remember installing python, php or apache to my server 🤔
+            I don&#39;t remember installing python, php or apache to my server 🤔
           </p>
         </article>
       </Page>
@@ -51,6 +53,7 @@ const Minecraft = () => {
   return (
     <Page description="Hey, would you like to join my Minecraft server?">
       <article>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/favicons/uwucraft.png"
           alt="UwUcraft Server Icon"
@@ -68,9 +71,9 @@ const Minecraft = () => {
         </p>
 
         <blockquote>
-          Don't forget to read the rules of my server to avoid getting banned
+          Don&#39;t forget to read the rules of my server to avoid getting banned
           all of sudden. Rules are located at{' '}
-          <a href="/minecraft/rules">/minecraft/rules</a> page
+          <Link href="/minecraft/rules">/minecraft/rules</Link> page
         </blockquote>
 
         <pre>
@@ -90,7 +93,7 @@ const Minecraft = () => {
         <h4>For Developers</h4>
 
         <pre>
-          // GET: /api/minecraft
+          {"// GET: /api/minecraft"}
           <br />
           {JSON.stringify(data.content, null, 2)}
         </pre>

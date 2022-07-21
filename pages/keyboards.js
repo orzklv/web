@@ -1,7 +1,7 @@
 import Page from '@components/page'
 import Entry from '@components/entry'
 
-import { data as items } from '@data/keyboards.json'
+import { data as items } from '@data/keyboards.json' assert {type: 'json'}
 
 const Keyboards = () => {
   return (

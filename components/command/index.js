@@ -250,12 +250,14 @@ const DefaultItems = () => {
 
   return (
     <>
-      <Item
-        value="Themes"
-        icon={<Sparkles />}
-        keybind="t"
-        closeOnCallback={false}
-      />
+      <Group title="Look & Feel">
+        <Item
+          value="Themes"
+          icon={<Sparkles />}
+          keybind="t"
+          closeOnCallback={false}
+        />
+      </Group>
       <Group title="Blog">
         <Item value="Blog" icon={<Pencil />} keybind="g b" />
         <Item
