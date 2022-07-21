@@ -5,6 +5,8 @@ slug: cxsmxs
 date: June 1, 2022
 ---
 
+![COSMOS](/stack/cxsmxs/cosmos.jpg)
+
 ## Libraries and Frameworks
 
 * **Server Side:** [Actix](https://actix.rs/)
