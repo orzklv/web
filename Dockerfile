@@ -5,6 +5,7 @@ RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
+RUN npm i -g pnpm
 RUN pnpm install --frozen-lockfile
 
 # 2. Rebuild the source code only when needed
