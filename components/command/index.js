@@ -38,6 +38,7 @@ import headerStyles from '@components/header/header.module.css'
 import { useTheme } from 'next-themes'
 import tinykeys from '@lib/tinykeys'
 import postMeta from '@data/blog.json'
+import Pin from '@components/icons/pin'
 
 const CommandData = React.createContext({})
 const useCommandData = () => React.useContext(CommandData)
@@ -87,9 +88,10 @@ const CommandMenu = memo(() => {
       'g q': () => router.push('/quotes'),
       'g w': () => router.push('/words'),
       'g i': () => router.push('/ideas'),
+      'g s': () => router.push('/stack'),
       'g y': () => router.push('/minecraft'),
       // Social
-      'g s': () => () => window.open('https://t.me/uwublog', '_blank')
+      'g /': () => () => window.open('https://t.me/uwublog', '_blank')
     }
   }, [router, setPages])
 
@@ -278,6 +280,7 @@ const DefaultItems = () => {
         <Item value="Quotes" icon={<Quote />} keybind="g q" />
         <Item value="Words" icon={<Words />} keybind="g w" />
         <Item value="Ideas" icon={<Lightbulb />} keybind="g i" />
+        <Item value="Stacks" icon={<Pin />} keybind="g s" />
         <Item value="Minecraft" icon={<Play />} keybind="g y" />
       </Group>
 
@@ -295,7 +298,7 @@ const DefaultItems = () => {
         <Item
           value="Telegram"
           icon={<Telegram />}
-          keybind="g s"
+          keybind="g /"
           callback={() => window.open('https://t.me/uwublog', '_blank')}
         />
       </Group>

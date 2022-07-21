@@ -6,7 +6,8 @@
     "dev": "next -p 3003",
     "build": "yarn rss && next build",
     "rss": "node lib/rss",
-    "new": "node lib/db"
+    "new": "node lib/db",
+    "docker": "docker build -t uwusite ."
   },
   "pre-commit": "lint",
   "license": "MIT",
