@@ -3,12 +3,12 @@ import Page from '@components/page'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const fetcher = (...args) => fetch(...args).then(res => res.json())
+const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
-const players = list => {
+const players = (list) => {
   return (
     <ul>
-      {list.map(p => (
+      {list.map((p) => (
         <li key={p.name}>{p.name}</li>
       ))}
     </ul>
@@ -17,7 +17,7 @@ const players = list => {
 
 const Minecraft = () => {
   const { data, error } = useSWR('/api/minecraft', fetcher, {
-    refreshInterval: 2000
+    refreshInterval: 2000,
   })
 
   if (error)
@@ -44,7 +44,8 @@ const Minecraft = () => {
         <article>
           <h1 align="center">Sad, seems like server is offline...</h1>
           <p align="center">
-            I don&#39;t remember installing python, php or apache to my server 🤔
+            I don&#39;t remember installing python, php or apache to my server
+            🤔
           </p>
         </article>
       </Page>
@@ -71,8 +72,8 @@ const Minecraft = () => {
         </p>
 
         <blockquote>
-          Don&#39;t forget to read the rules of my server to avoid getting banned
-          all of sudden. Rules are located at{' '}
+          Don&#39;t forget to read the rules of my server to avoid getting
+          banned all of sudden. Rules are located at{' '}
           <Link href="/minecraft/rules">/minecraft/rules</Link> page
         </blockquote>
 
@@ -93,7 +94,7 @@ const Minecraft = () => {
         <h4>For Developers</h4>
 
         <pre>
-          {"// GET: /api/minecraft"}
+          {'// GET: /api/minecraft'}
           <br />
           {JSON.stringify(data.content, null, 2)}
         </pre>

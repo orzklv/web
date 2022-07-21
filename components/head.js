@@ -7,7 +7,7 @@ const Head = ({
   title = 'UwUssimo Robinson',
   description = "Hi, I'm UwUssimo. Senior UwU Developer from Uzbekistan.",
   image = defaultOgImage,
-  children
+  children,
 }) => {
   const { systemTheme } = useTheme()
 

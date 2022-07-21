@@ -1,7 +1,7 @@
 import Page from '@components/page'
 import Entry from '@components/entry'
 
-import { data as items } from '@data/keyboards.json' assert {type: 'json'}
+import { data as items } from '@data/keyboards.json' assert { type: 'json' }
 
 const Keyboards = () => {
   return (
@@ -10,7 +10,7 @@ const Keyboards = () => {
       description="Collection of beautiful 60%, 65%, and TKL keyboards."
     >
       <article>
-        {items.map(entry => {
+        {items.map((entry) => {
           return (
             <Entry
               key={`${entry.title}-${entry.url}`}

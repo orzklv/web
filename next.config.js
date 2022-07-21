@@ -5,12 +5,12 @@ module.exports = {
       {
         source: '/skyline',
         destination: '/api/skyline',
-        permanent: true
-      }
+        permanent: true,
+      },
     ]
   },
   typescript: {
-    ignoreDevErrors: true
+    ignoreDevErrors: true,
   },
-  output: 'standalone'
+  output: 'standalone',
 }

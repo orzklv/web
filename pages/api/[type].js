@@ -2,10 +2,9 @@ import design from '@data/design.json'
 import reading from '@data/reading.json'
 import music from '@data/music.json'
 import blog from '@data/blog.json'
-import keyboard from "@data/keyboards.json"
+import keyboard from '@data/keyboards.json'
 import getStatus from '@lib/get-status'
 import skyline from '@lib/skyline'
-
 
 export default async function handler(req, res) {
   switch (req.query.type) {

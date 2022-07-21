@@ -8,10 +8,10 @@ const Stacks = ({ slug, stacks, paginate }) => {
 
   return (
     <div className={styles.container}>
-      {stacks.slice(0, paginate ? showMore : undefined).map(stack => {
+      {stacks.slice(0, paginate ? showMore : undefined).map((stack) => {
         const date = new Date(stack.date).toLocaleDateString('default', {
           month: 'numeric',
-          day: 'numeric'
+          day: 'numeric',
         })
 
         return (

@@ -8,7 +8,7 @@ const Music = () => {
   return (
     <Page title="Music" description="Collection of exemplary electronic music.">
       <article>
-        {items.map(entry => {
+        {items.map((entry) => {
           return (
             <Entry
               key={entry.title}
