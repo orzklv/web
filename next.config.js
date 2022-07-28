@@ -1,16 +1,17 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+
+const nextConfig = {
   swcMinify: true,
   async redirects() {
     return [
       {
         source: '/skyline',
         destination: '/api/skyline',
-        permanent: true,
-      },
+        permanent: true
+      }
     ]
   },
-  typescript: {
-    ignoreDevErrors: true,
-  },
-  output: 'standalone',
+  output: 'standalone'
 }
+
+module.exports = nextConfig
