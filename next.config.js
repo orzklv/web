@@ -7,11 +7,11 @@ const nextConfig = {
       {
         source: '/skyline',
         destination: '/api/skyline',
-        permanent: true
-      }
+        permanent: true,
+      },
     ]
   },
-  output: 'standalone'
+  output: 'standalone',
 }
 
 module.exports = nextConfig
