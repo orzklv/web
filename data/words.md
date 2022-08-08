@@ -1,5 +1,9 @@
 Words that I read but didn't understand or created by myself.
 
+**stressless**
+_adjective_
+developers who use only dynamic programming language
+
 **uwussimo**
 _adjective_
 the cutest but more superlative
