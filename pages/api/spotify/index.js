@@ -1,7 +1,3 @@
-// base64 encoded code
-// M2RiNWZlMTg1ZjljNGQwNGJmOTI3ZWE5MjJmNDM5MWM6Y2YyZDI2OTYwYzViNDNkMTlkZTZhNWY4NmU2ZDc2NmM
-
-// https://uwussi.moe/spotify/callback?code=AQCr9VL_fwovyVWNuJ1BlOSiBFCW0RVxRtnH0-DBog9vn-gECUWASPS8DRAyz32IxAp6kyH8ExYWYM4bxKFM2RoNKaQRLsYKySK2JMl3mNuZOkYOsuX5XNBVi1clbnAB3MBcI1kf7Ku7t5l5PuDvJJ0zeR308evofnTQ7po4k9MIVntkn8a7Lii1SMID0IcaiAvCA-TG41nwtCuUFJF-Qdv05d8Gn1XQZJYLNLa_ZoyFKJM
 import { getNowPlaying } from '@lib/spotify';
 
 export default async (_, res) => {
