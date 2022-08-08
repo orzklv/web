@@ -3,13 +3,13 @@
 - [x] Optimize the bulut to be compliant with any architecture x86_64
 - [x] Write osmon and cli with debugger
 - [x] Add ARM and ARM64 support for bulut
-- [] Stabilize all APIs of Xinux
-- [] Create server edition of Xinux
+- [ ] Stabilize all APIs of Xinux
+- [ ] Create server edition of Xinux
 
 ### Blog
 
 - [x] Write it down
-- [] Start porting blogs from Telegram channel
+- [ ] Start porting blogs from Telegram channel
 
 ### Dropped
 
