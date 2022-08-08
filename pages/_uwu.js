@@ -8,8 +8,8 @@ const uwu = () => {
 
         <p>
           Senior UwU Developer. I make software, minimal websites using modern
-          technologies. I specialize in software engineering and component based UI
-          designing.
+          technologies. I specialize in software engineering and component based
+          UI designing.
         </p>
       </article>
     </Page>

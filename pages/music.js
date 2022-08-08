@@ -9,7 +9,7 @@ const Music = () => {
     <Page title="Music" description="Collection of exemplary electronic music.">
       <article>
         <h1>List of collected musics</h1>
-        
+
         {items.map((entry) => {
           return (
             <Entry
