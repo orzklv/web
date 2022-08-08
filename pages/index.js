@@ -1,4 +1,4 @@
-import Page from '@components/page'
+  import Page from '@components/page'
 import Link from '@components/link'
 
 const Index = () => {
@@ -28,7 +28,10 @@ const Index = () => {
           <Link underline href="https://uzinfocom.uz/uz/" external>
             Uzinfocom
           </Link>{' '}
-          to make Uzbekistan more survivable.
+          to make Uzbekistan more survivable. Mostly, I maintain{' '}
+          <Link underline href="https://github.com/uzinfocom-org" external>
+            Uzinfocom Open Source Organization.
+          </Link>
         </p>
 
         <p align="center">
