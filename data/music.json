@@ -15,9 +15,34 @@
     {
       "name": "phonk",
       "color": "gray"
+    },
+    {
+      "name": "lolicore",
+      "color": "red"
     }
   ],
   "data": [
+    {
+      "title": "Glimpse of Us",
+      "description": "Joji",
+      "image": "https://i.ytimg.com/vi/NgsWGfUlwJI/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=NgsWGfUlwJI",
+      "key": "pop"
+    },
+    {
+      "title": "Ew",
+      "description": "Joji",
+      "image": "https://i.ytimg.com/vi/UGB_Bsm5Unk/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=UGB_Bsm5Unk",
+      "key": "pop"
+    },
+    {
+      "title": "YEAH RIGHT",
+      "description": "Joji",
+      "image": "https://i.ytimg.com/vi/tG7wLK4aAOE/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=tG7wLK4aAOE",
+      "key": "pop"
+    },
     {
       "title": "Something Comforting",
       "description": "Porter Robinson (Official Music Video)",
@@ -51,6 +76,20 @@
       "description": "YOASOBI (Official Music Video)",
       "image": "https://i.ytimg.com/vi/sAuEeM_6zpk/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=sAuEeM_6zpk",
+      "key": "pop"
+    },
+    {
+      "title": "Otogasuru",
+      "description": "yuigot + Hakushi Hasegawa",
+      "image": "https://i.ytimg.com/vi/i8adbqn6ZAo/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=i8adbqn6ZAo",
+      "key": "pop"
+    },
+    {
+      "title": "Love me, Love me, Love me",
+      "description": "Kikuo",
+      "image": "https://i.ytimg.com/vi/NTrm_idbhUk/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=NTrm_idbhUk",
       "key": "pop"
     },
     {
@@ -94,6 +133,13 @@
       "image": "https://i.ytimg.com/vi/OdDU-U5zcew/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=OdDU-U5zcew",
       "key": "pop"
+    },
+    {
+      "title": "橙ゲノム",
+      "description": "Tsuna Maru (Mezame-P)",
+      "image": "https://i.ytimg.com/vi/N9XIaxhe_EM/maxresdefault.jpg",
+      "url": "https://open.spotify.com/track/33f5QCjFQJ4PxXLpT8OFTE",
+      "key": "electronic"
     },
     {
       "title": "Yumetourou",
@@ -290,6 +336,34 @@
       "image": "https://i.ytimg.com/vi/CBpgqHBvsAc/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=CBpgqHBvsAc",
       "key": "phonk"
+    },
+    {
+      "title": "Voyage",
+      "description": "VINCCE x KSLV",
+      "image": "https://i.ytimg.com/vi/HeTP1rgc1PI/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=HeTP1rgc1PI",
+      "key": "phonk"
+    },
+    {
+      "title": "NEON BLADE",
+      "description": "MoonDeity",
+      "image": "https://i.ytimg.com/vi/TmFefcffXbQ/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=TmFefcffXbQ",
+      "key": "phonk"
+    },
+    {
+      "title": "denakuta shino",
+      "description": "Loli in early 20s",
+      "image": "https://i.ytimg.com/vi/xTARxrRqWEg/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=xTARxrRqWEg",
+      "key": "lolicore"
+    },
+    {
+      "title": "Various Types Of Ads",
+      "description": "Loli in early 20s",
+      "image": "https://i.ytimg.com/vi/0c5NwW9P8ig/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=0c5NwW9P8ig",
+      "key": "lolicore"
     }
   ]
 }
