@@ -9,7 +9,7 @@ const Spotify = () => {
     '/api/spotify/now-playing',
     fetcher,
     {
-      refreshInterval: 2000,
+      refreshInterval: 1000,
     }
   )
 
