@@ -1,5 +1,5 @@
 ---
-title: CXSMXS
+title: CXSMXS V1.0
 description: Blazingly Fast low level abused technique by UwU San.
 slug: cxsmxs
 date: June 1, 2022
@@ -10,7 +10,7 @@ date: June 1, 2022
 ## Libraries and Frameworks
 
 * **Server Side:** [Actix](https://actix.rs/)
-* **Web Development:** [Yew](https://yew.rs/) | [Next.js](https://nextjs.org/) => [Svelte](https://svelte.dev/)
+* **Web Development:** [Yew](https://yew.rs/) | [Next.js & Preact.js](https://nextjs.org/) => [Svelte](https://svelte.dev/)
 * **Web UI Style:** [UNOCSS](https://uno.antfu.me/) | [TailwindCSS](https://tailwindcss.com/) via B&W Style and some <span style="color: #d44137;">(Red)</span>
 * **GUI Development:** [Tauri Studio](https://tauri.app/)
 * **TUI Development:** [Cursive](https://github.com/gyscos/cursive)
