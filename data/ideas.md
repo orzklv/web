@@ -5,6 +5,7 @@
 - [x] Add ARM and ARM64 support for bulut
 - [ ] Stabilize all APIs of Xinux
 - [ ] Create server edition of Xinux
+- [ ] Create a platform for FinClub of WIUT
 
 ### Blog
 
