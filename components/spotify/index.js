@@ -19,11 +19,9 @@ const Spotify = () => {
 
   if (!data.isPlaying)
     return (
-      <>
         <p align="center">
           My spotify is offline, seems like I&apos;m in an important meeting...
         </p>
-      </>
     )
 
   return (
