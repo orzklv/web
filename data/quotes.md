@@ -1,3 +1,33 @@
+> Ironically, modernization initiated degradation. We came back to stone age, through the modern way.
+
+[Reacting to Social Media](https://t.me/uwublog/636), UwUssimo Robinson
+
+<br />
+
+> Not every people can have continuous enthusiasm to push themselves to reach infinity, they just get a temporary thrust which will eventually stop at somewhere
+
+[The Royal Maids Experiment](https://t.me/uwublog/695), UwUssimo Robinson
+
+<br />
+
+> In our IT sphere, you either become useless theorititian IT enterprenour or practicing minimalist useful programmer. If you're unlucky enough, you might become slave coding job quitter who will burn out on half way!
+
+UwUssimo Robinson
+
+<br />
+
+> The saddest thing is not when the child is afraid of the dark, it is when the adult is afraid of light
+
+[Past Lives](https://www.youtube.com/watch?v=-TXtyYZIiWc), UwUssimo Robinson
+
+<br />
+
+> Multiline string as output was designed for juniors who can’t write a delimiter function
+
+UwUssimo Robinson
+
+<br />
+
 > The sea is everything. It covers seven-tenths of the terrestrial globe. Its breath is pure and life-giving. It is an immense desert place where man is never lonely, for he senses the weaving of Creation on every hand. It is the physical embodiment of a supernatural existence... For the sea is itself nothing but **love and emotion**.
 
 [Twenty Thousand Leagues Under the Sea](https://www.amazon.com/000-Leagues-Under-Wordsworth-Classics/dp/1853260312), Jules Verne
