@@ -3,13 +3,16 @@ import Entry from '@components/entry'
 
 // Data
 import { data as items } from '@data/music.json'
+import Spotify from '@components/spotify'
 
 const Music = () => {
   return (
     <Page title="Music" description="Collection of exemplary electronic music.">
       <article>
-        <h1>List of collected musics</h1>
+        <h1>Spotify Now Listening</h1>
+        <Spotify />
 
+        <h1>List of collected musics</h1>
         {items.map((entry) => {
           return (
             <Entry
