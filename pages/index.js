@@ -1,5 +1,6 @@
 import Page from '@components/page'
 import Link from '@components/link'
+import Spotify from '@components/spotify/now-listening'
 
 const Index = () => {
   return (
@@ -38,6 +39,8 @@ const Index = () => {
           ⌘K or Alt+K to let the dark magic happen or press the ⌘ button on
           navigation menu...
         </p>
+
+        <Spotify />
       </article>
     </Page>
   )

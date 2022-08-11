@@ -1,6 +1,6 @@
 import { getNowPlaying } from '@lib/spotify'
 
-const base = "https://www.uwussi.moe/music"
+const base = 'https://www.uwussi.moe/music'
 
 export default async (_, res) => {
   const response = await getNowPlaying()
