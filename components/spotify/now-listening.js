@@ -18,13 +18,16 @@ const Spotify = () => {
   if (!data.isPlaying) return <></>
 
   return (
-    <Entry
-      key={data.artist + data.title}
-      title="Now Listening"
-      image={data.albumImageUrl}
-      href={data.songUrl}
-      description={data.title + ' - ' + data.artist}
-    />
+    <>
+      <h2 align="center">Listening on Spotify</h2>
+      <Entry
+        key={data.artist + data.title}
+        title={data.title}
+        image={data.albumImageUrl}
+        href={data.songUrl}
+        description={data.artist}
+      />
+    </>
   )
 }
 
