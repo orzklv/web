@@ -307,6 +307,14 @@ const DefaultItems = () => {
           callback={() => window.open('https://t.me/uwublog', '_blank')}
         />
       </Group>
+
+      <Group title="Platforms">
+          <Item
+            value="Space"
+            icon={<Github />}
+            callback={() => window.open('https://owo.jetbrains.space', '_blank')}
+          />
+      </Group>
     </>
   )
 }
