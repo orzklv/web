@@ -311,7 +311,7 @@ const DefaultItems = () => {
       <Group title="Platforms">
           <Item
             value="Space"
-            icon={<Github />}
+            icon={<GitHub />}
             callback={() => window.open('https://owo.jetbrains.space', '_blank')}
           />
       </Group>
