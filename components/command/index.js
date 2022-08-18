@@ -40,6 +40,7 @@ import { useTheme } from 'next-themes'
 import tinykeys from '@lib/tinykeys'
 import postMeta from '@data/blog.json'
 import Pin from '@components/icons/pin'
+import JetBrains from '@components/icons/jetbrains'
 
 const CommandData = React.createContext({})
 const useCommandData = () => React.useContext(CommandData)
@@ -311,7 +312,7 @@ const DefaultItems = () => {
       <Group title="Platforms">
           <Item
             value="Space"
-            icon={<GitHub />}
+            icon={<JetBrains />}
             callback={() => window.open('https://owo.jetbrains.space', '_blank')}
           />
       </Group>
