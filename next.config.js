@@ -9,6 +9,11 @@ const nextConfig = {
         destination: '/api/skyline',
         permanent: true,
       },
+      {
+        source: '/space',
+        destination: 'https://owo.jetbrains.space/',
+        permanent: true,
+      },
     ]
   },
   output: 'standalone',
