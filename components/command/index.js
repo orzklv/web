@@ -27,11 +27,12 @@ import {
   Document,
   Quote,
   Words,
-  Lightbulb,
+  LightBulb,
   ArrowRight,
   GitHub,
   Telegram,
   Play,
+  Mail,
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -90,6 +91,7 @@ const CommandMenu = memo(() => {
       'g i': () => router.push('/ideas'),
       'g s': () => router.push('/stack'),
       'g y': () => router.push('/minecraft'),
+      'g z': () => router.push('/sponsors'),
       // Social
       'g /': () => () => window.open('https://t.me/uwublog', '_blank'),
     }
@@ -281,9 +283,10 @@ const DefaultItems = () => {
         <Item value="Projects" icon={<Document />} keybind="g p" />
         <Item value="Quotes" icon={<Quote />} keybind="g q" />
         <Item value="Words" icon={<Words />} keybind="g w" />
-        <Item value="Ideas" icon={<Lightbulb />} keybind="g i" />
+        <Item value="Ideas" icon={<LightBulb />} keybind="g i" />
         <Item value="Stacks" icon={<Pin />} keybind="g s" />
         <Item value="Minecraft" icon={<Play />} keybind="g y" />
+        <Item value="Sponsors" icon={<Mail />} keybind="g z" />
       </Group>
 
       <Group title="Navigation">
