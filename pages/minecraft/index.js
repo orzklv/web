@@ -65,7 +65,7 @@ const Minecraft = () => {
           Recently, I created my own Minecraft Server to enjoy my free time on
           my server. Feel free to join me if you want to spend some time with
           me! Also, you can view{' '}
-          <a href="https://github.com/uwussimo/minecraft">
+          <a href="https://github.com/uwucraft/server-season-3">
             <u>repository</u>
           </a>{' '}
           of my minecraft server where I synchronise all my changes.
