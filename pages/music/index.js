@@ -1,11 +1,10 @@
+import { join } from 'path'
+import { promises } from 'fs'
 import Page from '@components/page'
 import Entry from '@components/entry'
-
-// Data
-import { data as items } from '@data/music.json'
 import Spotify from '@components/spotify/now-listening'
 
-const Music = () => {
+const Music = ({ items }) => {
   return (
     <Page title="Music" description="Collection of exemplary electronic music.">
       <article>
@@ -24,6 +23,17 @@ const Music = () => {
       </article>
     </Page>
   )
+}
+
+export const getStaticProps = async () => {
+  const file = await promises.readFile(join('./data', 'music.json'), {
+    encoding: 'utf8',
+  })
+  const parsed = JSON.parse(file)
+
+  return {
+    props: { items: parsed.data },
+  }
 }
 
 export default Music
