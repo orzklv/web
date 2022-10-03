@@ -1,9 +1,9 @@
+import { join } from 'path'
+import { promises } from 'fs'
 import Page from '@components/page'
 import Entry from '@components/entry'
 
-import { data as items } from '@data/keyboards.json' assert { type: 'json' }
-
-const Keyboards = () => {
+const Keyboards = ({ items }) => {
   return (
     <Page
       title="Keyboards"
@@ -24,6 +24,17 @@ const Keyboards = () => {
       </article>
     </Page>
   )
+}
+
+export const getStaticProps = async () => {
+  const file = await promises.readFile(join('./data', 'keyboards.json'), {
+    encoding: 'utf8',
+  })
+  const parsed = JSON.parse(file)
+
+  return {
+    props: { items: parsed.data },
+  }
 }
 
 export default Keyboards

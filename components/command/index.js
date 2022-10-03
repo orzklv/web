@@ -310,11 +310,11 @@ const DefaultItems = () => {
       </Group>
 
       <Group title="Platforms">
-          <Item
-            value="Space"
-            icon={<JetBrains />}
-            callback={() => window.open('https://owo.jetbrains.space', '_blank')}
-          />
+        <Item
+          value="Space"
+          icon={<JetBrains />}
+          callback={() => window.open('https://owo.jetbrains.space', '_blank')}
+        />
       </Group>
     </>
   )
