@@ -1,7 +1,7 @@
 import NextHead from 'next/head'
 import { useTheme } from 'next-themes'
 
-const defaultOgImage = 'https://uwussimo.vercel.app/og.png'
+const defaultOgImage = 'https://uwussi.moe/og.png'
 
 const Head = ({
   title = 'UwUssimo Robinson',
