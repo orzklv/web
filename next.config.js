@@ -14,6 +14,11 @@ const nextConfig = {
         destination: 'https://owo.jetbrains.space/',
         permanent: true,
       },
+      {
+        source: '/discord',
+        destination: 'https://discord.gg/JkXFQpScFj',
+        permanent: true,
+      },
     ]
   },
   output: 'standalone',
