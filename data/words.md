@@ -1,8 +1,17 @@
 Words that I read but didn't understand or created by myself.
 
+
+**open-sus**
+_adjective_
+web services on open source which has paid version ran by authors of the software.
+
+**stressful**
+_adjective_
+developers who use only statically compiled or high level programming languages in projects
+
 **stressless**
 _adjective_
-developers who use only dynamic programming language
+developers who use only dynamic or high level programming languages in project
 
 **uwussimo**
 _adjective_
