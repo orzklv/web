@@ -1,4 +1,4 @@
-Words that I read but didn't understand or created by myself.
+**Words that I read but didn't understand or created by myself.**
 
 
 **open-sus**
