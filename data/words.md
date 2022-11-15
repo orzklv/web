@@ -7,7 +7,7 @@ web services on open source which has paid version ran by authors of the softwar
 
 **stressful**
 _adjective_
-developers who use only statically compiled or high level programming languages in projects
+developers who use only statically compiled or low level programming languages in projects
 
 **stressless**
 _adjective_
