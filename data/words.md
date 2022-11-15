@@ -15,7 +15,7 @@ developers who use only dynamic or high level programming languages in project
 
 **uwussimo**
 _adjective_
-100x times cute
+100x times kawaii guy (may not be irl)
 
 **genemator**
 _noun_
