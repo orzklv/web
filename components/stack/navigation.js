@@ -16,7 +16,7 @@ const Previous = ({ previous, next }) => {
 
       <div className={styles.next}>
         {next && (
-          <Link href="/blog/[slug]" gray as={`/blog/${next.slug}`}>
+          <Link href="/stack/[slug]" gray as={`/stack/${next.slug}`}>
             <div className={styles.title}>Newer →</div>
             {next.title}
           </Link>
