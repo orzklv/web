@@ -7,6 +7,8 @@ date: June 1, 2022
 
 ![COSMOS](/stack/cxsmxs/cosmos.jpg)
 
+As the era of Rust has begun to grow, I decided to create a new stack that will be blazingly fast and will be able to handle any load. I have been working on this stack for a while now, and I am happy to announce that it is finally ready for production.
+
 ## Libraries and Frameworks
 
 * **Server Side:** [Actix](https://actix.rs/)
