@@ -10,3 +10,4 @@ yalc.lock
 .yalc
 .idea
 yarn-error.log
+.env.local
