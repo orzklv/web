@@ -57,18 +57,14 @@ const Minecraft = () => {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/favicons/cxsmxs.png"
-          alt="UwUcraft Server Icon"
+          alt="Yuri's Server Icon"
           height="100"
         />
 
         <p>
           Recently, I created my own Minecraft Server to enjoy my free time on
           my server. Feel free to join me if you want to spend some time with
-          me! Also, you can view{' '}
-          <a href="https://github.com/uwucraft/server-season-3">
-            <u>repository</u>
-          </a>{' '}
-          of my minecraft server where I synchronise all my changes.
+          me!
         </p>
 
         <blockquote>
