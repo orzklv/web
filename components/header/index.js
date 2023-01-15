@@ -9,10 +9,8 @@ const Header = ({ title, content }) => {
   return (
     <nav className={styles.nav}>
       <div className={styles.header}>
-        <Link href="/">
-          <a aria-label="Navigate Home" className={styles.logo}>
-            <LogoIcon />
-          </a>
+        <Link href="/" aria-label="Navigate Home" className={styles.logo}>
+          <LogoIcon />
         </Link>
 
         <Command />
