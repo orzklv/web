@@ -56,7 +56,7 @@ const Minecraft = () => {
       <article>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/favicons/uwucraft.png"
+          src="/favicons/cxsmxs.png"
           alt="UwUcraft Server Icon"
           height="100"
         />
@@ -83,7 +83,7 @@ const Minecraft = () => {
           <b>Players:</b> {data.content.players.online}/
           {data.content.players.max}
           <br />
-          <b>Address:</b> owo.uwussi.moe
+          <b>Address:</b> cxsmxs.space
           <br />
           <b>Software:</b> Vanilla {data.content.version.name}
           <br />
