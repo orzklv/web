@@ -3,15 +3,15 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "lint": "next lint",
-    "lint:fix": "pnpm lint --fix",
-    "fmt": "prettier --check \"{**/*,*}.{js,mjs,ts,jsx,tsx,md,json}\" --loglevel warn",
-    "fmt:fix": "pnpm fmt --write",
-    "fix": "pnpm run lint:fix && pnpm run fmt:fix",
     "dev": "next -p 3003",
-    "build": "pnpm rss && next build",
     "rss": "node lib/rss",
-    "new": "node lib/db"
+    "new": "node lib/db",
+    "build": "pnpm rss && next build",
+    "lint": "next lint",
+    "fmt": "prettier --check \"{**/*,*}.{js,mjs,ts,jsx,tsx,md,json}\" --loglevel warn",
+    "lint:fix": "pnpm lint --fix",
+    "fmt:fix": "pnpm fmt --write",
+    "fix": "pnpm run lint:fix && pnpm run fmt:fix"
   },
   "pre-commit": "fix",
   "license": "MIT",
