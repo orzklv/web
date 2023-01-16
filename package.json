@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "next lint",
     "lint:fix": "pnpm lint --fix",
-    "fmt": "prettier --check \"*.js\" \"*.json\" \"{util,public,pages,components}/**/*.{js,tsx}\" \"{util,public,pages,components}/*.{js,tsx}\" --loglevel warn",
+    "fmt": "prettier --check \"*.mjs\" \"*.json\" \"*.md\" \"{lib,public,pages,components,posts,stacks}/**/*.{js,jsx,md,tsx}\" \"{lib,public,pages,components,posts,stacks}/*.{js,jsx,md,tsx}\" --loglevel warn",
     "fmt:fix": "pnpm fmt --write",
     "fix": "pnpm run lint:fix && pnpm run fmt:fix",
     "dev": "next -p 3003",

@@ -55,11 +55,7 @@ const Minecraft = () => {
     <Page description="Hey, would you like to join my Minecraft server?">
       <article>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/favicons/cxsmxs.png"
-          alt="Yuri's Server Icon"
-          height="100"
-        />
+        <img src="/favicons/cxsmxs.png" alt="Yuri's Server Icon" height="100" />
 
         <p>
           Recently, I created my own Minecraft Server to enjoy my free time on

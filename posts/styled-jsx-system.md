@@ -6,7 +6,11 @@ date: Dec 21, 2019
 og: true
 ---
 
-[Styled System](https://styled-system.com/) is an excellent alternative to writing ad-hoc `style` declarations in your React components. By giving components standardized props like `bg` and `fontSize`, it's easier to build custom UI that respects your system constraints. That's because you can quickly specify your design tokens and use them in real code:
+[Styled System](https://styled-system.com/) is an excellent alternative to
+writing ad-hoc `style` declarations in your React components. By giving
+components standardized props like `bg` and `fontSize`, it's easier to build
+custom UI that respects your system constraints. That's because you can quickly
+specify your design tokens and use them in real code:
 
 ```js
 // theme.js
@@ -15,7 +19,7 @@ colors: {
 }
 
 // your React code
-<Box color="blue" />
+;<Box color="blue" />
 ```
 
 Styled System's responsive syntax is impressively concise, too:
@@ -27,11 +31,16 @@ Styled System's responsive syntax is impressively concise, too:
 
 These two features make it extremely easy to scaffold new components.
 
-I want to use Styled System with [styled-jsx](https://github.com/zeit/styled-jsx), because styled-jsx is included with [Next.js](https://github.com/zeit/next.js), and I use Next.js for everything React. But all the Styled System tooling I found was for styled-components or Emotion, so I made my own.
+I want to use Styled System with
+[styled-jsx](https://github.com/zeit/styled-jsx), because styled-jsx is included
+with [Next.js](https://github.com/zeit/next.js), and I use Next.js for
+everything React. But all the Styled System tooling I found was for
+styled-components or Emotion, so I made my own.
 
 ## styled-jsx-system
 
-[styled-jsx-system](https://github.com/uwussimo/styled-jsx-system) lets you use Styled System with styled-jsx.
+[styled-jsx-system](https://github.com/uwussimo/styled-jsx-system) lets you use
+Styled System with styled-jsx.
 
 ```bash
 $ yarn add styled-jsx-system
@@ -66,10 +75,16 @@ That's it! You can now use Styled System props with your Box component:
 <Box color={['#000', '#666', '#fff']}>Hello</Box>
 ```
 
-Other Styled System features like compose, system, and themeing are supported too. Check out the [repository](https://github.com/uwussimo/styled-jsx-system) for more information.
+Other Styled System features like compose, system, and themeing are supported
+too. Check out the [repository](https://github.com/uwussimo/styled-jsx-system)
+for more information.
 
 Cool. [Let me know](https://twitter.com/uwussimo) if you end up using it.
 
 ---
 
-Thanks to [jxnblk](https://twitter.com/jxnblk) for Styled System and all his cool CSS experiments, and thanks to [Giuseppe](https://twitter.com/giuseppegurgone), [JJ](https://twitter.com/_ijjk), and [Shu](https://twitter.com/shuding_) for help with compiling and publishing!
+Thanks to [jxnblk](https://twitter.com/jxnblk) for Styled System and all his
+cool CSS experiments, and thanks to
+[Giuseppe](https://twitter.com/giuseppegurgone),
+[JJ](https://twitter.com/_ijjk), and [Shu](https://twitter.com/shuding_) for
+help with compiling and publishing!

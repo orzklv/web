@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-
 const nextConfig = {
   swcMinify: true,
   async redirects() {
@@ -10,8 +9,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/space',
-        destination: 'https://owo.jetbrains.space/',
+        source: '/cxsmxs',
+        destination: 'https://cxsmxs.space/',
         permanent: true,
       },
       {
@@ -24,4 +23,4 @@ const nextConfig = {
   output: 'standalone',
 }
 
-module.exports = nextConfig
+export default nextConfig

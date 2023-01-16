@@ -1,11 +1,16 @@
 ---
 title: Custom text underlines
-description: Implementing custom CSS text underlines that work with descenders and wrapping.
+description:
+  Implementing custom CSS text underlines that work with descenders and
+  wrapping.
 slug: custom-text-underlines
 date: Feb 11, 2020
 ---
 
-The `text-decoration: underline` CSS property provides insufficient control over the underline styling and position. While we wait for the [CSS Text Decoration Module specification](https://www.w3.org/TR/css-text-decor-4/) to become standard, we must rely on custom implementations.
+The `text-decoration: underline` CSS property provides insufficient control over
+the underline styling and position. While we wait for the
+[CSS Text Decoration Module specification](https://www.w3.org/TR/css-text-decor-4/)
+to become standard, we must rely on custom implementations.
 
 My favorite approach is to use a `linear-gradient` to create an underline:
 
@@ -38,7 +43,10 @@ background-position: left 1.05em;
 
 ## Descenders
 
-You'll notice that the underline overlaps the [descenders](https://www.figma.com/dictionary/descender/) of the text. By adding a `text-shadow` with a small offset to the right and left with the color of the background, you can hide the underline around descenders.
+You'll notice that the underline overlaps the
+[descenders](https://www.figma.com/dictionary/descender/) of the text. By adding
+a `text-shadow` with a small offset to the right and left with the color of the
+background, you can hide the underline around descenders.
 
 ```css
 text-shadow: 0.1em 0 var(--background), -0.1em 0 var(--background);
@@ -68,7 +76,8 @@ background-size: 100% 0.25em;
 
 ## Dashes
 
-By using a `repeating-linear-gradient` and leaving half the gradient transparent, you can customize a dashed underline:
+By using a `repeating-linear-gradient` and leaving half the gradient
+transparent, you can customize a dashed underline:
 
 ```css
 background-image: repeating-linear-gradient(
@@ -99,7 +108,8 @@ background-size: 5ch 1px;
   </div>
 </div>
 
-The `ch` unit is equal to the width of the "0" glyph in the current font, which can be useful for natural alignment.
+The `ch` unit is equal to the width of the "0" glyph in the current font, which
+can be useful for natural alignment.
 
 ## Wrapping
 
@@ -111,11 +121,14 @@ Lastly, this approach also supports multi-line text:
   </div>
 </div>
 
-[Let me know](https://twitter.com/uwussimo) if you end up using this, or read more about other approaches in "[Crafting link underlines on Medium.](https://medium.design/crafting-link-underlines-on-medium-7c03a9274f9)"
+[Let me know](https://twitter.com/uwussimo) if you end up using this, or read
+more about other approaches in
+"[Crafting link underlines on Medium.](https://medium.design/crafting-link-underlines-on-medium-7c03a9274f9)"
 
 ---
 
-Thanks to [Franco](https://twitter.com/arzafran) for reminding me about this technique!
+Thanks to [Franco](https://twitter.com/arzafran) for reminding me about this
+technique!
 
 <style>
 
