@@ -4,7 +4,7 @@ import music from '@data/music.json'
 import blog from '@data/blog.json'
 import keyboard from '@data/keyboards.json'
 import getStatus from '@lib/get-status'
-import skyline from '@lib/skyline'
+import { skyline2022 } from '@lib/skyline'
 
 export default async function handler(req, res) {
   switch (req.query.type) {
@@ -22,7 +22,7 @@ export default async function handler(req, res) {
       await getStatus(res)
       break
     case 'skyline':
-      return res.redirect(encodeURI(skyline))
+      return res.redirect(encodeURI(skyline2022))
     default:
       return res.status(404).json({ message: 'Unknown service' })
   }

@@ -299,21 +299,21 @@ const DefaultItems = () => {
         <Item
           value="GitHub"
           icon={<GitHub />}
-          callback={() => window.open('https://github.com/uwussimo', '_blank')}
+          callback={() => window.open('https://github.com/katsuki-yuri', '_blank')}
         />
         <Item
           value="Telegram"
           icon={<Telegram />}
           keybind="g /"
-          callback={() => window.open('https://t.me/uwublog', '_blank')}
+          callback={() => window.open('https://t.me/yurionblog', '_blank')}
         />
       </Group>
 
       <Group title="Platforms">
         <Item
-          value="Space"
+          value="CXSMXS"
           icon={<JetBrains />}
-          callback={() => window.open('https://owo.jetbrains.space', '_blank')}
+          callback={() => window.open('https://cxsmxs.space', '_blank')}
         />
       </Group>
     </>

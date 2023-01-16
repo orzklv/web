@@ -11,19 +11,19 @@ harmonious. [LiteIcon](https://freemacsoft.net/liteicon/) does a great job of
 automating the icon changing process, but every time I opened Discord, the dock
 icon reverted back to default. Not cool.
 
-![Original Discord Icon in Dock](https://uwussi.moe/blog/persistent-icons/dock-1.png)
+![Original Discord Icon in Dock](https://katsuki.moe/blog/persistent-icons/dock-1.png)
 
 It happens to other Electron applications (Hyper, VSCode) over time. Even Safari
 reverts back occasionally. It's frustratingly ugly. Let's fix it.
 
 Find the application in Finder and right click to "Show Package Contents".
 
-![Show Package Contents on Discord.app](https://uwussi.moe/blog/persistent-icons/show.png)
+![Show Package Contents on Discord.app](https://katsuki.moe/blog/persistent-icons/show.png)
 
 Navigate to `Contents/Resources/`. Here, `electron.icns` is the culprit. Let's
 replace it with our custom icon.
 
-![electron.icns in Contents/Resources Folder](https://uwussi.moe/blog/persistent-icons/icns.png)
+![electron.icns in Contents/Resources Folder](https://katsuki.moe/blog/persistent-icons/icns.png)
 
 We'll need to convert our custom `.png` icon from Dusk (or anywhere else) to an
 `.icns` file. MacOS ships with the command line tool `sips` to help with this.
@@ -38,8 +38,8 @@ Move your new `.icns` file into the previously opened `Resources/` folder. I
 like to save the old icon by renaming it, just in case I have to revert later.
 Rename your new file to match the old (in this case, `electron.icns`).
 
-![New electron.icns File](https://uwussi.moe/blog/persistent-icons/fixed-icns.png)
+![New electron.icns File](https://katsuki.moe/blog/persistent-icons/fixed-icns.png)
 
 Restart the app, and your custom application icon should persist!
 
-![Much better](https://uwussi.moe/blog/persistent-icons/dock-2.png)
+![Much better](https://katsuki.moe/blog/persistent-icons/dock-2.png)

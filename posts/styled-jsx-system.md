@@ -39,7 +39,7 @@ styled-components or Emotion, so I made my own.
 
 ## styled-jsx-system
 
-[styled-jsx-system](https://github.com/uwussimo/styled-jsx-system) lets you use
+[styled-jsx-system](https://github.com/katsuki-yuri/styled-jsx-system) lets you use
 Styled System with styled-jsx.
 
 ```bash
@@ -76,10 +76,10 @@ That's it! You can now use Styled System props with your Box component:
 ```
 
 Other Styled System features like compose, system, and themeing are supported
-too. Check out the [repository](https://github.com/uwussimo/styled-jsx-system)
+too. Check out the [repository](https://github.com/katsuki-yuri/styled-jsx-system)
 for more information.
 
-Cool. [Let me know](https://twitter.com/uwussimo) if you end up using it.
+Cool. [Let me know](https://twitter.com/katsuki-yuri) if you end up using it.
 
 ---
 

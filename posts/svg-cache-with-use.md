@@ -223,7 +223,7 @@ element and don't involve the inner elements at all:
 ---
 
 Here's a [live demo](https://svgcache.vercel.app) and the
-[demo source code](https://github.com/uwussimo/svgcache).
+[demo source code](https://github.com/katsuki-yuri/svgcache).
 
 <div id="footnote"></div>
 

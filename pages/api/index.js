@@ -4,7 +4,7 @@ export default async function handler(req, res) {
     endpoints: [
       {
         name: '/blog',
-        desc: 'Get blog posts of UwUssimo',
+        desc: 'Get blog posts of Yuri',
       },
       {
         name: '/design',
@@ -16,7 +16,7 @@ export default async function handler(req, res) {
       },
       {
         name: '/music',
-        desc: "Get list of UwUssimo's favorite musics",
+        desc: "Get list of Yuri's favorite musics",
       },
       {
         name: '/reading',
@@ -24,11 +24,11 @@ export default async function handler(req, res) {
       },
       {
         name: '/minecraft',
-        desc: "Get status of UwUssimo's Minecraft Server",
+        desc: "Get status of Yuri's Minecraft Server",
       },
       {
         name: '/skyline',
-        desc: "Checkout UwUssimo's Skyline",
+        desc: "Checkout Yuri's Skyline",
       },
     ],
   })
