@@ -5,6 +5,7 @@
 - [ ] Release public version of Korrektor API
 - [ ] Release workstation version of Xinux with GNOME
 - [ ] Connect Havo with Osmon and make it single binary
+- [ ] Rewrite Garbage Collector of Bulut
 
 ### Blog
 
