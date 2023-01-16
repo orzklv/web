@@ -17,7 +17,10 @@ const Error = ({ status }) => {
 
           <p>
             <blockquote cite="http://www.aaronsw.com/weblog/visitingmit">
-              <p>If your DDoS is not succeeding, then you are hacking the wrong ass...</p>
+              <p>
+                If your DDoS is not succeeding, then you are hacking the wrong
+                ass...
+              </p>
 
               <footer>
                 — CryPTON32,{' '}

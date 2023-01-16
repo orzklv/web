@@ -7,7 +7,10 @@ const Contact = () => {
         <p>Get in touch...</p>
 
         <blockquote>
-          <a href="mailto:yuri@katsuki.moe?subject=Hewwo Yuwi... Iwd liwe to tawk with ya!" className="reset">
+          <a
+            href="mailto:yuri@katsuki.moe?subject=Hewwo Yuwi... Iwd liwe to tawk with ya!"
+            className="reset"
+          >
             yuri@katsuki.moe
           </a>
         </blockquote>

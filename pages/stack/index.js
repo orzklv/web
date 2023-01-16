@@ -6,7 +6,10 @@ import getStacks from '@lib/get-stacks'
 
 const Stack = ({ stacks }) => {
   return (
-    <Page title="Stacks" description="Stacks which I abused in past & currently abusing.">
+    <Page
+      title="Stacks"
+      description="Stacks which I abused in past & currently abusing."
+    >
       <article>
         <ul>
           <StacksList stacks={stacks} />

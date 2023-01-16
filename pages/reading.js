@@ -8,7 +8,10 @@ const Reading = ({ data }) => {
   const { items } = useData(data)
 
   return (
-    <Page title="Reading" description="Collection of articles, blog posts, and videos that I enjoyed.">
+    <Page
+      title="Reading"
+      description="Collection of articles, blog posts, and videos that I enjoyed."
+    >
       <article>
         <ul>
           {items.map((entry) => {

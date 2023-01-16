@@ -3,7 +3,10 @@ import getMarkdown from '@lib/get-markdown'
 
 const Quotes = ({ html }) => {
   return (
-    <Page title="Quotes" description="Collection of notable quotes encountered in reading.">
+    <Page
+      title="Quotes"
+      description="Collection of notable quotes encountered in reading."
+    >
       <article dangerouslySetInnerHTML={{ __html: html }} />
     </Page>
   )

@@ -13,7 +13,15 @@ const Reading = ({ sponsors }) => {
         <h1 align="center">People who support my work!</h1>
 
         {sponsors.map((entry) => {
-          return <Entry key={entry.id} title={entry.name} image={entry.avatarUrl} href={entry.url} description={entry.bio} />
+          return (
+            <Entry
+              key={entry.id}
+              title={entry.name}
+              image={entry.avatarUrl}
+              href={entry.url}
+              description={entry.bio}
+            />
+          )
         })}
       </article>
     </Page>

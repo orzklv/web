@@ -9,7 +9,10 @@ const Design = ({ data }) => {
   const nonImageItems = data.filter((x) => !x.image)
 
   return (
-    <Page title="Design" description="Collection of beautiful websites and portfolios that I admire.">
+    <Page
+      title="Design"
+      description="Collection of beautiful websites and portfolios that I admire."
+    >
       <article>
         {imageItems.map((entry) => {
           return (

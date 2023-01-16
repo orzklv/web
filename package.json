@@ -65,7 +65,14 @@
     "proseWrap": "always",
     "semi": false,
     "singleQuote": true,
-    "printWidth": 160
+    "overrides": [
+      {
+        "files": "*.md",
+        "options": {
+          "printWidth": 160
+        }
+      }
+    ]
   },
   "next-unused": {
     "alias": {

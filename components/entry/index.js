@@ -19,7 +19,11 @@ const Entry = ({ title, description, image, href, position }) => {
     >
       <section
         style={{
-          backgroundImage: image ? (!inView ? 'none' : `url('${imagePrefix}/${encodeURIComponent(image)}')`) : 'none',
+          backgroundImage: image
+            ? !inView
+              ? 'none'
+              : `url('${imagePrefix}/${encodeURIComponent(image)}')`
+            : 'none',
           backgroundPosition: position ? position : 'center',
         }}
       >
