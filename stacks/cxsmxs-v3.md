@@ -5,11 +5,11 @@ slug: cxsmxs-v3.0
 date: January 16, 2023
 ---
 
-![COSMOS](/stack/cxsmxs-v2/rebirth.webp)
+![COSMOS](/stack/cxsmxs-v3/dabbing_astranaut.jpg)
 
-After trying CXSMXS V1.0 in action and playing around with it, I decided to clean it up little bit to make it even more productive.
+This upgrade is a fixed version of CXSMXS V2.0 after its use in Korrektor API. As always, BLAZINGLY FAST!
 
-## Libraries and Frameworks
+## Languages, Libraries and Frameworks
 
 - **Server Side:** [Actix](https://actix.rs/)
 - **Web Development:** [Next.js](https://nextjs.org/) & [Turbopack](https://turbo.build/pack)
@@ -20,6 +20,7 @@ After trying CXSMXS V1.0 in action and playing around with it, I decided to clea
 - **Primary Language:** [Rust](https://www.rust-lang.org/)
 - **Secondary Language:** [Zig](https://ziglang.org/)
 - **SQL Database:** [PostgreSQL](https://www.postgresql.org/) | [MySQL](https://www.mysql.com/)
+- **For huge dataset:** [Cassandra](https://cassandra.apache.org/)
 - **NoSQL Database:** [Redis](https://redis.io/)
 - **Dynamic Language:** [TypeScript/Bun](https://bun.sh/)
 - **Proxy:** [NGIИX](https://www.nginx.com/)
@@ -35,3 +36,4 @@ After trying CXSMXS V1.0 in action and playing around with it, I decided to clea
 - Changed frontend bundler from `Preact.js` to `Turbopack`
 - Tauri should be bootstrapped with next.js
 - Server Arch Linux should use liquorix kernel
+- Huge datasets with massive concurrency should be stored in Cassandra
