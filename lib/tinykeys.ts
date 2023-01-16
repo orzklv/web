@@ -72,10 +72,10 @@ function parse(str: string): KeyBindingPress[] {
   return str
     .trim()
     .split(' ')
-    .map(press => {
+    .map((press) => {
       let mods = press.split('+')
       let key = mods.pop() as string
-      mods = mods.map(mod => (mod === '$mod' ? MOD : mod))
+      mods = mods.map((mod) => (mod === '$mod' ? MOD : mod))
       return [mods, key]
     })
 }
@@ -136,7 +136,7 @@ export default function keybindings(
   keyBindingMap: KeyBindingMap,
   options: Options = {}
 ) {
-  let keyBindings = Object.keys(keyBindingMap).map(key => {
+  let keyBindings = Object.keys(keyBindingMap).map((key) => {
     return [parse(key), keyBindingMap[key]] as const
   })
 
@@ -165,8 +165,7 @@ export default function keybindings(
       }
     }
 
-
-    keyBindings.forEach(keyBinding => {
+    keyBindings.forEach((keyBinding) => {
       let sequence = keyBinding[0]
       let callback = keyBinding[1]
 
