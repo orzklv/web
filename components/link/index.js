@@ -32,13 +32,7 @@ const Link = ({
 
   if (external) {
     return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={c}
-        {...props}
-      >
+      <a href={href} target="_blank" rel="noopener noreferrer" className={c} {...props}>
         {children}
       </a>
     )
@@ -46,14 +40,7 @@ const Link = ({
 
   return (
     <>
-      <NextLink
-        href={href}
-        as={as}
-        prefetch={canPrefetch(href) ? undefined : false}
-        passHref={passHref}
-        className={c}
-        {...props}
-      >
+      <NextLink href={href} as={as} prefetch={canPrefetch(href) ? undefined : false} passHref={passHref} className={c} {...props}>
         {children}
       </NextLink>
     </>

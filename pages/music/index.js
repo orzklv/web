@@ -10,15 +10,7 @@ const Music = ({ items }) => {
       <article>
         <h1>List of collected musics</h1>
         {items.map((entry) => {
-          return (
-            <Entry
-              key={entry.title}
-              title={entry.title}
-              image={entry.image}
-              href={entry.url}
-              description={entry.description}
-            />
-          )
+          return <Entry key={entry.title} title={entry.title} image={entry.image} href={entry.url} description={entry.description} />
         })}
       </article>
     </Page>

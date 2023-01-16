@@ -4,15 +4,7 @@ import { useRouter } from 'next/router'
 import useDelayedRender from 'use-delayed-render'
 import { DialogContent, DialogOverlay } from '@reach/dialog'
 
-import {
-  Command,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  useCommand,
-  usePages,
-  CommandGroup,
-} from 'cmdk'
+import { Command, CommandInput, CommandItem, CommandList, useCommand, usePages, CommandGroup } from 'cmdk'
 
 import {
   Command as CommandIcon,
@@ -134,11 +126,7 @@ const CommandMenu = memo(() => {
 
   return (
     <>
-      <button
-        className={headerStyles.command}
-        title="⌘K"
-        onClick={() => setOpen(true)}
-      >
+      <button className={headerStyles.command} title="⌘K" onClick={() => setOpen(true)}>
         <CommandIcon />
       </button>
 
@@ -149,10 +137,7 @@ const CommandMenu = memo(() => {
         })}
         onDismiss={() => setOpen(false)}
       >
-        <DialogContent
-          className={styles['dialog-content']}
-          aria-label="Site Navigation"
-        >
+        <DialogContent className={styles['dialog-content']} aria-label="Site Navigation">
           <Command
             {...commandProps}
             ref={commandRef}
@@ -162,13 +147,7 @@ const CommandMenu = memo(() => {
           >
             <div className={styles.top}>
               <CommandInput
-                placeholder={
-                  Items === ThemeItems
-                    ? 'Select a theme...'
-                    : Items === BlogItems
-                    ? 'Search for posts...'
-                    : 'Type a command or search...'
-                }
+                placeholder={Items === ThemeItems ? 'Select a theme...' : Items === BlogItems ? 'Search for posts...' : 'Type a command or search...'}
               />
             </div>
 
@@ -179,9 +158,7 @@ const CommandMenu = memo(() => {
               })}
             >
               <CommandList ref={listRef}>
-                <CommandData.Provider
-                  value={{ pages, search, open, setPages, keymap, setOpen }}
-                >
+                <CommandData.Provider value={{ pages, search, open, setPages, keymap, setOpen }}>
                   <Items />
                 </CommandData.Provider>
               </CommandList>
@@ -221,13 +198,7 @@ const BlogItems = () => {
   const router = useRouter()
 
   return postMeta.map((post, i) => {
-    return (
-      <Item
-        key={`blog-item-${post.title}-${i}`}
-        value={post.title}
-        callback={() => router.push('/blog/[slug]', `/blog/${post.slug}`)}
-      />
-    )
+    return <Item key={`blog-item-${post.title}-${i}`} value={post.title} callback={() => router.push('/blog/[slug]', `/blog/${post.slug}`)} />
   })
 }
 
@@ -254,26 +225,12 @@ const DefaultItems = () => {
   return (
     <>
       <Group title="Look & Feel">
-        <Item
-          value="Themes"
-          icon={<Sparkles />}
-          keybind="t"
-          closeOnCallback={false}
-        />
+        <Item value="Themes" icon={<Sparkles />} keybind="t" closeOnCallback={false} />
       </Group>
       <Group title="Blog">
         <Item value="Blog" icon={<Pencil />} keybind="g b" />
-        <Item
-          value="Search blog..."
-          icon={<Search />}
-          closeOnCallback={false}
-          callback={() => setPages([...pages, BlogItems])}
-        />
-        <Item
-          value="RSS"
-          icon={<RSS />}
-          callback={() => router.push('/feed.xml')}
-        />
+        <Item value="Search blog..." icon={<Search />} closeOnCallback={false} callback={() => setPages([...pages, BlogItems])} />
+        <Item value="RSS" icon={<RSS />} callback={() => router.push('/feed.xml')} />
       </Group>
 
       <Group title="Collection">
@@ -296,40 +253,18 @@ const DefaultItems = () => {
       </Group>
 
       <Group title="Social">
-        <Item
-          value="GitHub"
-          icon={<GitHub />}
-          callback={() =>
-            window.open('https://github.com/katsuki-yuri', '_blank')
-          }
-        />
-        <Item
-          value="Telegram"
-          icon={<Telegram />}
-          keybind="g /"
-          callback={() => window.open('https://t.me/yurionblog', '_blank')}
-        />
+        <Item value="GitHub" icon={<GitHub />} callback={() => window.open('https://github.com/katsuki-yuri', '_blank')} />
+        <Item value="Telegram" icon={<Telegram />} keybind="g /" callback={() => window.open('https://t.me/yurionblog', '_blank')} />
       </Group>
 
       <Group title="Platforms">
-        <Item
-          value="CXSMXS"
-          icon={<JetBrains />}
-          callback={() => window.open('https://cxsmxs.space', '_blank')}
-        />
+        <Item value="CXSMXS" icon={<JetBrains />} callback={() => window.open('https://cxsmxs.space', '_blank')} />
       </Group>
     </>
   )
 }
 
-const Item = ({
-  icon,
-  children,
-  callback,
-  closeOnCallback = true,
-  keybind,
-  ...props
-}) => {
+const Item = ({ icon, children, callback, closeOnCallback = true, keybind, ...props }) => {
   const { keymap, setOpen } = useCommandData()
 
   const cb = () => {

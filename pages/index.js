@@ -35,10 +35,7 @@ const Index = () => {
           </Link>
         </p>
 
-        <p align="center">
-          ⌘K or Alt+K to let the dark magic happen or press the ⌘ button on
-          navigation menu...
-        </p>
+        <p align="center">⌘K or Alt+K to let the dark magic happen or press the ⌘ button on navigation menu...</p>
 
         <Spotify />
       </article>

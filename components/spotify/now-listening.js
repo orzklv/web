@@ -8,24 +8,16 @@ const Spotify = () => {
     refreshInterval: 3000,
   })
 
-  if (error)
-    return <p align="center">Oops, I failed to load data from Spotify</p>
+  if (error) return <p align="center">Oops, I failed to load data from Spotify</p>
 
-  if (!data)
-    return <p align="center">Let me check if I&#39;m listening on Spotify...</p>
+  if (!data) return <p align="center">Let me check if I&#39;m listening on Spotify...</p>
 
   if (!data.isPlaying) return <></>
 
   return (
     <>
       <h2 align="center">Listening on Spotify</h2>
-      <Entry
-        key={data.artist + data.title}
-        title={data.title}
-        image={data.albumImageUrl}
-        href={data.songUrl}
-        description={data.artist}
-      />
+      <Entry key={data.artist + data.title} title={data.title} image={data.albumImageUrl} href={data.songUrl} description={data.artist} />
     </>
   )
 }

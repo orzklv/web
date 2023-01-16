@@ -26,12 +26,7 @@ const Projects = () => {
           href="https://xinux.uz/"
         />
 
-        <Entry
-          title="Osmon"
-          description="A programming language created for Uzbek audience"
-          image="https://www.osmon.dev/og.png"
-          href="https://osmon.dev"
-        />
+        <Entry title="Osmon" description="A programming language created for Uzbek audience" image="https://www.osmon.dev/og.png" href="https://osmon.dev" />
       </article>
     </Page>
   )

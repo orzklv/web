@@ -64,7 +64,8 @@
   "prettier": {
     "proseWrap": "always",
     "semi": false,
-    "singleQuote": true
+    "singleQuote": true,
+    "printWidth": 160
   },
   "next-unused": {
     "alias": {

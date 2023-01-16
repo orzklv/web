@@ -131,11 +131,7 @@ function match(event: KeyboardEvent, press: KeyBindingPress): boolean {
  * })
  * ```
  */
-export default function keybindings(
-  target: Window | HTMLElement,
-  keyBindingMap: KeyBindingMap,
-  options: Options = {}
-) {
+export default function keybindings(target: Window | HTMLElement, keyBindingMap: KeyBindingMap, options: Options = {}) {
   let keyBindings = Object.keys(keyBindingMap).map((key) => {
     return [parse(key), keyBindingMap[key]] as const
   })
@@ -156,10 +152,7 @@ export default function keybindings(
     // Ignore event when a focusable item is focused
     if (options.ignoreFocus) {
       if (document.activeElement) {
-        if (
-          inputs.indexOf(document.activeElement.tagName.toLowerCase()) !== -1 ||
-          (document.activeElement as HTMLElement).contentEditable === 'true'
-        ) {
+        if (inputs.indexOf(document.activeElement.tagName.toLowerCase()) !== -1 || (document.activeElement as HTMLElement).contentEditable === 'true') {
           return
         }
       }

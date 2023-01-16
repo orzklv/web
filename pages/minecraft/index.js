@@ -43,10 +43,7 @@ const Minecraft = () => {
       <Page description="Hey, would you like to join my Minecraft server?">
         <article>
           <h1 align="center">Sad, seems like server is offline...</h1>
-          <p align="center">
-            I don&#39;t remember installing python, php or apache to my server
-            🤔
-          </p>
+          <p align="center">I don&#39;t remember installing python, php or apache to my server 🤔</p>
         </article>
       </Page>
     )
@@ -57,23 +54,17 @@ const Minecraft = () => {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/favicons/cxsmxs.png" alt="Yuri's Server Icon" height="100" />
 
-        <p>
-          Recently, I created my own Minecraft Server to enjoy my free time on
-          my server. Feel free to join me if you want to spend some time with
-          me!
-        </p>
+        <p>Recently, I created my own Minecraft Server to enjoy my free time on my server. Feel free to join me if you want to spend some time with me!</p>
 
         <blockquote>
-          Don&#39;t forget to read the rules of my server to avoid getting
-          banned all of sudden. Rules are located at{' '}
+          Don&#39;t forget to read the rules of my server to avoid getting banned all of sudden. Rules are located at{' '}
           <Link href="/minecraft/rules">/minecraft/rules</Link> page
         </blockquote>
 
         <pre>
           <b>Online:</b> {data.status ? 'Yup' : 'Nope'}
           <br />
-          <b>Players:</b> {data.content.players.online}/
-          {data.content.players.max}
+          <b>Players:</b> {data.content.players.online}/{data.content.players.max}
           <br />
           <b>Address:</b> cxsmxs.space
           <br />
