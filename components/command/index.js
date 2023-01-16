@@ -33,6 +33,7 @@ import {
   Telegram,
   Play,
   Mail,
+  JetBrains,
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -40,7 +41,6 @@ import { useTheme } from 'next-themes'
 import tinykeys from '@lib/tinykeys'
 import postMeta from '@data/blog.json'
 import Pin from '@components/icons/pin'
-import JetBrains from '@components/icons/jetbrains'
 
 const CommandData = React.createContext({})
 const useCommandData = () => React.useContext(CommandData)
