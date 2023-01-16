@@ -61,7 +61,7 @@ const CommandMenu = memo(() => {
     exitDelay: 200,
   })
 
-  // Can't do this inside of useCommand because it relies on useDelayedRender
+  // Can't do this inside useCommand because it relies on useDelayedRender
   useEffect(() => {
     if (!mounted) {
       setPages([DefaultItems])
@@ -94,7 +94,7 @@ const CommandMenu = memo(() => {
       'g y': () => router.push('/minecraft'),
       'g z': () => router.push('/sponsors'),
       // Social
-      'g /': () => () => window.open('https://t.me/uwublog', '_blank'),
+      'g /': () => () => window.open('https://t.me/yurionblog', '_blank'),
     }
   }, [router, setPages])
 
