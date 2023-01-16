@@ -26,7 +26,7 @@ const Music = ({ items }) => {
 }
 
 export const getStaticProps = async () => {
-  const file = await promises.readFile(join('./data', 'music.json'), {
+  const file = await promises.readFile(join('./data', 'minecraft.json'), {
     encoding: 'utf8',
   })
   const parsed = JSON.parse(file)

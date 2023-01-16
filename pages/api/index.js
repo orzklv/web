@@ -1,6 +1,7 @@
 export default async function handler(req, res) {
   return res.status(404).json({
-    query: '/api/[blog, design, keyboard, music, reading, minecraft, skyline]',
+    query:
+      '/api/[blog, design, keyboard, minecraft, reading, minecraft, skyline]',
     endpoints: [
       {
         name: '/blog',
@@ -15,7 +16,7 @@ export default async function handler(req, res) {
         desc: 'Get list of favorite keyboard models',
       },
       {
-        name: '/music',
+        name: '/minecraft',
         desc: "Get list of Yuri's favorite musics",
       },
       {

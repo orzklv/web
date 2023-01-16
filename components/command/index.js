@@ -85,7 +85,7 @@ const CommandMenu = memo(() => {
       'g r': () => router.push('/reading'),
       'g d': () => router.push('/design'),
       'g k': () => router.push('/keyboards'),
-      'g m': () => router.push('/music'),
+      'g m': () => router.push('/minecraft'),
       'g p': () => router.push('/projects'),
       'g q': () => router.push('/quotes'),
       'g w': () => router.push('/words'),
@@ -299,7 +299,9 @@ const DefaultItems = () => {
         <Item
           value="GitHub"
           icon={<GitHub />}
-          callback={() => window.open('https://github.com/katsuki-yuri', '_blank')}
+          callback={() =>
+            window.open('https://github.com/katsuki-yuri', '_blank')
+          }
         />
         <Item
           value="Telegram"
