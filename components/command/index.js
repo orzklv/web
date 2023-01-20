@@ -33,7 +33,7 @@ import {
   Telegram,
   Play,
   Mail,
-  JetBrains,
+  Gitlab,
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -314,7 +314,7 @@ const DefaultItems = () => {
       <Group title="Platforms">
         <Item
           value="CXSMXS"
-          icon={<JetBrains />}
+          icon={<Gitlab />}
           callback={() => window.open('https://cxsmxs.space', '_blank')}
         />
       </Group>
