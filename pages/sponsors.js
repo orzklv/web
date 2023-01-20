@@ -32,7 +32,7 @@ export async function getServerSideProps() {
   const { data } = await client.query({
     query: gql`
       query Sponsors {
-        user(login: "uwussimo") {
+        user(login: "katsuki-yuri") {
           sponsors(first: 100) {
             nodes {
               ... on User {
