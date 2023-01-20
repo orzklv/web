@@ -4,7 +4,7 @@
 
 My own website where I share my blog posts and media contents.
 
-[![GitHub top language](https://img.shields.io/github/languages/top/katsuki-yuri/website?style=flat-square&logo=github)](https://github.com/uzinfocom-org/vicardi)
+[![GitHub top language](https://img.shields.io/github/languages/top/katsuki-yuri/website?style=flat-square&logo=github)](https://github.com/katsuki-yuri/website)
 [![Channel](https://img.shields.io/badge/Chat-grey?style=flat-square&logo=telegram)](https://t.me/yurionblog)
 [![Test CI](https://github.com/katsuki-yuri/website/actions/workflows/test.yml/badge.svg)](https://github.com/katsuki-yuri/website/actions/workflows/test.yml)
 
