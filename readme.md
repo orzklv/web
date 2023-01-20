@@ -20,11 +20,14 @@ The Website runs on top of the latest version of Next.js and Node.js. Pretty not
 
 - Markdown content renders
 - Minecraft server status api
+- Additional contents (like my favorite musics)
+- Spotify live integration
+- Docker image for easy deployment
 
 ## Development
 
-In order to run the website, just install the latest LTS version of Node.js (it's 18.x.x at the moment) and make sure
-you have pnpm installed globally. Then run the following commands:
+In order to run the website, just install the latest LTS version of Node.js (it's 18.x.x at the moment) and make sure you have pnpm installed globally. Then run
+the following commands:
 
 ```bash
 pnpm install
