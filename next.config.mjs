@@ -14,6 +14,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/telegram',
+        destination: 'https://t.me/yurionblog',
+        permanent: true,
+      },
+      {
         source: '/discord',
         destination: 'https://discord.gg/JkXFQpScFj',
         permanent: true,
