@@ -85,7 +85,7 @@ const CommandMenu = memo(() => {
       'g r': () => router.push('/reading'),
       'g d': () => router.push('/design'),
       'g k': () => router.push('/keyboards'),
-      'g m': () => router.push('/minecraft'),
+      'g m': () => router.push('/music'),
       'g p': () => router.push('/projects'),
       'g q': () => router.push('/quotes'),
       'g w': () => router.push('/words'),

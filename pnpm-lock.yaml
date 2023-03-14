@@ -6,6 +6,7 @@ specifiers:
   '@reach/dialog': ^0.17.0
   '@types/body-scroll-lock': ^3.1.0
   '@types/lodash.debounce': ^4.0.7
+  '@types/node': 18.15.3
   '@types/nprogress': ^0.2.0
   '@types/react': ^18.0.15
   '@types/react-transition-group': ^4.4.5
@@ -68,6 +69,7 @@ dependencies:
 devDependencies:
   '@types/body-scroll-lock': 3.1.0
   '@types/lodash.debounce': 4.0.7
+  '@types/node': 18.15.3
   '@types/nprogress': 0.2.0
   '@types/react': 18.0.15
   '@types/react-transition-group': 4.4.5
@@ -578,7 +580,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
-      '@types/node': 18.0.6
+      '@types/node': 18.15.3
       '@types/responselike': 1.0.0
     dev: true
 
@@ -612,7 +614,7 @@ packages:
   /@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 18.0.6
+      '@types/node': 18.15.3
     dev: true
 
   /@types/lodash.debounce/4.0.7:
@@ -625,8 +627,8 @@ packages:
     resolution: {integrity: sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==}
     dev: true
 
-  /@types/node/18.0.6:
-    resolution: {integrity: sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==}
+  /@types/node/18.15.3:
+    resolution: {integrity: sha512-p6ua9zBxz5otCmbpb5D3U4B5Nanw6Pk3PPyX05xnxbB/fRv71N7CPmORg7uAD5P70T0xmx1pzAx/FUfa5X+3cw==}
     dev: true
 
   /@types/nprogress/0.2.0:
@@ -656,7 +658,7 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 18.0.6
+      '@types/node': 18.15.3
     dev: true
 
   /@types/scheduler/0.16.2:
