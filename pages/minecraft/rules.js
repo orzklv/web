@@ -16,7 +16,7 @@ const Rules = () => {
             Everything seems beautiful when the one and only beautiful law
             exists...
             <br />
-            <div align="right">© UwUssimo Robinson</div>
+            <div align="right">© Yuri Katsuki</div>
           </blockquote>
         </p>
         <h3>In order to avoid booming server, we created a set of rules</h3>
