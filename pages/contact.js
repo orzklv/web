@@ -15,11 +15,19 @@ const Contact = () => {
           </a>
         </blockquote>
 
-        <p>...or follow me on telegram.</p>
+        <p>...or follow me on telegram...</p>
 
         <blockquote>
           <a href="https://t.me/s/yurionblog" className="reset">
             @yurionblog
+          </a>
+        </blockquote>
+
+        <p>...emmm, maybe twitter?</p>
+
+        <blockquote>
+          <a href="https://twitter.com/yurionterminal" className="reset">
+            @yurionterminal
           </a>
         </blockquote>
       </article>
