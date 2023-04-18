@@ -18,7 +18,7 @@ const Spotify = () => {
 
   return (
     <>
-      <h2 align="center">Listening on Spotify</h2>
+      <h1>Listening on Spotify</h1>
       <Entry
         key={data.artist + data.title}
         title={data.title}

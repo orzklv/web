@@ -9,11 +9,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/cxsmxs',
-        destination: 'https://cxsmxs.space/',
-        permanent: true,
-      },
-      {
         source: '/telegram',
         destination: 'https://t.me/yurionblog',
         permanent: true,

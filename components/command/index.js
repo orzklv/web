@@ -91,7 +91,6 @@ const CommandMenu = memo(() => {
       'g w': () => router.push('/words'),
       'g i': () => router.push('/ideas'),
       'g s': () => router.push('/stack'),
-      'g y': () => router.push('/minecraft'),
       'g z': () => router.push('/sponsors'),
       // Social
       'g /': () => () => window.open('https://t.me/yurionblog', '_blank'),
@@ -286,7 +285,6 @@ const DefaultItems = () => {
         <Item value="Words" icon={<Words />} keybind="g w" />
         <Item value="Ideas" icon={<LightBulb />} keybind="g i" />
         <Item value="Stacks" icon={<Pin />} keybind="g s" />
-        <Item value="Minecraft" icon={<Play />} keybind="g y" />
         <Item value="Sponsors" icon={<Mail />} keybind="g z" />
       </Group>
 
@@ -308,14 +306,6 @@ const DefaultItems = () => {
           icon={<Telegram />}
           keybind="g /"
           callback={() => window.open('https://t.me/yurionblog', '_blank')}
-        />
-      </Group>
-
-      <Group title="Platforms">
-        <Item
-          value="CXSMXS"
-          icon={<Gitlab />}
-          callback={() => window.open('https://cxsmxs.space', '_blank')}
         />
       </Group>
     </>

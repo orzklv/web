@@ -26,7 +26,6 @@
     "isomorphic-unfetch": "^3.1.0",
     "lodash.debounce": "^4.0.8",
     "match-sorter": "^6.3.1",
-    "minecraft-server-util": "^5.3.0",
     "next": "^13.1.2",
     "next-themes": "^0.2.0",
     "nprogress": "^0.2.0",

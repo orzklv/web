@@ -1,6 +1,5 @@
 import Page from '@components/page'
 import Link from '@components/link'
-import Spotify from '@components/spotify/now-listening'
 
 const Index = () => {
   return (
@@ -14,7 +13,7 @@ const Index = () => {
             keyboard
           </Link>{' '}
           enthusiast, practicing minimalist, and{' '}
-          <Link underline href="/music">
+          <Link underline href="/music.js">
             electronic lover
           </Link>{' '}
           in search of good Rust macro.{' '}
@@ -39,8 +38,6 @@ const Index = () => {
           ⌘K or Alt+K to let the dark magic happen or press the ⌘ button on
           navigation menu...
         </p>
-
-        <Spotify />
       </article>
     </Page>
   )

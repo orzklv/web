@@ -31,9 +31,6 @@ dependencies:
   match-sorter:
     specifier: ^6.3.1
     version: 6.3.1
-  minecraft-server-util:
-    specifier: ^5.3.0
-    version: 5.3.0
   next:
     specifier: ^13.1.2
     version: 13.1.2(react-dom@18.2.0)(react@18.2.0)
@@ -2797,17 +2794,6 @@ packages:
     resolution: {integrity: sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ==}
     engines: {node: '>=10'}
     dev: true
-
-  /minecraft-motd-util@1.1.12:
-    resolution: {integrity: sha512-5TuTRjrRupSTruea0nRC37r0FdhkS1O4wIJKAYfwJRCQd/X4Zyl/dVIs96h9UVW6N8jhIuz9pNkrDsqyN7VBdA==}
-    dev: false
-
-  /minecraft-server-util@5.3.0:
-    resolution: {integrity: sha512-4z3H6U0QdGdO4AFU2zwEIhGEDKc4i09uiD/L42BF71/pjZKHKHU7381PX2Sc+hLZvFZEGeSG/xmPU3GYvyJqEw==}
-    engines: {node: '>=10.0.0'}
-    dependencies:
-      minecraft-motd-util: 1.1.12
-    dev: false
 
   /minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
