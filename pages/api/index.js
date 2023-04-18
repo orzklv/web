@@ -16,10 +16,6 @@ export default async function handler(req, res) {
         desc: 'Get list of favorite keyboard models',
       },
       {
-        name: '/minecraft',
-        desc: "Get list of Yuri's favorite musics",
-      },
-      {
         name: '/reading',
         desc: 'Get list of bookmarked articles',
       },
