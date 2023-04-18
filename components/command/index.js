@@ -31,9 +31,8 @@ import {
   ArrowRight,
   GitHub,
   Telegram,
-  Play,
   Mail,
-  Gitlab,
+  Twitter
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -302,9 +301,15 @@ const DefaultItems = () => {
           }
         />
         <Item
+          value="Twitter"
+          icon={<Twitter />}
+          keybind="g /"
+          callback={() => window.open('https://twitter.com/yurionterminal', '_blank')}
+        />
+        <Item
           value="Telegram"
           icon={<Telegram />}
-          keybind="g /"
+          keybind="g \"
           callback={() => window.open('https://t.me/yurionblog', '_blank')}
         />
       </Group>
