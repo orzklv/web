@@ -32,7 +32,7 @@ import {
   GitHub,
   Telegram,
   Mail,
-  Twitter
+  Twitter,
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -304,7 +304,9 @@ const DefaultItems = () => {
           value="Twitter"
           icon={<Twitter />}
           keybind="g /"
-          callback={() => window.open('https://twitter.com/yurionterminal', '_blank')}
+          callback={() =>
+            window.open('https://twitter.com/yurionterminal', '_blank')
+          }
         />
         <Item
           value="Telegram"
