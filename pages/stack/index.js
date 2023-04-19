@@ -2,7 +2,7 @@ import React from 'react'
 
 import Page from '@components/page'
 import StacksList from '@components/stacks-list'
-import getStacks from '@lib/get-stacks'
+import getContents from '@lib/get-contents'
 
 const Stack = ({ stacks }) => {
   return (
@@ -20,7 +20,7 @@ const Stack = ({ stacks }) => {
 }
 
 export const getStaticProps = () => {
-  const stacks = getStacks()
+  const stacks = getContents('stacks', 'stack')
 
   return {
     props: {

@@ -2,7 +2,7 @@ import React from 'react'
 
 import Page from '@components/page'
 import PostsList from '@components/posts-list'
-import getPosts from '@lib/get-posts'
+import getContents from '@lib/get-contents'
 
 const Blog = ({ posts }) => {
   return (
@@ -17,7 +17,7 @@ const Blog = ({ posts }) => {
 }
 
 export const getStaticProps = () => {
-  const posts = getPosts()
+  const posts = getContents('posts', 'blog')
 
   return {
     props: {

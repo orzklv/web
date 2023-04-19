@@ -1,13 +1,13 @@
 import Stack from '@components/stack'
 import renderMarkdown from '@lib/render-markdown'
-import getStacks from '@lib/get-stacks'
+import getContents from '@lib/get-contents'
 
 const StackPage = (props) => {
   return <Stack {...props} />
 }
 
 export const getStaticProps = ({ params: { slug } }) => {
-  const stacks = getStacks()
+  const stacks = getContents('stacks', 'stack')
   const stackIndex = stacks.findIndex((p) => p.slug === slug)
   const stack = stacks[stackIndex]
   const { body, ...rest } = stack
@@ -24,7 +24,7 @@ export const getStaticProps = ({ params: { slug } }) => {
 
 export const getStaticPaths = () => {
   return {
-    paths: getStacks().map((p) => `/stack/${p.slug}`),
+    paths: getContents('stacks', 'stack').map((p) => `/stack/${p.slug}`),
     fallback: false,
   }
 }
