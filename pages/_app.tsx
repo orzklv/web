@@ -1,8 +1,12 @@
 import React from 'react'
-import Router from 'next/router'
 import App from 'next/app'
+import '@styles/global.css'
+import Router from 'next/router'
 import nprogress from 'nprogress'
 import debounce from 'lodash.debounce'
+import { ThemeProvider } from 'next-themes'
+import { Analytics } from '@vercel/analytics/react';
+
 
 // Only show nprogress after 500ms (slow loading)
 const start = debounce(nprogress.start, 500)
@@ -17,8 +21,6 @@ Router.events.on('routeChangeError', () => {
   nprogress.done()
 })
 
-import '@styles/global.css'
-import { ThemeProvider } from 'next-themes'
 
 class MyApp extends App {
   render() {
@@ -27,6 +29,7 @@ class MyApp extends App {
       <ThemeProvider disableTransitionOnChange defaultTheme="dark">
         {/*// @ts-ignore*/}
         <Component {...pageProps} />
+        <Analytics />
       </ThemeProvider>
     )
   }
