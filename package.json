@@ -15,7 +15,7 @@
   },
   "pre-commit": "fix",
   "license": "MIT",
-  "dependencies": { 
+  "dependencies": {
     "@apollo/client": "^3.6.9",
     "@reach/auto-id": "^0.17.0",
     "@reach/dialog": "^0.17.0",
