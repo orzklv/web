@@ -81,7 +81,8 @@
       "@components": "components/",
       "@data": "data/",
       "@lib": "lib/",
-      "@styles": "styles/"
+      "@styles": "styles/",
+      "@type": "type/"
     },
     "include": [
       "components",

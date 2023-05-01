@@ -1,5 +1,5 @@
 import Page from '@components/page'
-import Entry from '@components/entry/index'
+import Entry from '@components/entry'
 
 // Data
 import client from '@lib/apollo'

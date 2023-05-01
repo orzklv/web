@@ -12,7 +12,7 @@ inject a new stylesheet.
 I love [Aaron Swartz's blog](http://aaronsw.com/weblog/archive), but the font size is tiny, the content is not centered, and the colors aren't late-night
 friendly. Let's improve it.
 
-Create `api/music.js` and add a server-side fetching library like [node-fetch](https://github.com/node-fetch/node-fetch):
+Create `api/music.ts` and add a server-side fetching library like [node-fetch](https://github.com/node-fetch/node-fetch):
 
 ```js
 const fetch = require('node-fetch')
