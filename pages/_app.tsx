@@ -5,8 +5,7 @@ import Router from 'next/router'
 import nprogress from 'nprogress'
 import debounce from 'lodash.debounce'
 import { ThemeProvider } from 'next-themes'
-import { Analytics } from '@vercel/analytics/react';
-
+import { Analytics } from '@vercel/analytics/react'
 
 // Only show nprogress after 500ms (slow loading)
 const start = debounce(nprogress.start, 500)
@@ -20,7 +19,6 @@ Router.events.on('routeChangeError', () => {
   start.cancel()
   nprogress.done()
 })
-
 
 class MyApp extends App {
   render() {
