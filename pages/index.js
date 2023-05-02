@@ -13,7 +13,7 @@ const Index = () => {
             keyboard
           </Link>{' '}
           enthusiast, practicing minimalist, and{' '}
-          <Link underline href="/music.js">
+          <Link underline href="/music">
             electronic lover
           </Link>{' '}
           in search of good Rust macro.{' '}
