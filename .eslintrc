@@ -9,7 +9,15 @@
     "jest": true
   },
   "rules": {
-    "import/no-anonymous-default-export": "off"
+    "import/no-anonymous-default-export": "off",
+    "react/no-unknown-property": [
+      2,
+      {
+        "ignore": [
+          "jsx"
+        ]
+      }
+    ]
   },
   "parserOptions": {
     "ecmaVersion": 2018,

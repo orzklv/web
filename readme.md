@@ -12,9 +12,11 @@ My own website where I share my blog posts and media contents.
 
 ## About
 
-The Website runs on top of the latest version of Next.js and Node.js. Pretty nothing special. Just a website built with React components and css.
+The Website runs on top of the latest version of Next.js and Node.js. Pretty
+nothing special. Just a website built with React components and css.
 
-> I host all contents statically, so you may correct me up by sending a pull request.
+> I host all contents statically, so you may correct me up by sending a pull
+> request.
 
 ## Features
 
@@ -26,8 +28,9 @@ The Website runs on top of the latest version of Next.js and Node.js. Pretty not
 
 ## Development
 
-In order to run the website, just install the latest LTS version of Node.js (it's 18.x.x at the moment) and make sure you have pnpm installed globally. Then run
-the following commands:
+In order to run the website, just install the latest LTS version of Node.js
+(it's 18.x.x at the moment) and make sure you have pnpm installed globally. Then
+run the following commands:
 
 ```bash
 pnpm install
@@ -44,4 +47,5 @@ docker run -p 3000:3000 ghcr.io/katsuki-yuri/website:latest
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
+for details.

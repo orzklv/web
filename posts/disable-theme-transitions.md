@@ -5,11 +5,13 @@ slug: disable-theme-transitions
 date: Mar 19, 2020
 ---
 
-It's difficult to transition between themes smoothly. Adding a CSS `transition` to every element negatively impacts rendering performance, and it also won't
+It's difficult to transition between themes smoothly. Adding a CSS `transition`
+to every element negatively impacts rendering performance, and it also won't
 work for images, icons, and CSS properties that don't support transitions.
 
-Instead, we can temporarily remove transitions from all elements so that toggling themes feels snappy and consistent. We'll manually create a stylesheet that
-disables transitions:
+Instead, we can temporarily remove transitions from all elements so that
+toggling themes feels snappy and consistent. We'll manually create a stylesheet
+that disables transitions:
 
 ```js
 const css = document.createElement('style')
@@ -28,9 +30,11 @@ css.appendChild(
 document.head.appendChild(css)
 ```
 
-Note that we need to manually specify browser prefixes, as this CSS isn't run through any preprocessing.
+Note that we need to manually specify browser prefixes, as this CSS isn't run
+through any preprocessing.
 
-After changing the theme (usually this involves toggling a class on `<body>`), we force a browser repaint and remove the stylesheet:
+After changing the theme (usually this involves toggling a class on `<body>`),
+we force a browser repaint and remove the stylesheet:
 
 ```js
 // Toggle the theme here...
@@ -40,7 +44,8 @@ const _ = window.getComputedStyle(css).opacity
 document.head.removeChild(css)
 ```
 
-Calling `requestAnimationFrame` before removing the stylesheet seemed to work at first, but it was unreliable and elements still transitioned. Using
+Calling `requestAnimationFrame` before removing the stylesheet seemed to work at
+first, but it was unreliable and elements still transitioned. Using
 `getComputedStyle` works reliably on every major browser, because it forcibly
 [applies all active stylesheets](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).
 

@@ -10,7 +10,7 @@ const Reading = ({ sponsors }) => {
   return (
     <Page title="Sponsors" description="People who support my work and effort!">
       <article>
-        <h1 align="center">People who support my work!</h1>
+        <h1 className="align-center">People who support my work!</h1>
 
         {sponsors.map((entry) => {
           return (

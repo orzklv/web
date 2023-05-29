@@ -11,7 +11,8 @@
     "fmt": "prettier --check \"{**/*,*}.{js,mjs,ts,jsx,tsx,md,json}\" --loglevel warn",
     "lint:fix": "pnpm lint --fix",
     "fmt:fix": "pnpm fmt --write",
-    "fix": "pnpm run lint:fix && pnpm run fmt:fix"
+    "fix": "pnpm run lint:fix && pnpm run fmt:fix",
+    "find:unused": "next-unused"
   },
   "pre-commit": "fix",
   "license": "MIT",
@@ -66,15 +67,7 @@
   "prettier": {
     "proseWrap": "always",
     "semi": false,
-    "singleQuote": true,
-    "overrides": [
-      {
-        "files": "*.md",
-        "options": {
-          "printWidth": 160
-        }
-      }
-    ]
+    "singleQuote": true
   },
   "next-unused": {
     "alias": {
@@ -86,7 +79,8 @@
     },
     "include": [
       "components",
-      "lib"
+      "lib",
+      "type"
     ]
   }
 }

@@ -36,7 +36,7 @@ const Index = ({ domain }) => {
           </Link>
         </p>
 
-        <p align="center">
+        <p className="align-center">
           ⌘K or Alt+K to let the dark magic happen or press the ⌘ button on
           navigation menu...
         </p>
@@ -45,7 +45,7 @@ const Index = ({ domain }) => {
   )
 }
 
-export const getServerSideProps = async ({ req, res }) => {
+export const getServerSideProps = async ({ req }) => {
   return {
     props: {
       domain: req.headers.host,

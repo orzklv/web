@@ -5,9 +5,11 @@ slug: css-previous-sibling-selector
 date: Mar 24, 2020
 ---
 
-There is no previous sibling selector in CSS. Instead, we can achieve the same behavior by using flexbox and the `order` property.
+There is no previous sibling selector in CSS. Instead, we can achieve the same
+behavior by using flexbox and the `order` property.
 
-Let's say you're adding a prefix to an input, and would like to style the prefix when the input is focused. If you read from left to right and top to bottom
+Let's say you're adding a prefix to an input, and would like to style the prefix
+when the input is focused. If you read from left to right and top to bottom
 (English), you likely structure your DOM like that too:
 
 ```html
@@ -24,8 +26,9 @@ Let's say you're adding a prefix to an input, and would like to style the prefix
   </div>
 </div>
 
-In this markup, there's no way to target the `.prefix` class using `input:focus`, because we have no preceding selector. Instead, we can rewrite the DOM
-structure so that prefix appears _after_ the input:
+In this markup, there's no way to target the `.prefix` class using
+`input:focus`, because we have no preceding selector. Instead, we can rewrite
+the DOM structure so that prefix appears _after_ the input:
 
 ```html
 <div class="container">
@@ -65,14 +68,17 @@ Now you can select the prefix using the sibling selector:
   </div>
 </div>
 
-In the case of an input, the simple solution is to use [`:focus-within`](https://caniuse.com/#search=focus-within), which has good browser support but is still
-experimental. Maybe you have other use cases for this trick though, [let me know](https://twitter.com/katsuki-yuri)!
+In the case of an input, the simple solution is to use
+[`:focus-within`](https://caniuse.com/#search=focus-within), which has good
+browser support but is still experimental. Maybe you have other use cases for
+this trick though, [let me know](https://twitter.com/katsuki-yuri)!
 
 ---
 
 This post is inspired by my own work on inputs, and this paragraph:
 
-> Unfortunately, trying to use `:focus` limits what you can do: you can style the input or siblings that come after the input… but that’s it. —
+> Unfortunately, trying to use `:focus` limits what you can do: you can style
+> the input or siblings that come after the input… but that’s it. —
 > [Initializing focus state in React](https://exogen.github.io/blog/focus-state)
 
 <style>

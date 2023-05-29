@@ -212,6 +212,10 @@ code {
   user-select: none;
 }
 
+.align-center {
+  text-align: center;
+  align-content: center;
+}
 
 kbd {
   font-family: var(--font-sans);
