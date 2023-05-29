@@ -1,11 +1,13 @@
 import Page from '@components/page'
 import Link from '@components/link'
 
-const Index = () => {
+import getName from "../lib/get-name"
+
+const Index = ({ domain }) => {
   return (
     <Page description="Hi, I'm Yuri. Senior Dorito Enjoyer, Linux enthusiast, practicing minimalist, and electronic lover in search of good dota team without aggressive russian kids.">
       <article>
-        <h1 className="hero">Yuri Katsuki (๑╹ω╹๑)</h1>
+        <h1 className="hero">{getName(domain)} (๑╹ω╹๑)</h1>
 
         <p>
           Senior Dorito Enjoyer,{' '}
@@ -42,5 +44,15 @@ const Index = () => {
     </Page>
   )
 }
+
+export const getServerSideProps = async ({ req, res }) => {
+  return {
+    props: {
+      domain: req.headers.host
+    }
+  };
+};
+
+
 
 export default Index
