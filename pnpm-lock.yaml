@@ -1,4 +1,8 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   '@apollo/client':
@@ -100,8 +104,8 @@ devDependencies:
     specifier: ^3.0.0
     version: 3.0.0
   marked:
-    specifier: ^4.0.18
-    version: 4.0.18
+    specifier: ^5.0.3
+    version: 5.0.3
   next-unused:
     specifier: ^0.0.6
     version: 0.0.6
@@ -2745,9 +2749,9 @@ packages:
       - supports-color
     dev: true
 
-  /marked@4.0.18:
-    resolution: {integrity: sha512-wbLDJ7Zh0sqA0Vdg6aqlbT+yPxqLblpAZh1mK2+AO2twQkPywvvqQNfEPVwSSRjZ7dZcdeVBIAgiO7MMp3Dszw==}
-    engines: {node: '>= 12'}
+  /marked@5.0.3:
+    resolution: {integrity: sha512-KUONa43Uk74uUNWMxh6lfaNYmSAsRMiDAaX8QBCCRVXzEufR0zX6T33vrGbvTnQLL02ungDM3KSzZtO+chJaHg==}
+    engines: {node: '>= 18'}
     hasBin: true
     dev: true
 

@@ -32,8 +32,8 @@ that I crafted by myself for myself and I have to accept it no matter what - I s
 Maybe I’m feeling sad because I need more money? No, I already have enough to eat, exist and do things that I love… maybe I need more love? Idiot! You already
 have the most merciful one who cares for you. _Maybe… I’m just burning out? Maybe, maybe…_
 
-I understood that I was doing it wrong, I mean things that I didn’t enjoy and love. I’m sure **Geno** and **UwU** would say the same if they had seen me now. I had to
-do something, I have to change that...
+I understood that I was doing it wrong, I mean things that I didn’t enjoy and love. I’m sure **Geno** and **UwU** would say the same if they had seen me now. I
+had to do something, I have to change that...
 
 After thinking for a while, I started finding the sources of my problem and made lots of changes to my personality and did a git push in the end.
 
