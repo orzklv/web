@@ -11,3 +11,4 @@ yalc.lock
 .idea
 yarn-error.log
 .env.local
+pnpm-lock.yaml
