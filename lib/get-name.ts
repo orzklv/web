@@ -12,7 +12,7 @@ export default (url: string) => {
 
   // Return name
   switch (result) {
-    case "localhost:3003":
+    case 'localhost:3003':
     case 'orzklv.uz':
       return 'Sokhibjon Orzikulov'
     default:

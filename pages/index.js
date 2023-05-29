@@ -1,7 +1,7 @@
 import Page from '@components/page'
 import Link from '@components/link'
 
-import getName from "../lib/get-name"
+import getName from '../lib/get-name'
 
 const Index = ({ domain }) => {
   return (
@@ -48,11 +48,9 @@ const Index = ({ domain }) => {
 export const getServerSideProps = async ({ req, res }) => {
   return {
     props: {
-      domain: req.headers.host
-    }
-  };
-};
-
-
+      domain: req.headers.host,
+    },
+  }
+}
 
 export default Index
