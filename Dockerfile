@@ -4,9 +4,10 @@ FROM node:16-alpine AS deps
 RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
-COPY package.json pnpm-lock.yaml ./
+#COPY package.json pnpm-lock.yaml ./
 RUN npm i -g pnpm
-RUN pnpm install --frozen-lockfile
+#RUN pnpm install --frozen-lockfile
+pnpm install
 
 FROM node:16-alpine AS builder
 WORKDIR /app
