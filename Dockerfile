@@ -10,7 +10,7 @@ RUN npm i -g pnpm
 #RUN pnpm install --frozen-lockfile
 RUN pnpm install
 
-FROM node:16-alpine AS builder
+FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
@@ -18,7 +18,7 @@ COPY . .
 RUN npm i -g pnpm
 RUN pnpm build
 
-FROM node:16-alpine AS runner
+FROM node:20-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
