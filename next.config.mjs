@@ -4,11 +4,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/skyline',
-        destination: '/api/skyline',
-        permanent: true,
-      },
-      {
         source: '/telegram',
         destination: 'https://t.me/yurionblog',
         permanent: true,
