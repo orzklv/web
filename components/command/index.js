@@ -296,17 +296,13 @@ const DefaultItems = () => {
         <Item
           value="GitHub"
           icon={<GitHub />}
-          callback={() =>
-            window.open('https://github.com/orzklv', '_blank')
-          }
+          callback={() => window.open('https://github.com/orzklv', '_blank')}
         />
         <Item
           value="Twitter"
           icon={<Twitter />}
           keybind="g /"
-          callback={() =>
-            window.open('https://twitter.com/orzklv', '_blank')
-          }
+          callback={() => window.open('https://twitter.com/orzklv', '_blank')}
         />
         <Item
           value="Telegram"

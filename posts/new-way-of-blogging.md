@@ -23,7 +23,7 @@ As of you, my dear subbies, just checkout my RSS feeds located at
 `https://orzklv.uz/feed.xml`
 
 By the way, my short posts will be posted on my twitter profile at
-`https://twitter.com/orzklv`. So, you're welcome to follow me there and
-stay keep in touch.
+`https://twitter.com/orzklv`. So, you're welcome to follow me there and stay
+keep in touch.
 
 _Keep programming, stop coding! Deez nuts..._
