@@ -27,6 +27,7 @@
     "intersection-observer": "^0.12.2",
     "isomorphic-unfetch": "^3.1.0",
     "lodash.debounce": "^4.0.8",
+    "marked-gfm-heading-id": "^3.0.4",
     "match-sorter": "^6.3.1",
     "next": "^13.1.2",
     "next-sitemap": "^4.0.7",
