@@ -1,5 +1,5 @@
 <header>
-<img src="https://www.katsuki.moe/favicons/pinned.svg" alt="logo" height="100" align="left">
+<img src="https://www.orzklv.uz/favicons/logo.png" alt="logo" height="100" align="left">
 <h1 style="display: inline">Website</h1>
 
 My own website where I share my blog posts and media contents.
