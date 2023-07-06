@@ -45,6 +45,7 @@
     "@types/nprogress": "^0.2.0",
     "@types/react": "^18.0.15",
     "@types/react-transition-group": "^4.4.5",
+    "caniuse-lite": "^1.0.30001512",
     "eslint": "^8.20.0",
     "eslint-config-next": "^12.2.2",
     "eslint-config-prettier": "^8.5.0",
