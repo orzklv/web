@@ -20,10 +20,10 @@ resources and also make references to existing sources. I've been inspired by
 [Yetim Dasturchi](https://t.me/yetimdasturchi) to start blogging in this format.
 
 As of you, my dear subbies, just checkout my RSS feeds located at
-`https://katsuki.moe/feed.xml`
+`https://orzklv.uz/feed.xml`
 
 By the way, my short posts will be posted on my twitter profile at
-`https://twitter.com/yurionterminal`. So, you're welcome to follow me there and
+`https://twitter.com/orzklv`. So, you're welcome to follow me there and
 stay keep in touch.
 
 _Keep programming, stop coding! Deez nuts..._

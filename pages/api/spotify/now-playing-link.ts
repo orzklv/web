@@ -2,7 +2,7 @@ import { getNowPlaying } from '@lib/spotify'
 import { NextApiRequest, NextApiResponse } from 'next'
 import { Spotify } from '@type/Spotify'
 
-const base = 'https://www.katsuki.moe/music'
+const base = 'https://www.orzklv.uz/music'
 
 export default async (_: NextApiRequest, res: NextApiResponse) => {
   const response = await getNowPlaying()

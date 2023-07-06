@@ -5,7 +5,7 @@ const nextConfig = {
     return [
       {
         source: '/telegram',
-        destination: 'https://t.me/yurionblog',
+        destination: 'https://t.me/orzklvb',
         permanent: true,
       },
       {

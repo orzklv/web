@@ -12,10 +12,9 @@ export default (url: string) => {
 
   // Return name
   switch (result) {
-    case 'localhost:3003':
-    case 'orzklv.uz':
-      return 'Sokhibjon Orzikulov'
+    case 'katsuki.moe':
+      return 'Sokhibjon Orzikulov (alt. Yuri Katsuki)'
     default:
-      return 'Yuri Katsuki'
+      return 'Sokhibjon Orzikulov'
   }
 }

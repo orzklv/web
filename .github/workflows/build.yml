@@ -7,7 +7,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: website
-  IMAGE_AUTHOR: katsuki-yuri
+  IMAGE_AUTHOR: orzklv
 
 jobs:
   build-and-push-image:

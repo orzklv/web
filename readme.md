@@ -4,9 +4,9 @@
 
 My own website where I share my blog posts and media contents.
 
-[![GitHub top language](https://img.shields.io/github/languages/top/katsuki-yuri/website?style=flat-square&logo=github)](https://github.com/katsuki-yuri/website)
-[![Channel](https://img.shields.io/badge/Chat-grey?style=flat-square&logo=telegram)](https://t.me/yurionblog)
-[![Test CI](https://github.com/katsuki-yuri/website/actions/workflows/test.yml/badge.svg)](https://github.com/katsuki-yuri/website/actions/workflows/test.yml)
+[![GitHub top language](https://img.shields.io/github/languages/top/orzklv/website?style=flat-square&logo=github)](https://github.com/orzklv/website)
+[![Channel](https://img.shields.io/badge/Chat-grey?style=flat-square&logo=telegram)](https://t.me/orzklvb)
+[![Test CI](https://github.com/orzklv/website/actions/workflows/test.yml/badge.svg)](https://github.com/orzklv/website/actions/workflows/test.yml)
 
 </header>
 
@@ -42,7 +42,7 @@ pnpm run dev
 Also, you may actually run the docker image hosted on GitHub Container Registry:
 
 ```bash
-docker run -p 3000:3000 ghcr.io/katsuki-yuri/website:latest
+docker run -p 3000:3000 ghcr.io/orzklv/website:latest
 ```
 
 ## License

@@ -5,12 +5,12 @@ import getName from '../lib/get-name'
 
 const Index = ({ domain }) => {
   return (
-    <Page description="Hi, I'm Yuri. Senior Dorito Enjoyer, Linux enthusiast, practicing minimalist, and electronic lover in search of good dota team without aggressive russian kids.">
+    <Page description="Hi, I'm Sokhibjon. Senior Hello World Enjoyer, Linux enthusiast, practicing minimalist, and electronic lover in search of good dota team without aggressive russian kids.">
       <article>
         <h1 className="hero">{getName(domain)} (๑╹ω╹๑)</h1>
 
         <p>
-          Senior Dorito Enjoyer,{' '}
+          Senior Hello World Enjoyer,{' '}
           <Link underline href="/keyboards">
             keyboard
           </Link>{' '}

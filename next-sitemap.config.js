@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: 'https://katsuki.moe',
+  siteUrl: 'https://orzklv.uz',
   generateRobotsTxt: true,
   sitemapSize: 7000,
   changefreq: 'weekly',

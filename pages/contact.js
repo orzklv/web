@@ -8,26 +8,26 @@ const Contact = () => {
 
         <blockquote>
           <a
-            href="mailto:yuri@katsuki.moe?subject=Hewwo Yuwi... Iwd liwe to tawk with ya!"
+            href="mailto:sakhib@orzklv.uz?subject=Hello Sokhibjon... I'd like to talk with you about ...!"
             className="reset"
           >
-            yuri@katsuki.moe
+            sakhib@orzklv.uz
           </a>
         </blockquote>
 
         <p>...or follow me on telegram...</p>
 
         <blockquote>
-          <a href="https://t.me/s/yurionblog" className="reset">
-            @yurionblog
+          <a href="https://t.me/s/orzklvb" className="reset">
+            @orzklvb
           </a>
         </blockquote>
 
         <p>...emmm, maybe twitter?</p>
 
         <blockquote>
-          <a href="https://twitter.com/yurionterminal" className="reset">
-            @yurionterminal
+          <a href="https://twitter.com/orzklv" className="reset">
+            @orzklv
           </a>
         </blockquote>
       </article>

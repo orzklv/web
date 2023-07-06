@@ -92,7 +92,7 @@ const CommandMenu = memo(() => {
       'g s': () => router.push('/stack'),
       'g z': () => router.push('/sponsors'),
       // Social
-      'g /': () => () => window.open('https://t.me/yurionblog', '_blank'),
+      'g /': () => () => window.open('https://t.me/orzklvb', '_blank'),
     }
   }, [router, setPages])
 
@@ -297,7 +297,7 @@ const DefaultItems = () => {
           value="GitHub"
           icon={<GitHub />}
           callback={() =>
-            window.open('https://github.com/katsuki-yuri', '_blank')
+            window.open('https://github.com/orzklv', '_blank')
           }
         />
         <Item
@@ -305,14 +305,14 @@ const DefaultItems = () => {
           icon={<Twitter />}
           keybind="g /"
           callback={() =>
-            window.open('https://twitter.com/yurionterminal', '_blank')
+            window.open('https://twitter.com/orzklv', '_blank')
           }
         />
         <Item
           value="Telegram"
           icon={<Telegram />}
           keybind="g \"
-          callback={() => window.open('https://t.me/yurionblog', '_blank')}
+          callback={() => window.open('https://t.me/orzklvb', '_blank')}
         />
       </Group>
     </>
