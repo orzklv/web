@@ -55,10 +55,10 @@ const Minecraft = () => {
     <Page description="Hey, would you like to join my Minecraft server?">
       <article>
         <Image
-          src="/favicons/cxsmxs.png"
+          src="/favicons/cxsmxs.svg"
           alt="Sokhibjon's Server Icon"
-          height="200"
-          width="200"
+          height="300"
+          width="300"
         />
 
         <p>
