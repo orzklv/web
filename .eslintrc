@@ -11,7 +11,7 @@
   "rules": {
     "import/no-anonymous-default-export": "off",
     "react/no-unknown-property": [
-      2,
+      0,
       {
         "ignore": [
           "jsx"
