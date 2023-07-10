@@ -32,7 +32,7 @@ import {
   GitHub,
   Telegram,
   Mail,
-  Twitter,
+  Twitter, Play
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -90,6 +90,7 @@ const CommandMenu = memo(() => {
       'g w': () => router.push('/words'),
       'g i': () => router.push('/ideas'),
       'g s': () => router.push('/stack'),
+      'g y': () => router.push('/minecraft'),
       'g z': () => router.push('/sponsors'),
       // Social
       'g /': () => () => window.open('https://t.me/orzklvb', '_blank'),
@@ -284,6 +285,7 @@ const DefaultItems = () => {
         <Item value="Words" icon={<Words />} keybind="g w" />
         <Item value="Ideas" icon={<LightBulb />} keybind="g i" />
         <Item value="Stacks" icon={<Pin />} keybind="g s" />
+        <Item value="Minecraft" icon={<Play />} keybind="g y" />
         <Item value="Sponsors" icon={<Mail />} keybind="g z" />
       </Group>
 
