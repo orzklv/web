@@ -32,7 +32,8 @@ import {
   GitHub,
   Telegram,
   Mail,
-  Twitter, Play
+  Twitter,
+  Play,
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
