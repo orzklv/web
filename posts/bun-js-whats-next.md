@@ -50,7 +50,7 @@ which will continue maintaining projects written in Node.js.
 
 ## Early days of shiny Bun.js
 
-Bun.js is a new shiny framework and it's still just getting started. It's
+Bun.js is a new shiny runtime engine and it's still just getting started. It's
 just getting popular amongst developers. I think, it will take some time until
 Bun.js will become popular amongst companies and startups and people will start
 using it at work, like, solid 2-3 years will be spent to become at least some
