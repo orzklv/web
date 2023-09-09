@@ -32,7 +32,7 @@ but I'm excited to see what will happen.
 
 ## What's gonna happen with Deno?
 
-Deno is a new JavaScript/Typescript runtime created by Ryan Dahl, the creator of
+Deno is a JavaScript/Typescript runtime created by Ryan Dahl, the creator of
 Node.js. Deno is a great runtime, but it's not as popular as Node.js amongst
 companies and startups. Deno.land team is trying their best to make Deno more
 popular by adding more APIs and integrating platforms to their runtime like Deno
@@ -50,7 +50,7 @@ which will continue maintaining projects written in Node.js.
 
 ## Early days of shiny Bun.js
 
-Bun.js is a new shiny framework and it's still in just getting started. It's
+Bun.js is a new shiny framework and it's still just getting started. It's
 just getting popular amongst developers. I think, it will take some time until
 Bun.js will become popular amongst companies and startups and people will start
 using it at work, like, solid 2-3 years will be spent to become at least some
