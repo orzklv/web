@@ -13,6 +13,11 @@ const nextConfig = {
         destination: 'https://discord.gg/JkXFQpScFj',
         permanent: true,
       },
+      {
+        source: '/windows',
+        destination: "https://massgrave.dev/get",
+        permanent: true,
+      }
     ]
   },
   output: 'standalone',
