@@ -15,9 +15,9 @@ const nextConfig = {
       },
       {
         source: '/windows',
-        destination: "https://massgrave.dev/get",
+        destination: 'https://massgrave.dev/get',
         permanent: true,
-      }
+      },
     ]
   },
   output: 'standalone',
