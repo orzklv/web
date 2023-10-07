@@ -79,7 +79,7 @@ const Minecraft = () => {
           <b>Players:</b> {data.content.players.online}/
           {data.content.players.max}
           <br />
-          <b>Address:</b> cxsmxs.space
+          <b>Address:</b> mc.ugame.uz
           <br />
           <b>Software:</b> Vanilla {data.content.version.name}
           <br />

@@ -6,7 +6,7 @@ export default async function handler(
   res: NextApiResponse
 ): Promise<void> {
   return await util
-    .status('cxsmxs.space', 25565, {
+    .status('mc.ugame.uz', 25565, {
       timeout: 1000 * 5,
       enableSRV: true,
     })
