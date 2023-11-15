@@ -36,6 +36,13 @@ const Index = ({ domain }) => {
           </Link>
         </p>
 
+        <p>
+          Born and raised in {' '}
+          <Link underline href="https://khakimovs.uz/" external>
+            Khakimov&apos;s Family
+          </Link>. Proud elder son.
+        </p>
+
         <p className="align-center">
           ⌘K or Alt+K to let the dark magic happen or press the ⌘ button on
           navigation menu...
