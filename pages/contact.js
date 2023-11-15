@@ -13,6 +13,13 @@ const Contact = () => {
           >
             sakhib@orzklv.uz
           </a>
+          <br />
+          <a
+            href="mailto:sakhib@orzklv.uz?subject=Hello Sokhibjon... I'd like to talk with you about ...!"
+            className="reset"
+          >
+            sakhib@khakimovs.uz
+          </a>
         </blockquote>
 
         <p>...or follow me on telegram...</p>
