@@ -24,18 +24,17 @@ jobs:
       - name: Build website
         uses: shalzz/zola-deploy-action@v0.19.1
         env:
-          BUILD_DIR: out
           BUILD_ONLY: true
           BUILD_FLAGS: --drafts
 
       - name: List all files in the build directory
-        run: ls -la out
+        run: ls -la public
 
-      - name: Fix permissions
-        run: |
-          chmod -c -R +rX "./" | while read line; do
-            echo "::warning title=Invalid file permissions automatically fixed::$line"
-          done
+      # - name: Fix permissions
+      #   run: |
+      #     chmod -c -R +rX "./public" | while read line; do
+      #       echo "::warning title=Invalid file permissions automatically fixed::$line"
+      #     done
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -43,7 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './public'
 
       - name: Deploy to GitHub Pages
         id: deployment
