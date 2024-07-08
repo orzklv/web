@@ -32,7 +32,7 @@ jobs:
           BUILD_FLAGS: --drafts
 
       - name: List all files in the build directory
-        run: ls -R out
+        run: ls -la out
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
