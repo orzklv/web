@@ -1,5 +1,5 @@
 {
-  description = "NyanSystems tomonidan yozilgan blog";
+  description = "Orzklv's web development environment";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -20,7 +20,7 @@
     };
   in {
     devShells.default = pkgs.mkShell rec {
-      name = "purr";
+      name = "web";
 
       packages = with pkgs; [
         zola
