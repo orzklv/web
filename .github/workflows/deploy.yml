@@ -30,12 +30,6 @@ jobs:
       - name: List all files in the build directory
         run: ls -la public
 
-      # - name: Fix permissions
-      #   run: |
-      #     chmod -c -R +rX "./public" | while read line; do
-      #       echo "::warning title=Invalid file permissions automatically fixed::$line"
-      #     done
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
