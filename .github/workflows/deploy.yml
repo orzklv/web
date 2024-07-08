@@ -31,6 +31,9 @@ jobs:
           BUILD_ONLY: true
           BUILD_FLAGS: --drafts
 
+      - name: List all files in the build directory
+        run: ls -R out
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
