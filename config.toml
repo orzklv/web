@@ -26,11 +26,7 @@ taxonomies = [{ name = "tags", feed = true }]
 
 [markdown]
 highlight_code = true
-highlight_theme = "css"
-highlight_themes_css = [
-  { theme = "solarized-dark", filename = "syntax-theme-dark.css" },
-  { theme = "solarized-light", filename = "syntax-theme-light.css" },
-]
+highlight_theme = "1337"
 smart_punctuation = true
 
 [search]
@@ -46,12 +42,12 @@ taxonomies = [{ name = "tags", feed = true }]
 [extra]
 # Sets theme and browser theme color.
 # See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
-primary_color = "#ff7800"
+primary_color = "#919191"
 # Same as primary_color, but with 20% opacity
-primary_color_alpha = "rgba(255, 120, 0, 0.2)"
+primary_color_alpha = "rgba(145, 145, 145, 0.2)"
 # Use emoji as a favicon.
 # Only one emoji is being rendered, everything else is truncated.
-# emoji_favicon = "🦆🪶"
+emoji_favicon = "🎛️"
 # URL to website's issue tracker
 issues_url = "https://github.com/orzklv/blog/issues"
 # URL to website's source code
