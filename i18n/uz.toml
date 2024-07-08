@@ -1,11 +1,11 @@
 # Shown in language picker for multi-language sites
-language_name = "Русский"
+language_name = "O'zbek"
 # Tera date format used for listing posts
 # (post publication date, tag posts list...).
 # Not used in comments, "date_locale" is used instead.
 # See https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html
 date_format = "%d %B %Y г."
-date_locale = "ru_RU"
+date_locale = "uz_UZ"
 
 # Note on pluralization prefixes:
 # - few_: for numbers ending in 2-4, except 12-14, in genitive singular.
@@ -13,14 +13,14 @@ date_locale = "ru_RU"
 
 # Menu items.
 # Should match the names in config.extra.nav.links and config.extra.footer.links.
-Blog = "Блог"
-Demo = "Демо"
-Repo = "Репо"
+Blog = "Blog"
+Demo = "Demo"
+Repo = "Repo"
 
-all_tags = "Показать все теги"
-archived = "Архив"
-author = "Автор"
-blog_post_author = "Автор блог-поста"
+all_tags = "Hamma teglar ko'rsatish"
+archived = "Arxiv"
+author = "Muallif"
+blog_post_author = "Blog post muallifi"
 boosts_from = "Продвижения с"
 comments = "Комментарии"
 comments_description = "Вы можете оставить комментарий к этому блог-посту, публично ответив на него с помощью аккаунта Mastodon или другого аккаунта ActivityPub/Fediverse. Известные неприватные ответы отображены ниже."
