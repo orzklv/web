@@ -24,12 +24,12 @@ jobs:
       - name: Build website
         uses: shalzz/zola-deploy-action@v0.19.1
         env:
-          BUILD_DIR: .
+          BUILD_DIR: out
           BUILD_ONLY: true
           BUILD_FLAGS: --drafts
 
       - name: List all files in the build directory
-        run: ls -la .
+        run: ls -la out
 
       - name: Fix permissions
         run: |
