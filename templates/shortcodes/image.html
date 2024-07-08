@@ -1,0 +1,27 @@
+{%- if url_min -%}
+	<a href="{{ url }}">
+		<img class="
+			{% if full %}full{% endif %}
+			{% if full_bleed %}full_bleed{% endif %}
+			{% if start %}start{% endif %}
+			{% if end %}end{% endif %}
+			{% if pixels %}pixels{% endif %}
+			{% if transparent %}transparent{% endif %}
+			{% if no_hover %}no-hover{% endif %}
+		"
+		{%- if alt -%}alt="{{ alt }}"{%- endif -%}
+		src="{{ url_min }}" />
+	</a>
+{%- else -%}
+	<img class="
+			{% if full %}full{% endif %}
+			{% if full_bleed %}full_bleed{% endif %}
+			{% if start %}start{% endif %}
+			{% if end %}end{% endif %}
+			{% if pixels %}pixels{% endif %}
+			{% if transparent %}transparent{% endif %}
+			{% if no_hover %}no-hover{% endif %}
+		"
+		{%- if alt -%}alt="{{ alt }}"{%- endif -%}
+		src="{{ url }}" />
+{%- endif -%}

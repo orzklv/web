@@ -1,0 +1,40 @@
+.dialog-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-top: 4rem;
+}
+
+.inline-button {
+	transition: var(--transition);
+	cursor: pointer;
+	box-shadow: var(--edge-highlight);
+	border-radius: var(--rounded-corner);
+	background-color: var(--fg-muted-1);
+	padding: 0.625rem 1rem;
+	color: var(--fg-color);
+	font-size: 0.9rem;
+	line-height: normal;
+	text-decoration: none;
+
+	&:hover {
+		background-color: var(--fg-muted-2);
+		text-decoration: none;
+	}
+
+	&:active {
+		transform: scale(var(--active));
+	}
+
+	&.colored {
+		box-shadow: none;
+		background-color: transparent;
+		color: var(--primary-color);
+
+		&:hover {
+			box-shadow: var(--edge-highlight);
+			background-color: var(--primary-color-alpha);
+		}
+	}
+}

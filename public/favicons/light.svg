@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="3000px" height="3000px" viewBox="0 0 3000 3000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Concept Logo Houndstooth</title>
-    <g id="Concept-Logo-Houndstooth" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Background" fill="#FFFFFF" x="0" y="0" width="3000" height="3000" rx="175"></rect>
-        <path d="M2250,238 L2250,761 L2750,761 L2250,1261 L2250,1762 L1250,2761 L1250,2261.5 L1749.001,1762 L1250,1762 L1250,1261 L750,1761 L250,1761 L1250,761 L1750,761 L2250,238 Z" id="Combined-Shape" fill="#000000"></path>
-    </g>
-</svg>

@@ -1,0 +1,69 @@
+# Shown in language picker for multi-language sites
+language_name = "Русский"
+# Tera date format used for listing posts
+# (post publication date, tag posts list...).
+# Not used in comments, "date_locale" is used instead.
+# See https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html
+date_format = "%d %B %Y г."
+date_locale = "ru_RU"
+
+# Note on pluralization prefixes:
+# - few_: for numbers ending in 2-4, except 12-14, in genitive singular.
+# - many_: for all others, including 5-9, 0, and teens (11-14), in genitive plural.
+
+# Menu items.
+# Should match the names in config.extra.nav.links and config.extra.footer.links.
+Blog = "Блог"
+Demo = "Демо"
+Repo = "Репо"
+
+all_tags = "Показать все теги"
+archived = "Архив"
+author = "Автор"
+blog_post_author = "Автор блог-поста"
+boosts_from = "Продвижения с"
+comments = "Комментарии"
+comments_description = "Вы можете оставить комментарий к этому блог-посту, публично ответив на него с помощью аккаунта Mastodon или другого аккаунта ActivityPub/Fediverse. Известные неприватные ответы отображены ниже."
+copy_code = "Скопировать код"
+disclaimer = "Дисклеймер"
+drafted = "Черновик"
+faves_from = "Избранное с"
+featured = "Подборка"
+feed = "Лента"
+file_an_issue = "Отправить Отчет об Ошибке"
+filter_by_tag = "Фильтр по тегам"
+go_to_top = "Перейти в Начало"
+language = "Язык"
+load_comments = "Загрузить Комментарии"
+loading = "Загрузка…"
+newest_to_oldest = "От новейшего к старейшему"
+next = "Следующий"
+noscript = "Загрузка комментариев зависит от JavaScript. Попробуйте включить JavaScript и перезагрузить, или посетите оригинальный пост на Mastodon."
+open_post = "Открыть Пост"
+posts = "$NUMBER постов"
+one_posts = "Всего $NUMBER пост"
+few_posts = "Всего $NUMBER поста"
+many_posts = "Всего $NUMBER постов"
+posts_with_tag = "Посты с тегом"
+powered_by = "Работает на базе"
+powered_by_and = "и"
+previous = "Предыдущий"
+search = "Поиск"
+search_for = "Искать…"
+skip_to_content = "Перейти к основному содержанию"
+source = "Исходный код веб-сайта"
+table_of_contents = "Оглавление"
+tags = "$NUMBER тегов"
+one_tags = "Всего $NUMBER тег"
+few_tags = "Всего $NUMBER тега"
+many_tags = "Всего $NUMBER тегов"
+tags_title = "Теги"
+trigger_warning = "Предупреждение о Тревоге"
+updated = "Последний раз обновлено"
+view_comment = "Показать комментарий на"
+view_profile = "Показать профиль на"
+note = "Заметьте"
+tip = "Совет"
+important = "Важно"
+warning = "Внимание"
+caution = "Осторожно"

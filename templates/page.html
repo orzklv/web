@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+{%- if page.extra.archive %}
+	<div class="statement-container archive">
+		<strong class="big">
+			<i class="icon"></i>
+			{{- macros_translate::translate(key="archived", default="Archived", language_strings=language_strings) -}}
+		</strong>
+		{{ page.extra.archive | markdown | safe }}
+	</div>
+{%- endif %}
+{{ page.content | safe }}
+{% endblock content %}

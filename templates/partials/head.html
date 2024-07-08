@@ -1,0 +1,98 @@
+<head>
+	<!-- {{ now() | date(format='%F %a %R') }} -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="{{ config.description }}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="{{ config.extra.primary_color | default(value='#9a9996') }}" />
+	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
+	<title>{% include "partials/title.html" %}</title>
+
+	{%- if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
+		{%- if config.markdown.highlight_themes_css | length > 0 %}
+			<link rel="stylesheet" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
+			<link rel="stylesheet" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
+		{%- else %}
+			<link rel="stylesheet" href="{{ get_url(path='syntax-theme.css') }}" />
+		{%- endif %}
+	{%- endif %}
+
+	{%- set stylesheets = [ "style.css" ] %}
+
+	{%- if config.extra.stylesheets %}
+		{%- set stylesheets = stylesheets | concat(with=config.extra.stylesheets) %}
+	{%- endif %}
+
+	{%- if page.extra.stylesheets %}
+		{%- set stylesheets = stylesheets | concat(with=page.extra.stylesheets) %}
+	{%- elif section.extra.stylesheets %}
+		{%- set stylesheets = stylesheets | concat(with=section.extra.stylesheets) %}
+	{%- endif %}
+
+	{%- for stylesheet in stylesheets %}
+		<link rel="stylesheet" href="{{ get_url(path=stylesheet) | safe }}" />
+	{%- endfor %}
+
+	<style>:root {--primary-color: {{ config.extra.primary_color | default(value="#9a9996") }}; --primary-color-alpha: {{ config.extra.primary_color_alpha | default(value="rgba(154, 153, 150, 0.2)") }};}</style>
+
+	{%- if config.extra.goatcounter %}
+		<script data-goatcounter="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count" async src="//gc.zgo.at/count.js"></script>
+		<noscript>
+			<img src="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count?p={{ current_path | default(value='/') | safe }}" />
+		</noscript>
+	{%- endif %}
+
+	{%- if config.extra.show_copy_button %}
+		{%- include "partials/copy_button.html" %}
+	{%- endif %}
+
+	{%- if config.build_search_index %}
+		{%- include "partials/search.html" %}
+		{%- set scripts = ["elasticlunr.min.js"] %}
+	{%- else %}
+		{%- set scripts = [""] %}
+	{%- endif %}
+
+	{%- if config.extra.scripts %}
+		{%- set scripts = config.extra.scripts %}
+	{%- endif %}
+
+	{%- if page.extra.scripts %}
+		{%- set scripts = scripts | concat(with=page.extra.scripts) %}
+	{%- elif section.extra.scripts %}
+		{%- set scripts = scripts | concat(with=section.extra.scripts) %}
+	{%- endif %}
+
+	{%- if scripts | length > 0 %}
+		{%- for script in scripts %}
+			<script src="{{ get_url(path=script) | safe }}"></script>
+		{%- endfor %}
+	{%- endif %}
+
+	{%- if config.extra.comments %}
+		<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
+	{%- endif %}
+
+	<link rel="icon" type="image/png" href="{{ get_url(path='favicon.png') }}" />
+	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ get_url(path='apple-touch-icon.png') }}" />
+
+	{%- if config.extra.emoji_favicon %}
+		<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-.07em' y='.89em' font-size='90'%3E{{ config.extra.emoji_favicon | truncate(length=1, end='') }}%3C/text%3E%3C/svg%3E">
+	{%- endif %}
+
+	{%- if config.generate_feeds and config.feed_filenames %}
+		{%- for feed in config.feed_filenames %}
+			<link rel="alternate" type={% if feed == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="{{ config.title }}" href="{{ get_url(path=feed) | safe }}" />
+		{%- endfor %}
+	{%- elif config.generate_feeds and config.feed_filenames | length > 0 %}
+		<link rel="alternate" type={% if config.feed_filenames[0] == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="{{ config.title }}" href="{{ get_url(path=config.feed_filenames[0]) | safe }}" />
+	{%- endif %}
+
+	<meta property="og:site_name" content="{{ config.title }}" />
+	<meta property="og:title" content="{% include 'partials/title.html' %}" />
+	<meta property="og:url" content="{{ current_url | default(value='/') | safe }}" />
+	<meta property="og:description" content="{{ page.description | default(value=config.description) }}" />
+	<meta property="og:image" content="{{ get_url(path='card.png') }}" />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="og:locale" content="{{ macros_translate::translate(key='date_locale', default='en_US', language_strings=language_strings) }}" />
+</head>

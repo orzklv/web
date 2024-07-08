@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block content %}
+{%- set date_format = macros_translate::translate(key="date_format", default="%B %d, %Y", language_strings=language_strings) -%}
+{%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
+<article>
+	<h1>{{ page.title }}</h1>
+
+	{%- if page.date -%}
+		<small>
+			<time datetime="{{ page.date | date(format=' %+') }}" pubdate>
+				{{ page.date | date(format=date_format, locale=date_locale) }}
+			</time>
+			{%- if page.authors -%}
+				<span>•</span>
+				<span>
+					{{ macros_translate::translate(key="author", default="Author", language_strings=language_strings) }}:
+					{{ page.authors[0] }}
+				</span>
+			{%- endif -%}
+			{%- if page.taxonomies -%}
+				{%- for name, taxon in page.taxonomies -%}
+					<ul class="tags inline">
+						{%- for item in taxon -%}
+							<li>
+								<a class="tag" href="{{ get_taxonomy_url(kind=name, name=item, lang=lang) }}">
+									{{ item }}
+								</a>
+							</li>
+						{%- endfor -%}
+					</ul>
+				{%- endfor -%}
+			{%- endif -%}
+		</small>
+		{%- if page.updated -%}
+			<small class="last-updated">
+				<time datetime="{{ page.updated | date(format=' %+') }}" pubdate>
+					{{ macros_translate::translate(key="updated", default="Last updated on", language_strings=language_strings) }}
+					{{ page.updated | date(format=date_format, locale=date_locale) }}
+				</time>
+			</small>
+		{%- endif -%}
+	{%- endif -%}
+
+	{%- if page.extra.archive -%}
+		<div class="statement-container archive">
+			<strong class="big">
+				<i class="icon"></i>
+				{{- macros_translate::translate(key="archived", default="Archived", language_strings=language_strings) -}}
+			</strong>
+			{{ page.extra.archive | markdown | safe }}
+		</div>
+	{%- endif -%}
+
+	{%- if page.extra.trigger -%}
+		<div class="statement-container trigger">
+			<strong class="big">
+				<i class="icon"></i>
+				{{- macros_translate::translate(key="trigger_warning", default="Trigger Warning", language_strings=language_strings) -}}
+			</strong>
+			{{ page.extra.trigger | markdown | safe }}
+		</div>
+	{%- endif -%}
+
+	{%- if page.extra.disclaimer -%}
+		<div class="statement-container disclaimer">
+			<strong class="big">
+				<i class="icon"></i>
+				{{-macros_translate::translate(key="disclaimer", default="Disclaimer", language_strings=language_strings) -}}
+			</strong>
+			{{ page.extra.disclaimer | markdown | safe }}
+		</div>
+	{%- endif -%}
+
+	{%- if page.extra.toc -%}
+		<h2>{{ macros_translate::translate(key="table_of_contents", default="Table of Contents", language_strings=language_strings) }}</h2>
+		<ul>
+			{%- for h1 in page.toc -%}
+				<li>
+					<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+					{%- if h1.children -%}
+						<ul>
+							{%- for h2 in h1.children -%}
+								<li>
+									<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+								</li>
+							{%- endfor -%}
+						</ul>
+					{%- endif -%}
+				</li>
+			{%- endfor -%}
+		</ul>
+	{%- endif -%}
+
+	{{ page.content | safe }}
+</article>
+
+{%- if page.extra.comments.id -%}
+	{% include "partials/comments.html" ignore missing %}
+{%- endif -%}
+
+{%- if page.lower or page.higher -%}
+	<hr>
+	<nav id="post-nav">
+		{%- if page.higher -%}
+			<a class="post-nav-item post-nav-prev" href="{{ page.higher.permalink }}">
+				<div class="nav-arrow">{{ macros_translate::translate(key="previous", default="Previous", language_strings=language_strings) }}</div>
+				<span class="post-title">{{ page.higher.title }}</span>
+			</a>
+		{%- endif -%}
+		{%- if page.lower -%}
+			<a class="post-nav-item post-nav-next" href="{{ page.lower.permalink }}">
+				<div class="nav-arrow">{{ macros_translate::translate(key="next", default="Next", language_strings=language_strings) }}</div>
+				<span class="post-title">{{ page.lower.title }}</span>
+			</a>
+		{%- endif -%}
+	</nav>
+{%- endif -%}
+
+<div class="dialog-buttons">
+	<a class="inline-button" href="#top">{{ macros_translate::translate(key="go_to_top", default="Go to Top", language_strings=language_strings) }}</a>
+	{%- if config.extra.issues_url -%}
+		<a class="inline-button colored external" href="{{ config.extra.issues_url }}">
+			{{ macros_translate::translate(key="file_an_issue", default="File an Issue", language_strings=language_strings) }}
+		</a>
+	{%- endif -%}
+</div>
+{% endblock content %}

@@ -1,0 +1,44 @@
+{#- Based on https://www.roboleary.net/2022/01/13/copy-code-to-clipboard-blog.html -#}
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		let blocks = document.querySelectorAll("pre[class^='language-']");
+
+		blocks.forEach((block) => {
+			if (navigator.clipboard) {
+				let container = document.createElement("div");
+				container.classList.add("pre-container");
+
+				block.parentNode.insertBefore(container, block);
+				container.appendChild(block);
+
+				let button = document.createElement("button");
+				let icon = document.createElement("i");
+				let span = document.createElement("span");
+				icon.classList.add("icon");
+				span.classList.add("hidden");
+				span.innerHTML = "{{ macros_translate::translate(key='copy_code', default='Copy code', language_strings=language_strings) }}";
+				button.appendChild(icon);
+				button.appendChild(span);
+				container.appendChild(button);
+
+				button.addEventListener("click", async () => {
+					await copyCode(block, button);
+				});
+			}
+		});
+
+		async function copyCode(block, button) {
+			let code = block.querySelector("code");
+			let text = code.innerText;
+
+			await navigator.clipboard.writeText(text);
+
+			button.classList.add("active");
+
+			setTimeout(() => {
+				button.classList.remove("active");
+			}, 800);
+		}
+	});
+</script>

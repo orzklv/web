@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<picture>
+	<source srcset="{{ get_url(path='404.png') }}" media="(prefers-reduced-motion: reduce)"></source>
+	<img id="not-found" class="pixels transparent no-hover" srcset="{{ get_url(path='404.gif') }}">
+</picture>
+
+<h1>Page Not Found</h1>
+
+<p>The requested page could not be found.{% if config.extra.issues_url %} If you feel this is not normal, then you can create an issue on the issue tracker.{% endif %}</p>
+
+<div class="dialog-buttons">
+	<a onclick="window.history.go(-1)" class="inline-button">Go Back</a>
+	{%- if config.extra.issues_url %}
+		<a class="inline-button colored external" href="{{ config.extra.issues_url }}">File an Issue</a>
+	{%- endif %}
+</div>
+{% endblock content %}

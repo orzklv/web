@@ -1,0 +1,34 @@
+// TABLE
+table {
+	box-shadow: var(--edge-highlight);
+	border-radius: var(--rounded-corner);
+	border-collapse: collapse;
+	background-color: var(--fg-muted-1);
+	width: 100%;
+	table-layout: fixed;
+	overflow: hidden;
+
+	th {
+		font-weight: bold;
+	}
+
+	th,
+	td {
+		padding: 0.5rem 1rem;
+	}
+
+	tr {
+		&:nth-child(even) {
+			background-color: var(--fg-muted-1);
+		}
+
+		th {
+			background-color: var(--fg-muted-2);
+		}
+	}
+}
+
+td,
+th {
+	padding: 0;
+}

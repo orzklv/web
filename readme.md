@@ -1,51 +1,40 @@
-<header>
-<img src="https://www.orzklv.uz/favicons/logo.png" alt="logo" height="100" align="left">
-<h1 style="display: inline">Website</h1>
+[![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue)](https://mit-license.org)
+[![status-badge](https://ci.codeberg.org/api/badges/13032/status.svg)](https://ci.codeberg.org/repos/13032)
 
-My own website where I share my blog posts and media contents.
+# [Duckquill](https://duckquill.daudix.one) <img src="logo.png" alt="Logo" width="96" align="right"/>
 
-[![GitHub top language](https://img.shields.io/github/languages/top/orzklv/website?style=flat-square&logo=github)](https://github.com/orzklv/website)
-[![Channel](https://img.shields.io/badge/Chat-grey?style=flat-square&logo=telegram)](https://t.me/orzklvb)
-[![Test CI](https://github.com/orzklv/website/actions/workflows/test.yml/badge.svg)](https://github.com/orzklv/website/actions/workflows/test.yml)
+Duckquill is a modern, pretty, and clean (and opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
 
-</header>
+![Screenshot](screenshot.png)
 
-## About
+## Docs
 
-The Website runs on top of the latest version of Next.js and Node.js. Pretty
-nothing special. Just a website built with React components and css.
+Docs are provided in form of a [live demo](https://duckquill.daudix.one).
 
-> I host all contents statically, so you may correct me up by sending a pull
-> request.
+## Know your rights
 
-## Features
+This website is under the MIT license:
 
-- Markdown content renders
-- Minecraft server status api
-- Additional contents (like my favorite musics)
-- Spotify live integration
-- Docker image for easy deployment
+- **Freedom to Use**: You have the right to use the software for any purpose, whether it's personal, academic, or commercial.
+- **Freedom to Modify**: You can modify the source code of the software to suit your needs or preferences.
+- **Freedom to Distribute**: You have the right to distribute the software, whether in its original form or modified, to others.
+- **Collaboration**: You can collaborate with others on the software's development and improvement.
+- **No License Compatibility Issues**: You can combine the MIT-licensed software with other software, even if they use different licenses.
+- **No Usage Restrictions**: There are no restrictions on the technologies or fields of use, giving you maximum flexibility.
+- **No Royalties**: You are not required to pay any royalties or fees for using, modifying, or distributing the software.
 
-## Development
+## Contributing guidelines
 
-In order to run the website, just install the latest LTS version of Node.js
-(it's 18.x.x at the moment) and make sure you have pnpm installed globally. Then
-run the following commands:
+There are several ways to contribute to this project:
 
-```bash
-pnpm install
-pnpm run dev
-```
+- Reporting issues
+- Discussing potential improvements
+- Contributing code
+- Writing documentation
+- Submitting feature requests
+- Providing feedback
 
-## Docker
+When making any sort of contribution, please make sure to follow [Forgejo's Code of Conduct](https://codeberg.org/forgejo/code-of-conduct). If you don't have the time to read it, just know that all you have to do is be nice, and you'll be just fine.
 
-Also, you may actually run the docker image hosted on GitHub Container Registry:
-
-```bash
-docker run -p 3000:3000 ghcr.io/orzklv/website:latest
-```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
-for details.
+*</> with <3 by [daudix](https://daudix.codeberg.page) | README based on [libreivan's](https://codeberg.org/libreivan/libreivan.com)*

@@ -1,0 +1,76 @@
+.tags {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 0.25rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	&.inline {
+		margin-inline-start: 0.25rem;
+	}
+
+	li {
+		display: flex;
+		transition: var(--transition);
+		line-height: normal;
+
+		&:active {
+			transform: scale(var(--active));
+		}
+	}
+
+	a {
+		transition: var(--transition);
+		box-shadow: var(--edge-highlight);
+		border-radius: 999px;
+		background-color: var(--fg-muted-1);
+		padding: 0.25rem 0.75rem;
+		color: var(--fg-color);
+		font-size: 0.875rem;
+		text-decoration: none;
+
+		&:hover {
+			background-color: var(--primary-color-alpha);
+			color: var(--primary-color);
+			text-decoration: none;
+
+			.count {
+				background-color: var(--primary-color-alpha);
+				color: var(--primary-color);
+			}
+		}
+
+		&:has(.tag) {
+			padding: 0;
+		}
+
+		.tag {
+			display: inline-block;
+			padding: 0.25rem 0.5rem 0.25rem 0.75rem;
+
+			&::before {
+				content: "#";
+			}
+
+			:root[dir*="rtl"] & {
+				padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+			}
+		}
+
+		.count {
+			display: inline-block;
+			transition: var(--transition);
+			border-radius: 0 999px 999px 0;
+			background-color: var(--fg-muted-1);
+			padding: 0.25rem 0.625rem 0.25rem 0.5rem;
+			color: var(--fg-muted-4);
+			font-variant-numeric: tabular-nums;
+
+			:root[dir*="rtl"] & {
+				border-radius: 999px 0 0 999px;
+				padding: 0.25rem 0.5rem 0.25rem 0.625rem;
+			}
+		}
+	}
+}

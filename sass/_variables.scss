@@ -1,0 +1,87 @@
+:root {
+	// COLORS
+	--bg-color: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+	--fg-color: rgba(0, 0, 0, 0.8);
+	--fg-muted-1: rgba(0, 0, 0, 0.05);
+	--fg-muted-2: rgba(0, 0, 0, 0.1);
+	--fg-muted-3: rgba(0, 0, 0, 0.2);
+	--fg-muted-4: rgba(0, 0, 0, 0.5);
+	--fg-muted-5: rgba(0, 0, 0, 0.6);
+	--nav-bg: rgba(242, 242, 242, 0.7);
+	--blue-bg: rgba(53, 132, 228, 0.1);
+	--blue-fg: rgb(53, 132, 228);
+	--green-bg: rgba(38, 162, 105, 0.1);
+	--green-fg: rgb(38, 162, 105);
+	--purple-bg: rgba(145, 65, 172, 0.1);
+	--purple-fg: rgb(145, 65, 172);
+	--red-bg: rgba(224, 27, 36, 0.1);
+	--red-fg: rgb(224, 27, 36);
+	--yellow-bg: rgba(156, 110, 3, 0.1);
+	--yellow-fg: rgb(156, 110, 3);
+	--star-featured: rgba(156, 110, 3, 0.15);
+
+	// VARIABLES
+	--active: 0.9;
+	--blur: saturate(180%) blur(0.75rem);
+	--container-width: 720px;
+	--edge-highlight: inset 0 0.0625rem 0 rgba(255, 255, 255, 0.1);
+	--rounded-corner-small: 0.5rem;
+	--rounded-corner: 0.75rem;
+	--shadow-raised: 0 0 0 0.0625rem rgba(0, 0, 0, 0.06), 0 0.125rem 0.375rem 0.125rem rgba(0, 0, 0, 0.14), 0 0.25rem 0.75rem 0.25rem rgba(0, 0, 0, 0.06);
+	--shadow: 0 0 0 0.0625rem rgba(0, 0, 0, 0.03), 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.07), 0 0.125rem 0.375rem 0.125rem rgba(0, 0, 0, 0.03);
+	--transition-long: 0.8s;
+	--transition-longer: 0.4s;
+	--transition: 0.2s;
+
+	// FONTS
+	--font-system-ui: system-ui, sans-serif;
+	--font-transitional: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+	--font-old-style: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+	--font-humanist: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro, sans-serif;
+	--font-geometric-humanist: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+	--font-classical-humanist: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
+	--font-neo-grotesque: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif;
+	--font-monospace-slab-serif: "Nimbus Mono PS", "Courier New", monospace;
+	--font-monospace-code: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+	--font-industrial: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium", "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
+	--font-rounded-sans: ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa, Manjari, "Arial Rounded MT", "Arial Rounded MT Bold", Calibri, source-sans-pro, sans-serif;
+	--font-slab-serif: Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif", "Sitka Small", serif;
+	--font-antique: Superclarendon, "Bookman Old Style", "URW Bookman", "URW Bookman L", "Georgia Pro", Georgia, serif;
+	--font-didone: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+	--font-handwritten: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual, cursive;
+	--font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+	@media (prefers-color-scheme: dark) {
+		// COLORS
+		--bg-color: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+		--fg-color: rgb(255, 255, 255);
+		--fg-muted-1: rgba(255, 255, 255, 0.05);
+		--fg-muted-2: rgba(255, 255, 255, 0.1);
+		--fg-muted-3: rgba(255, 255, 255, 0.2);
+		--fg-muted-4: rgba(255, 255, 255, 0.5);
+		--fg-muted-5: rgba(255, 255, 255, 0.6);
+		--nav-bg: rgba(25, 25, 25, 0.7);
+		--blue-bg: rgba(153, 193, 241, 0.1);
+		--blue-fg: rgb(153, 193, 241);
+		--green-bg: rgba(143, 240, 164, 0.1);
+		--green-fg: rgb(143, 240, 164);
+		--purple-bg: rgba(220, 138, 221, 0.1);
+		--purple-fg: rgb(220, 138, 221);
+		--red-bg: rgba(226, 97, 81, 0.1);
+		--red-fg: rgb(246, 97, 81);
+		--yellow-bg: rgba(248, 228, 92, 0.1);
+		--yellow-fg: rgb(248, 228, 92);
+		--star-featured: rgba(248, 228, 92, 0.05);
+
+		color-scheme: dark;
+	}
+}
+
+@media (prefers-reduced-motion) {
+	*,
+	*::before,
+	*::after {
+		animation: none !important;
+		transition: none !important;
+	}
+}
