@@ -43,43 +43,6 @@ I mean, that's a statement, not a promise, you know what I'm sayin' :D Ye, I'm s
 
 Mainly my tech career stuff and experiments that I document after ending up wasting hours of time on it. I hope it's gonna be useful at some point for people and humble learners. I'll try to recover my old posts from old blogs but can't promise anything. Also, I decided to add uzbek localization support to create more resources for fellow developers with language barrier~ **Uzbek Developers life matter!**. 
 
-## In the Wild
-
-<details>
-  <summary>This list is starting to get long, so click on it to expand it.</summary>
-
-- [agustinramirodiaz.github.io](https://agustinramirodiaz.github.io)
-- [alavi.me](https://alavi.me)
-- [bano.dev](https://bano.dev)
-- [blog.pansi21.xyz](https://blog.pansi21.xyz)
-- [daudix.one](https://daudix.one) <small>(obviously)</small>
-- [daveparr.info](https://www.daveparr.info)
-- [digital-horror.com](https://digital-horror.com)
-- [enriquekesslerm.com](https://enriquekesslerm.com)
-- [gregorni.gitlab.io](https://gregorni.gitlab.io)
-- [jzbor.de](https://jzbor.de)
-- [licu.dev](https://licu.dev)
-- [luciengheerbrant.com](https://luciengheerbrant.com)
-- [lukoktonos.com](http://www.lukoktonos.com)
-- [malloc.garden](https://malloc.garden)
-- [mourelask.xyz](https://mourelask.xyz)
-- [nbenedek.me](https://nbenedek.me)
-- [notaplace.com](https://notaplace.com)
-- [pyter.at](https://pyter.at)
-- [rbd.gg](https://www.rbd.gg)
-- [rerere.unlogic.co.uk](https://rerere.unlogic.co.uk)
-- [siddharthsabron.in](https://siddharthsabron.in)
-- [skaven.org](https://skaven.org)
-- [sorcery.nexus](https://sorcery.nexus)
-- [sorg.codeberg.page](https://sorg.codeberg.page)
-- [sungsphinx.codeberg.page](https://sungsphinx.codeberg.page)
-- [treeniks.github.io](https://treeniks.github.io)
-- [vikramxd.github.io](https://vikramxd.github.io)
-- [zorrn.net](https://www.zorrn.net)
-- Yours? <small>(feel free to [contact me](https://daudix.one/find/#contacts) or send a pull request)</small>
-
-</details>
-
 ## Credits
 
 - [Zola](https://www.getzola.org) for making my life easier and not suffer with frontend hell.
