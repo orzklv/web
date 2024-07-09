@@ -20,7 +20,7 @@
     };
   in {
     devShells.default = pkgs.mkShell rec {
-      name = "web";
+      name = "webnya";
 
       packages = with pkgs; [
         zola

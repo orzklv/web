@@ -3,75 +3,47 @@ insert_anchor_links = "right"
 title = "Home"
 +++
 
+# Orzklv's Dark Voyage
+
 {% crt() %}
 ```
-      _          _          _          _          _
-    >(')____,  >(')____,  >(')____,  >(')____,  >(') ___,
-      (` =~~/    (` =~~/    (` =~~/    (` =~~/    (` =~~/
-jgs~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~
+@@@@@@@@@@   @@@:@@@@@@@@:::@@@@ @@@@@@@   @@@@:@@@@@@@@:::@@@@ @@@@@@
+@@@@@@@@@@ @@@:::@@@@@@@@:@@@@   @@@@@@@  @@@:::@@@@@@@@:@@@@   @@@@@@
+@@@@@@@@@:::::::::::@@@@            @@@@:::::::::::@@@@            @@@
+@@@@@@@::::::::::::@@@            @@@@:::::::::::#@@@            @@@@:
+@@@@@::::@:::::::@@@@   *        @@@::::::::::::@@@+   @        @@@:::
+@@@::::@@@:::::::@@    @@        @::::@@::::::::@@    @@        @::::@
+@@@@@@@@@@@@@::::@@@@@@@@@@@@   @@@@@@@@@@@@::::@@@@@@@@@@@    @@@@@@@
+@@@@@@@@@@@::::@@@@@@@@@@@@    @@@@@@@@@@@::::@@@@@@@@@@@@   #@@@@@@@@
+@@@@@@@@@@:::@@@@@@@@@@@@    @@@:@@@@@@@::::@@@@@@@@@@@@    @@@:@@@@@@
+@@@@@@@@@@:@@@@  @@@@@@@@  @@@@::@@@@@@@::@@@@  @@@@@@@@  @@@@::@@@@@@
 ```
 {% end %}
 
-# Duckquill
+I tend to keep personal blog but most of the time I end up forgetting about it and later I come back to rewrite it from scratch and keep it going. However, this time, I decided to make it different to minimze hustle to focus more on content instead of website itself (hopefully). Yes, no more Nextjs cancer and over engineered stuff. Just my pure & raw thoughts of mine in a simple static site generator.
 
-Duckquill is a modern, pretty, and clean (and opinionated) [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the needed options for comfortable writing, keeping the balance of it being simple.
+Well, my current name is not the only one I used in my entire career. They are a lot and some of them are quite popular and some of them were just doing their thang. Well, they are:
 
-Edit a bit of metadata and tweak some of the included graphics and have a blog up in minutes!
+- **Mr. @%@%@% OOO** (redacted for privacy)
+- **Biitsu Yoshikage** (a.k.a @biitsu)
+- **Geno Ferollo** (a.k.a @genemator)
+- **UwUssimo Robinson** (a.k.a @uwussimo)
+- **Yuri Katsuki** (a.k.a @katsuki-yuri)
+- **Orzklv** (a.k.a @orzklv)
 
-- Pretty, yet lightweight. No JavaScript is used (except for comments, heh).
-- Colors are tinted with the user-selected primary color for a pleasant look.
-- ~90kB in size; take that, 12MB Medium!
-- Uses system fonts for blazingly fast loading.
-- Mobile friendly, with a proper dark variant.
-- Proper favicon for modern browsers and Apple device icons.
-- Twitter, Mastodon and other social media meta cards for easy sharing. Try [Share Preview](https://apps.gnome.org/SharePreview/) to test.
-- [Mastodon-powered comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/); comment using compatible ActivityPub server by replying to a Mastodon post.
+Long story short, I came up with this personality thing back in 2016-17 'ish due to concerns about my privacy and security. Also, this served me as an easy rescue button which would help me to get out of heavy fuck ups, so people would memorize old personality of mine if I did something really that bad. Sounds similar? Yup, that's like having VTuber career, but when you fuck up, you just graduate and then come in another form with another type of approach/take.
+
+However, things got serious in mid 2022's. The more personality I created, the more I suffered morally and more close relatives & friends were getting worried, so I had to eventually stop forever in my current personality (yes, sadly, there won't be new personality switches anymore).
 
 {% alert(note=true) %}
-Duckquill is made based on needs of [my website](https://daudix.one), if you need some feature/configuration that doesn't exist feel free to open an issue or better yet, pull request!
+I mean, that's a statement, not a promise, you know what I'm sayin' :D Ye, I'm sorry for being unstable (⌒_⌒;)
 {% end %}
 
-## Installation
+## What's this blog about?
 
-First, download this theme to your `themes` directory:
+Mainly my tech career stuff and experiments that I document after ending up wasting hours of time on it.
 
-```sh
-git clone https://codeberg.org/daudix/duckquill.git themes/duckquill
-```
 
-...or add as submodule for easy updating (recommended if you already have git setup on site):
-
-```sh
-git submodule init
-git submodule add https://codeberg.org/daudix/duckquill.git themes/duckquill
-```
-
-{% alert(important=true) %}
-It is highly recommended to switch from the `main` branch to the latest release:
-{% end %}
-
-```sh
-cd themes/duckquill
-git checkout tags/v3.2.1
-```
-
-To update the submodule, simply switch to a new tag:
-
-{% alert(tip=true) %}
-Check the changelog for all versions that came after the one you are using, there might be breaking changes that may need manual involvement.
-{% end %}
-
-```sh
-git submodule update --remote --merge
-git tag --list
-git checkout tags/v3.2.1
-```
-
-Then, enable it in your `config.toml`:
-
-```toml
-theme = "duckquill"
-```
 
 ## Options
 
@@ -87,55 +59,10 @@ Inside that file, copy-paste one of the existing translations from Duckquill and
 
 Additionally to translating Duckquill, you can also override the English stings by copy-pasting `en.toml` from Duckquill to the `i18n` directory of your website and adjusting the values to your liking.
 
-### Custom Stylesheets
-
-To add your own or override existing styles, create a custom stylesheet and add it in the `config.toml`:
-
-```toml
-[extra]
-stylesheets = [
-  "YOUR_STYLE.css"
-]
-```
-
-Additional stylesheets are expected it to be in the `static` directory. If you are using Sass they will be compiled there by default.
-
-If for some reason overridden style is not respected, try using `!important` (don't use it unless needed ). You can import styles from Duckquill using:
-
-```scss
-@use "../themes/duckquill/sass/NEEDED_FILE.scss";
-```
-
-You can also load stylesheets per page/section by setting them inside page's front matter:
-
-```toml
-[extra]
-stylesheets = [
-  "YOUR_STYLE.css",
-  "ALSO_YOUR_STYLE.css"
-]
-```
-
-### Primary Color
-
-Duckquill respects chosen primary color everywhere, simply change the primary color in `config.toml`:
-
-```toml
-[extra]
-primary_color = "COLOR_CODE"
-primary_color_alpha = "COLOR_CODE"
-```
 
 ### Favicon
 
 Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and apple touch icon respectively. For animated favicon you can use APNG with `png` file extension.
-
-## Test Pages
-
-- [Demo page](@/demo/index.md)
-- [Cake Party!](@/demo/page.md)
-- [ActivityPub/​Fediverse comments demo](@/demo/comments.md)
-- [Code block demo (needs Zola v0.18.0 and higher)](@/demo/code.md)
 
 ## In the Wild
 
@@ -174,39 +101,13 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and app
 
 </details>
 
-## In Credits
-
-- [andreatitolo.com](https://www.andreatitolo.com/credits)
-- [aplos.gxbs.me](https://aplos.gxbs.me)
-- [archaeoramblings.com](https://www.archaeoramblings.com/credits)
-- [oomfie.town](https://oomfie.town/credits)
-- [veeronniecaw.space](https://veeronniecaw.space)
-
-## Assets Sources
-
-All sources for Duckquill's assets are available [here](https://codeberg.org/daudix/archive/src/branch/main/duckquill/src) and licensed under CC BY-SA 4.0. The reason for not putting the sources in the same repo as Duckquill itself is simple: I want it to be as small as possible, so that repo cloning is fast and doesn't make the site significantly heavier; this is also why the demo uses remote images instead of local copies.
-
 ## Credits
 
-- [Quill image used in the metadata card](https://commons.wikimedia.org/wiki/File:3quills.jpg)
-
-## Tools Used
-
-- [VSCodium](https://vscodium.com) - Free/Libre Open Source Software Binaries of VS Code
-  - [Capitalize](https://marketplace.visualstudio.com/items?itemName=viablelab.capitalize) - Title capitalization without random websites.
-  - [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml) - For `config.toml` basically.
-  - [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) - Awfully pretty theme.
-  - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss) - Not sure if it actually works. ¯\\\_(ツ)_/¯
-  - [Sort CSS](https://marketplace.visualstudio.com/items?itemName=piyushsarkar.sort-css-properties) - A lifesaver for long CSS properties.
-  - [Tera](https://marketplace.visualstudio.com/items?itemName=karunamurti.tera) - Tera template engine (the one Zola uses) support.
-- [Firefox developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) - Best of its kind.
-
-As for the code formatter I use built-in VSCodium one. Prettier is good but I don't like how it tries to make code fit in a very narrow column, this can be changed of course, but built-in formatter does it's job so I don't bother doing so.
+- [Zola](https://www.getzola.org) for making my life easier and not suffer with frontend hell.
+- [Duckquill](https://duckquill.daudix.one) & [daudix](https://daudix.one) for this website's theme and inspiration.
 
 ## Thanks To
 
-- [Jakub Steiner](https://jimmac.eu) for the [OS Component Website](https://jimmac.github.io/os-component-website), which served as a starting point and inspiration.
-- [Carl Schwan](https://carlschwan.eu) for the [Mastodon-powered Comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/).
-- [Jonathan Neal](https://jonneal.dev) for the [normalize.css](https://csstools.github.io/normalize.css/).
-- [Modern Font Stacks](https://modernfontstacks.com) for the system font stack.
+- [Crypton](https://t.me/CryPTON32) - for motivating me to focus on more of personal stuff.
+- [Shakhzod Kudratov](https://t.me/shakhzodme) for letting me to have some free time at work and motivating me to work on this.
 - Everyone who supported me and said good stuff <3
