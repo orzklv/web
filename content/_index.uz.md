@@ -40,3 +40,16 @@ Aytmoqchiman-ki, bu e'lon, va'da emas. Nima deyayotganimni tushungadirsiz-a :D N
 {% end %}
 
 ## Bu blog o'zi nima haqida?
+
+Asosan texnologik karyeram va bir necha soatlab vaqtimni har xil eksperimentlar qilib natijasini yozib borishim haqida. Bir maromda bu odamlar va qiziquvchan o’rganuvchilar uchun foydali bo’ladi deb umid qilaman. Eski bloglarimdagi eski postlarimni tiklashga harakat qilaman, lekin hech narsaga va’da berolmayman. Shuningdek, til bariyeri bor dasturchilar uchun ko’proq manbalar yaratish uchun o’zbekcha lokalizatsiya qo’shishga qaror qildim. O’zbek dasturchilari ham muhim!
+
+## Tan olishlar (credits)
+
+- [Zola](https://www.getzola.org) for making my life easier and not suffer with frontend hell.
+- [Duckquill](https://duckquill.daudix.one) & [daudix](https://daudix.one) for this website's theme and inspiration.
+
+## Tashakkurlar
+
+- [Crypton](https://t.me/CryPTON32) - for motivating me to focus on more of personal stuff.
+- [Shakhzod Kudratov](https://t.me/shakhzodme) for letting me to have some free time at work and motivating me to work on this.
+- Everyone who supported me and said good stuff <3
