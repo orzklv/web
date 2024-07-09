@@ -41,12 +41,7 @@ I mean, that's a statement, not a promise, you know what I'm sayin' :D Ye, I'm s
 
 ## What's this blog about?
 
-Mainly my tech career stuff and experiments that I document after ending up wasting hours of time on it. I hope it's gonna be useful at some point for people and humble learners. I'll try to recover my old posts from old blogs but can't promise anything. Also, I decided to add uzbek localization support to create more resources for fellow developers with language barrier _[Uzbek Developers life matter!]_. 
-
-
-### Favicon
-
-Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and apple touch icon respectively. For animated favicon you can use APNG with `png` file extension.
+Mainly my tech career stuff and experiments that I document after ending up wasting hours of time on it. I hope it's gonna be useful at some point for people and humble learners. I'll try to recover my old posts from old blogs but can't promise anything. Also, I decided to add uzbek localization support to create more resources for fellow developers with language barrier~ **Uzbek Developers life matter!**. 
 
 ## In the Wild
 
