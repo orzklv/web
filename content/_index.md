@@ -41,23 +41,7 @@ I mean, that's a statement, not a promise, you know what I'm sayin' :D Ye, I'm s
 
 ## What's this blog about?
 
-Mainly my tech career stuff and experiments that I document after ending up wasting hours of time on it.
-
-
-
-## Options
-
-Duckquill offers some configuration options to make it fit you better; most options have pretty descriptive comments, so it should be easy to understand what they do.
-
-### Localization
-
-Duckquill ships with a localization system based on one used in [tabi](https://github.com/welpo/tabi), it's very easy to use and quite flexible at the same time.
-
-To add a translation, simply create a file in your site's `i18n` directory called `[lang-code].toml`, e.g `fr.toml`. The language code should be [ISO 639-1](https://localizely.com/iso-639-1-list/) or [BCP 47](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
-
-Inside that file, copy-paste one of the existing translations from Duckquill and adapt it to your needs. You can also check [tabi](https://github.com/welpo/tabi/tree/main/i18n) translation files for reference.
-
-Additionally to translating Duckquill, you can also override the English stings by copy-pasting `en.toml` from Duckquill to the `i18n` directory of your website and adjusting the values to your liking.
+Mainly my tech career stuff and experiments that I document after ending up wasting hours of time on it. I hope it's gonna be useful at some point for people and humble learners. I'll try to recover my old posts from old blogs but can't promise anything. Also, I decided to add uzbek localization support to create more resources for fellow developers with language barrier _[Uzbek Developers life matter!]_. 
 
 
 ### Favicon
