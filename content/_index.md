@@ -52,4 +52,4 @@ Mainly my tech career stuff and experiments that I document after ending up wast
 
 - [Crypton](https://t.me/CryPTON32) - for motivating me to focus on more of personal stuff.
 - [Shakhzod Kudratov](https://t.me/shakhzodme) for letting me to have some free time at work and motivating me to work on this.
-- Everyone who supported me and said good stuff <3
+- Everyone who supported me and said good stuff (ﾉ´ з `)ノ <3
