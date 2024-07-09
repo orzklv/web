@@ -45,11 +45,11 @@ Asosan texnologik karyeram va bir necha soatlab vaqtimni har xil eksperimentlar 
 
 ## Tan olishlar (credits)
 
-- [Zola](https://www.getzola.org) for making my life easier and not suffer with frontend hell.
-- [Duckquill](https://duckquill.daudix.one) & [daudix](https://daudix.one) for this website's theme and inspiration.
+- [Zola](https://www.getzola.org) hayotimni osonlashtirgani va frontend azobidan qutqargani uchun.
+- [Duckquill](https://duckquill.daudix.one) va [daudix](https://daudix.one) ushbu veb-saytning mavzusi va ilhomi uchun.
 
 ## Tashakkurlar
 
-- [Crypton](https://t.me/CryPTON32) - for motivating me to focus on more of personal stuff.
-- [Shakhzod Kudratov](https://t.me/shakhzodme) for letting me to have some free time at work and motivating me to work on this.
-- Everyone who supported me and said good stuff <3
+- [Crypton](https://t.me/CryPTON32) - shaxsiy narsalarga ko’proq e’tibor qaratishga motivatsiya bergani uchun.
+- [Shakhzod Kudratov](https://t.me/shakhzodme) menga ishda ozgina bo’sh vaqt qoldirib, bu ish bilan shug’ullanishimga motivatsiya bergani uchun.
+- Meni qo’llab-quvvatlagan va yaxshi gaplar aytgan hamma <3
