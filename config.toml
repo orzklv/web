@@ -77,7 +77,7 @@ show_feed = true
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
   { url = "@/blog/_index.md", name = "Blog" },
-  { url = "@/demo/index.md", name = "Demo" },
+  # { url = "@/demo/index.md", name = "Demo" },
   { url = "https://github.com/sponsors/orzklv", name = "Sponsor" },
 ]
 
@@ -86,7 +86,7 @@ links = [
 # Same as the nav ones.
 links = [
   { url = "@/blog/_index.md", name = "Blog" },
-  { url = "@/demo/index.md", name = "Demo" },
+  # { url = "@/demo/index.md", name = "Demo" },
   { url = "https://github.com/sponsors/orzklv", name = "Sponsor" },
 ]
 # Social links in the footer.
