@@ -106,7 +106,7 @@ show_powered_by = false
 # Whether to show link to website source
 show_source = false
 # Custom copyright text
-copyright = "© *Orzklv* from [**Khakimov's Family**](https://khakimovs.uz), `2024`"
+copyright = "© **Orzklv** from [**Khakimov's Family**](https://khakimovs.uz), `2024`"
 
 # Based on https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
 #
