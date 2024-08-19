@@ -12,6 +12,7 @@ date_locale = "en_US"
 Blog = "Blog"
 Demo = "Demo"
 Repo = "Repo"
+Sponsor = "Sponsor"
 
 all_tags = "See all tags"
 archived = "Archived"

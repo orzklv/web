@@ -16,6 +16,7 @@ date_locale = "ja_JP"
 Blog = "ブログ"
 Demo = "デモ"
 Repo = "リポジトリ"
+Sponsor = "スポンサー"
 
 all_tags = "すべてのタグを見る"
 archived = "アーカイブ済み "

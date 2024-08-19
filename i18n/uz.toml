@@ -16,6 +16,7 @@ date_locale = "uz_UZ"
 Blog = "Blog"
 Demo = "Demo"
 Repo = "Repo"
+Sponsor = "Sponsor"
 
 all_tags = "Hamma teglar ko'rsatish"
 archived = "Arxiv"
