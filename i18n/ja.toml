@@ -1,0 +1,69 @@
+# Shown in language picker for multi-language sites
+language_name = "日本語"
+# Tera date format used for listing posts
+# (post publication date, tag posts list...).
+# Not used in comments, "date_locale" is used instead.
+# See https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html
+date_format = "%Y年%m月%d日"
+date_locale = "ja_JP"
+
+# Note on pluralization prefixes:
+# - few_: for numbers ending in 2-4, except 12-14, in genitive singular.
+# - many_: for all others, including 5-9, 0, and teens (11-14), in genitive plural.
+
+# Menu items.
+# Should match the names in config.extra.nav.links and config.extra.footer.links.
+Blog = "ブログ"
+Demo = "デモ"
+Repo = "リポジトリ"
+
+all_tags = "すべてのタグを見る"
+archived = "アーカイブ済み "
+author = "著者"
+blog_post_author = "ブログ投稿の著者"
+boosts_from = "からのブースト "
+comments = "コメント"
+comments_description = "このブログ投稿には、Mastodonやその他のActivityPub/Fediverseアカウントを使用して公開返信することでコメントできます。既知の非プライベート返信は以下に表示されます。"
+copy_code = "コードをコピー"
+disclaimer = "免責事項"
+drafted = "下書き"
+faves_from = "からのお気に入り"
+featured = "おすすめ"
+feed = "フィード"
+file_an_issue = "問題を報告する"
+filter_by_tag = "タグで絞り込む"
+go_to_top = "トップに戻る"
+language = "言語"
+load_comments = "コメントを読み込む"
+loading = "読み込み中"
+newest_to_oldest = "新しい順から古い順へ"
+next = "次へ"
+noscript = "コメントの読み込みにはJavaScriptが必要です。JavaScriptを有効にして再読み込みするか、Mastodonで元の投稿を確認してください。"
+open_post = "投稿を開く"
+posts = "合計 $NUMBER 件の投稿"
+one_posts = "合計 $NUMBER 件の投稿"
+few_posts = "合計 $NUMBER 件の投稿"
+many_posts = "合計 $NUMBER 件の投稿"
+posts_with_tag = "タグ付きの投稿"
+powered_by = "提供元:"
+powered_by_and = "そして"
+previous = "前へ"
+search = "検索"
+search_for = "検索…"
+skip_to_content = "メインコンテンツへスキップ"
+source = "ウェブサイトのソース"
+table_of_contents = "目次"
+tags = "$NUMBER 件のタグ"
+one_tags = "合計 $NUMBER 件のタグ"
+few_tags = "合計 $NUMBER 件のタグ"
+many_tags = "合計 $NUMBER 件のタグ"
+tags_title = "タグ"
+trigger_warning = "トリガー警告"
+updated = "最終更新日:"
+view_comment = "コメントを見る:"
+view_profile = "プロフィールを見る:"
+note = "注記"
+tip = "ヒント"
+important = "重要"
+warning = "警告"
+caution = "注意"

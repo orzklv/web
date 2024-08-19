@@ -37,6 +37,11 @@ title = "Qora Sayohat"
 description = "Orzklv'ning qora sayohati va hikoyalari."
 generate_feeds = true
 
+[languages.ja]
+title = "暗い航海"
+description = "オルズクルフの暗い航海と物語"
+generate_feeds = true
+
 taxonomies = [{ name = "tags", feed = true }]
 
 [extra]
