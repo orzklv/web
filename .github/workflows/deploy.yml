@@ -22,23 +22,11 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v4
 
-      - name: Clone content repository
-        uses: actions/checkout@v4
-        with:
-          repository: orzklv/blog
-          path: temporary
-
-      - name: Move content to the root directory
-        run: mv temporary/content . && rm -rf temporary
-
       - name: Build website
         uses: shalzz/zola-deploy-action@v0.19.1
         env:
           BUILD_ONLY: true
-          BUILD_FLAGS: --drafts
-
-      - name: List all files in the build directory
-        run: ls -la public
+          # BUILD_FLAGS: --drafts
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
