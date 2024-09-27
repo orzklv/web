@@ -4,6 +4,7 @@ title = "Static website via flake"
 description = "Using docker for hosting static website is overkill, so why not give nix flake a chance?"
 date = 2024-09-27
 updated = "2024-09-27"
+draft = true
 [taxonomies]
 tags = ["Nix", "Flake", "DevOps"]
 

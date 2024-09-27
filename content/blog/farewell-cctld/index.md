@@ -4,6 +4,7 @@ title = "Farewell ccTLD RnD"
 description = "Experiences and story of mine working at ccTLD Uzinfocom"
 date = 2024-09-27
 updated = "2024-09-27"
+draft = true
 [taxonomies]
 tags = ["Work", "Uzinfocom"]
 
