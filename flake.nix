@@ -41,15 +41,6 @@
               figlet -f slant "${name}" | lolcat
               printf "\n\n"
 
-              # Check if the blog repo exists
-              # If not, clone it from GitHub
-              if [ ! -d ../blog ]; then
-                git clone https://github.com/orzklv/blog.git ../blog
-              fi
-
-              # Symlink contents to blog repo
-              ln -s ../blog/content ./content
-
               zola serve &
               SERVER_PID=$!
 
@@ -59,9 +50,6 @@
 
                 # Kill the server
                 kill $SERVER_PID
-
-                # Remove symlink
-                rm ./content
               }
 
               trap finish EXIT
