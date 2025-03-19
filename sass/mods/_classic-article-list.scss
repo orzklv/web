@@ -1,0 +1,45 @@
+#article-list {
+	gap: 2rem;
+
+	article {
+		position: relative;
+		transition: none;
+		box-shadow: none;
+		border-radius: 0;
+		border-block-end: max(1px, 0.0625rem) solid var(--fg-muted-2);
+		background: none;
+		padding: 0;
+		padding-block-end: 1rem;
+		overflow: visible;
+
+		&:last-of-type {
+			border-block-end: none;
+		}
+
+		&:active {
+			transform: none;
+		}
+
+		& > a {
+			border-radius: 0;
+		}
+
+		&.draft,
+		&.archive,
+		&.featured,
+		&.hot,
+		&.poor {
+			background-color: transparent;
+
+			&::before {
+				display: none;
+			}
+		}
+
+		.details {
+			margin-block-start: 0;
+			border-block-start: none;
+			padding-block-start: 0;
+		}
+	}
+}

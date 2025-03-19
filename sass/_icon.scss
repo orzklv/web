@@ -1,9 +1,11 @@
-.icon {
-	-webkit-mask-size: cover;
+i.icon {
 	display: inline-block;
 	mask-size: cover;
+	background-color: currentColor;
+	width: 1rem;
+	height: 1rem;
 	font-style: normal;
 	font-variant: normal;
-	line-height: 1;
+	line-height: 0;
 	text-rendering: auto;
 }

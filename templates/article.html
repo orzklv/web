@@ -3,104 +3,143 @@
 {% block content %}
 {%- set date_format = macros_translate::translate(key="date_format", default="%B %d, %Y", language_strings=language_strings) -%}
 {%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
+{%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
+
+{%- if page.extra.toc_ordered or section.extra.toc_ordered or config.extra.toc_ordered -%}
+	{%- set list_element = "ol" -%}
+{%- else -%}
+	{%- set list_element = "ul" -%}
+{%- endif -%}
+
 <article>
-	<h1>{{ page.title }}</h1>
+	{%- if page.extra.banner -%}
+		<div id="banner-container">
+			<img id="banner" class="full-bleed{% if page.extra.banner_pixels %} pixels{% endif %}" src="{{ current_url ~ page.extra.banner }}" {% if config.markdown.lazy_async_image %}decoding="async" loading="lazy"{% endif %} />
+		</div>
+	{%- endif -%}
 
-	{%- if page.date -%}
-		<small>
-			<time datetime="{{ page.date | date(format=' %+') }}" pubdate>
-				{{ page.date | date(format=date_format, locale=date_locale) }}
-			</time>
-			{%- if page.authors -%}
-				<span>•</span>
-				<span>
-					{{ macros_translate::translate(key="author", default="Author", language_strings=language_strings) }}:
-					{{ page.authors[0] }}
-				</span>
-			{%- endif -%}
-			{%- if page.taxonomies -%}
-				{%- for name, taxon in page.taxonomies -%}
-					<ul class="tags inline">
-						{%- for item in taxon -%}
-							<li>
-								<a class="tag" href="{{ get_taxonomy_url(kind=name, name=item, lang=lang) }}">
-									{{ item }}
-								</a>
-							</li>
-						{%- endfor -%}
-					</ul>
-				{%- endfor -%}
-			{%- endif -%}
-		</small>
-		{%- if page.updated -%}
-			<small class="last-updated">
-				<time datetime="{{ page.updated | date(format=' %+') }}" pubdate>
-					{{ macros_translate::translate(key="updated", default="Last updated on", language_strings=language_strings) }}
-					{{ page.updated | date(format=date_format, locale=date_locale) }}
-				</time>
-			</small>
+	<div id="heading">
+		{%- if page.date -%}
+			<p>
+				<small>
+					<time datetime="{{ page.date | date(format=' %+') }}">
+						{{- macros_translate::translate(key="published", default="Published on", language_strings=language_strings) }}
+						{{ page.date | date(format=date_format, locale=date_locale) -}}
+					</time>
+					{%- if page.updated -%}
+						<span> {{ config.extra.separator | default(value="•") }} </span>
+						<time datetime="{{ page.updated | date(format=' %+') }}">
+							{{- macros_translate::translate(key="updated", default="Updated on", language_strings=language_strings) }}
+							{{ page.updated | date(format=date_format, locale=date_locale) -}}
+						</time>
+					{%- endif -%}
+				</small>
+			</p>
 		{%- endif -%}
-	{%- endif -%}
 
-	{%- if page.extra.archive -%}
-		<div class="statement-container archive">
-			<strong class="big">
-				<i class="icon"></i>
-				{{- macros_translate::translate(key="archived", default="Archived", language_strings=language_strings) -}}
-			</strong>
-			{{ page.extra.archive | markdown | safe }}
-		</div>
-	{%- endif -%}
+		<h1>{{ page.title }}</h1>
 
-	{%- if page.extra.trigger -%}
-		<div class="statement-container trigger">
-			<strong class="big">
-				<i class="icon"></i>
-				{{- macros_translate::translate(key="trigger_warning", default="Trigger Warning", language_strings=language_strings) -}}
-			</strong>
-			{{ page.extra.trigger | markdown | safe }}
-		</div>
-	{%- endif -%}
+		{%- if page.authors or config.extra.show_reading_time -%}
+			<p>
+				<small>
+					{%- if page.authors -%}
+						<span>{% include "partials/authors.html" -%}</span>
+						{%- if config.extra.show_reading_time -%}
+							<span> {{ config.extra.separator | default(value="•") }} </span>
+						{%- endif -%}
+					{%- endif -%}
 
-	{%- if page.extra.disclaimer -%}
-		<div class="statement-container disclaimer">
-			<strong class="big">
-				<i class="icon"></i>
-				{{-macros_translate::translate(key="disclaimer", default="Disclaimer", language_strings=language_strings) -}}
-			</strong>
-			{{ page.extra.disclaimer | markdown | safe }}
-		</div>
-	{%- endif -%}
+					{%- if config.extra.show_reading_time -%}
+						<span>{{ macros_translate::translate(key="minutes_read", number=page.reading_time, default="$NUMBER minute read", language_strings=language_strings) }}</span>
+						{%- if page.taxonomies -%}
+							<span> {{ config.extra.separator | default(value="•") }} </span>
+						{%- endif -%}
+					{%- endif -%}
+				</small>
+			</p>
+		{%- endif -%}
 
-	{%- if page.extra.toc -%}
-		<h2>{{ macros_translate::translate(key="table_of_contents", default="Table of Contents", language_strings=language_strings) }}</h2>
-		<ul>
-			{%- for h1 in page.toc -%}
-				<li>
-					<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
-					{%- if h1.children -%}
-						<ul>
-							{%- for h2 in h1.children -%}
+		{%- if page.taxonomies -%}
+			{%- for name, taxon in page.taxonomies %}
+				<ul class="tags">
+					{%-for item in taxon -%}
+						<li><a class="tag" href="{{ get_taxonomy_url(kind=name, name=item, lang=lang) }}">{{ item }}</a></li>
+					{%- endfor %}
+				</ul>
+			{%- endfor -%}
+		{%- endif %}
+	</div>
+
+	<div id="buttons-container">
+		{%- if page.extra.toc and page.toc | length > 0 -%}
+			<details id="toc" class="closable">
+				<summary title="{{ macros_translate::translate(key='table_of_contents', default='Table of Contents', language_strings=language_strings) }}"><i class="icon"></i></summary>
+				<div>
+					<strong class="title">{{ macros_translate::translate(key="table_of_contents", default="Table of Contents", language_strings=language_strings) }}</strong>
+					<div>
+						<{{ list_element }}>
+							{%- for h1 in page.toc -%}
 								<li>
-									<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+									<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+									{%- if h1.children -%}
+										<{{ list_element }}>
+											{%- for h2 in h1.children -%}
+												<li>
+													<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+												</li>
+											{%- endfor -%}
+										</{{ list_element }}>
+									{%- endif -%}
+								</li>
+							{%- endfor -%}
+						</{{ list_element }}>
+					</div>
+				</div>
+			</details>
+		{%- endif -%}
+		{%- if config.extra.show_backlinks and page.backlinks | length > 0 -%}
+			<details id="backlinks" class="closable">
+				<summary title="{{ macros_translate::translate(key='backlinks', default='Backlinks', language_strings=language_strings) }}"><i class="icon"></i></summary>
+				<div>
+					<strong class="title">{{ macros_translate::translate(key="backlinks", default="Backlinks", language_strings=language_strings) }}</strong>
+					<div>
+						<ul>
+							{%- for backlink in page.backlinks -%}
+								<li>
+									<a href="{{ backlink.permalink }}">{{ backlink.title }}</a>
 								</li>
 							{%- endfor -%}
 						</ul>
-					{%- endif -%}
-				</li>
-			{%- endfor -%}
-		</ul>
+					</div>
+				</div>
+			</details>
+		{%- endif -%}
+		<a id="go-to-top" href="#top" title="{{ macros_translate::translate(key='go_to_top', default='Go to Top', language_strings=language_strings) }}"><i class="icon"></i></a>
+		{%- if config.extra.show_share_button -%}
+			<a id="share" href="https://shareopenly.org/share/?url={{ page.permalink }}{% if page.description %}&text={{ page.description | urlencode }}{% endif %}" rel="{{ rel_attributes }}" title="{{ macros_translate::translate(key='share', default='Share', language_strings=language_strings) }}"><i class="icon"></i></a>
+		{%- endif -%}
+		{%- if config.extra.issues_url -%}
+			<a id="issue" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="{{ macros_translate::translate(key='file_an_issue', default='File an Issue', language_strings=language_strings) }}"><i class="icon"></i></a>
+		{%- endif -%}
+	</div>
+
+	{%- include "partials/statements.html" -%}
+
+	{%- if page.extra.toc_inline -%}
+		{%- include "partials/toc.html" -%}
+	{%- elif config.extra.toc_inline -%}
+		{%- include "partials/toc.html" -%}
 	{%- endif -%}
 
 	{{ page.content | safe }}
 </article>
 
 {%- if page.extra.comments.id -%}
-	{% include "partials/comments.html" ignore missing %}
+	{%- include "partials/comments.html" -%}
 {%- endif -%}
 
 {%- if page.lower or page.higher -%}
-	<hr>
+	<hr />
 	<nav id="post-nav">
 		{%- if page.higher -%}
 			<a class="post-nav-item post-nav-prev" href="{{ page.higher.permalink }}">
@@ -116,13 +155,4 @@
 		{%- endif -%}
 	</nav>
 {%- endif -%}
-
-<div class="dialog-buttons">
-	<a class="inline-button" href="#top">{{ macros_translate::translate(key="go_to_top", default="Go to Top", language_strings=language_strings) }}</a>
-	{%- if config.extra.issues_url -%}
-		<a class="inline-button colored external" href="{{ config.extra.issues_url }}">
-			{{ macros_translate::translate(key="file_an_issue", default="File an Issue", language_strings=language_strings) }}
-		</a>
-	{%- endif -%}
-</div>
 {% endblock content %}

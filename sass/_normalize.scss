@@ -123,7 +123,10 @@
 // Correct the inability to style buttons in iOS and Safari.
 //
 
-:where(button, input:is([type="button" i], [type="reset" i], [type="submit" i])) {
+:where(
+		button,
+		input:is([type="button" i], [type="reset" i], [type="submit" i])
+	) {
 	-webkit-appearance: button;
 }
 
@@ -201,7 +204,15 @@
 // Remove the inner border and padding of focus outlines in Firefox.
 //
 
-:where(button, input:is([type="button" i], [type="color" i], [type="reset" i], [type="submit" i]))::-moz-focus-inner {
+:where(
+		button,
+		input:is(
+				[type="button" i],
+				[type="color" i],
+				[type="reset" i],
+				[type="submit" i]
+			)
+	)::-moz-focus-inner {
 	border-style: none;
 	padding: 0;
 }
@@ -210,7 +221,15 @@
 // Restore the focus outline styles unset by the previous rule in Firefox.
 //
 
-:where(button, input:is([type="button" i], [type="color" i], [type="reset" i], [type="submit" i]))::-moz-focusring {
+:where(
+		button,
+		input:is(
+				[type="button" i],
+				[type="color" i],
+				[type="reset" i],
+				[type="submit" i]
+			)
+	)::-moz-focusring {
 	outline: 1px dotted ButtonText;
 }
 

@@ -1,23 +1,25 @@
 +++
-insert_anchor_links = "right"
+insert_anchor_links = "left"
 title = "Home"
 +++
 
 # Orzklv's Dark Voyage
 
 {% crt() %}
+
 ```
-@@@@@@@@@@   @@@:@@@@@@@@:::@@@@ @@@@@@@   @@@@:@@@@@@@@:::@@@@ @@@@@@
-@@@@@@@@@@ @@@:::@@@@@@@@:@@@@   @@@@@@@  @@@:::@@@@@@@@:@@@@   @@@@@@
-@@@@@@@@@:::::::::::@@@@            @@@@:::::::::::@@@@            @@@
-@@@@@@@::::::::::::@@@            @@@@:::::::::::#@@@            @@@@:
-@@@@@::::@:::::::@@@@   *        @@@::::::::::::@@@+   @        @@@:::
-@@@::::@@@:::::::@@    @@        @::::@@::::::::@@    @@        @::::@
-@@@@@@@@@@@@@::::@@@@@@@@@@@@   @@@@@@@@@@@@::::@@@@@@@@@@@    @@@@@@@
-@@@@@@@@@@@::::@@@@@@@@@@@@    @@@@@@@@@@@::::@@@@@@@@@@@@   #@@@@@@@@
-@@@@@@@@@@:::@@@@@@@@@@@@    @@@:@@@@@@@::::@@@@@@@@@@@@    @@@:@@@@@@
-@@@@@@@@@@:@@@@  @@@@@@@@  @@@@::@@@@@@@::@@@@  @@@@@@@@  @@@@::@@@@@@
+@@@@@@@@@   @@@:@@@@@@@@:::@@@@ @@@@@@@   @@@@:@@@@@@@@:::@@@@ @@@@@@
+@@@@@@@@@ @@@:::@@@@@@@@:@@@@   @@@@@@@  @@@:::@@@@@@@@:@@@@   @@@@@@
+@@@@@@@@:::::::::::@@@@            @@@@:::::::::::@@@@            @@@
+@@@@@@::::::::::::@@@            @@@@:::::::::::#@@@            @@@@:
+@@@@::::@:::::::@@@@   *        @@@::::::::::::@@@+   @        @@@:::
+@@::::@@@:::::::@@    @@        @::::@@::::::::@@    @@        @::::@
+@@@@@@@@@@@@::::@@@@@@@@@@@@   @@@@@@@@@@@@::::@@@@@@@@@@@    @@@@@@@
+@@@@@@@@@@::::@@@@@@@@@@@@    @@@@@@@@@@@::::@@@@@@@@@@@@   #@@@@@@@@
+@@@@@@@@@:::@@@@@@@@@@@@    @@@:@@@@@@@::::@@@@@@@@@@@@    @@@:@@@@@@
+@@@@@@@@@:@@@@  @@@@@@@@  @@@@::@@@@@@@::@@@@  @@@@@@@@  @@@@::@@@@@@
 ```
+
 {% end %}
 
 I tend to keep personal blog but most of the time I end up forgetting about it and later I come back to rewrite it from scratch and keep it going. However, this time, I decided to make it different to minimze hustle to focus more on content instead of website itself (hopefully). Yes, no more Nextjs cancer and over engineered stuff. Just my pure & raw thoughts of mine in a simple static site generator.
@@ -41,7 +43,7 @@ I mean, that's a statement, not a promise, you know what I'm sayin' :D Ye, I'm s
 
 ## What's this blog about?
 
-Mainly my tech career stuff and experiments that I document after ending up wasting hours of time on it. I hope it's gonna be useful at some point for people and humble learners. I'll try to recover my old posts from old blogs but can't promise anything. Also, I decided to add uzbek localization support to create more resources for fellow developers with language barrier~ **Uzbek Developers life matter!**. 
+Mainly my tech career stuff and experiments that I document after ending up wasting hours of time on it. I hope it's gonna be useful at some point for people and humble learners. I'll try to recover my old posts from old blogs but can't promise anything. Also, I decided to add uzbek localization support to create more resources for fellow developers with language barrier~ **Uzbek Developers life matter!**.
 
 ## Credits
 

@@ -3,8 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    # nixpkgs.url = "github:NixOS/nixpkgs/24.05";
-
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -19,12 +17,17 @@
       in
       {
         # Nix script formatter
-        formatter = pkgs.nixpkgs-fmt;
+        formatter = pkgs.alejandra;
 
         devShells.default = pkgs.mkShell rec {
           name = "webnya";
 
           packages = with pkgs; [
+            nixd
+            alejandra
+            statix
+            deadnix
+
             zola
             lolcat
             figlet
@@ -41,18 +44,18 @@
               figlet -f slant "${name}" | lolcat
               printf "\n\n"
 
-              zola serve &
-              SERVER_PID=$!
+              # zola serve &
+              # SERVER_PID=$!
 
-              finish()
-              {
-                printf "\nTime to say goodbye, Nya!\n" | lolcat
+              # finish()
+              # {
+              #   printf "\nTime to say goodbye, Nya!\n" | lolcat
 
-                # Kill the server
-                kill $SERVER_PID
-              }
+              #   # Kill the server
+              #   kill $SERVER_PID
+              # }
 
-              trap finish EXIT
+              # trap finish EXIT
             '';
         };
       });

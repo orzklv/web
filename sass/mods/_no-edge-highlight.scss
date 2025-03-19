@@ -1,0 +1,7 @@
+@import "../_variables.scss";
+
+@include theme-variables using ($theme) {
+	@if $theme == "light" {
+		--edge-highlight: 0 0 transparent;
+	}
+}

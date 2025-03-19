@@ -1,11 +1,12 @@
 +++
-insert_anchor_links = "right"
+insert_anchor_links = "left"
 title = "Asosiy"
 +++
 
 # Orzklv ning Qora Sayohati
 
 {% crt() %}
+
 ```
 @@@@@@@@@@   @@@:@@@@@@@@:::@@@@ @@@@@@@   @@@@:@@@@@@@@:::@@@@ @@@@@@
 @@@@@@@@@@ @@@:::@@@@@@@@:@@@@   @@@@@@@  @@@:::@@@@@@@@:@@@@   @@@@@@
@@ -18,6 +19,7 @@ title = "Asosiy"
 @@@@@@@@@@:::@@@@@@@@@@@@    @@@:@@@@@@@::::@@@@@@@@@@@@    @@@:@@@@@@
 @@@@@@@@@@:@@@@  @@@@@@@@  @@@@::@@@@@@@::@@@@  @@@@@@@@  @@@@::@@@@@@
 ```
+
 {% end %}
 
 Men odatda shaxsiy blog yuritaman, lekin ko’pincha uni unutib qo’yaman va keyinroq uni boshqatdan yozib, davom ettiraman. Biroq, bu safar, veb-saytning o’ziga emas, kontentga ko’proq e’tibor qaratish orqali boshqacha qilishga qaror qildim. Ha, endi Nextjs va ortiqcha murakkab narsalar bo'lmaydi. Faqat oddiy statik sayt generatorida qog'ozda toza fikrlarim.
