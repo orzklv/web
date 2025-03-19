@@ -1,3 +1,5 @@
-public/
+# Nix
+result
 
-nohup.out
+# Zola
+public/

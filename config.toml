@@ -2,6 +2,8 @@ title = "Dark Voyage"
 base_url = "https://orzklv.uz"
 description = "Orzklv's dark voyage & stories."
 
+theme = "duckquill"
+
 compile_sass = true
 minify_html = true
 generate_feeds = true
@@ -165,16 +167,18 @@ show_repo = true
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
   { url = "@/blog/_index.md", name = "Blog" },
-  # { url = "@/demo/index.md", name = "Demo" },
-  { url = "https://github.com/sponsors/orzklv", name = "Sponsor" },
+  { name = "Links", menu = [
+    { url = "https://live.orzklv.uz", name = "Live" },
+    { url = "https://github.com/sponsors/orzklv", name = "Sponsor" },
+  ] },
+
 ]
 
 [extra.footer]
 # Links used in the footer.
 # Same as the nav ones.
 links = [
-  { url = "@/blog/_index.md", name = "Blog" },
-  # { url = "@/demo/index.md", name = "Demo" },
+  { url = "https://live.orzklv.uz", name = "Live" },
   { url = "https://github.com/sponsors/orzklv", name = "Sponsor" },
 ]
 # Social links in the footer.
@@ -221,4 +225,4 @@ show_qr = true
 # Display outlines around all elements for debugging purposes
 layout = false
 # Don't load any styles for debugging purposes
-no_styles = true
+no_styles = false

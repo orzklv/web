@@ -6,57 +6,41 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, flake-utils, ... } @ inputs:
-    flake-utils.lib.eachDefaultSystem (system:
-      let
-        pkgs = import nixpkgs {
-          inherit system;
-          overlays = [ ];
-          config.allowUnfree = true;
-        };
-      in
-      {
-        # Nix script formatter
-        formatter = pkgs.alejandra;
+  outputs = {
+    nixpkgs,
+    flake-utils,
+    ...
+  }:
+    flake-utils.lib.eachDefaultSystem (system: let
+      pkgs = import nixpkgs {
+        inherit system;
+        overlays = [];
+        config.allowUnfree = true;
+      };
+    in {
+      # Nix script formatter
+      formatter = pkgs.alejandra;
 
-        devShells.default = pkgs.mkShell rec {
-          name = "webnya";
+      # Output compiled website
+      # nix build ".?submodules=1#" -L
+      packages.default = pkgs.runCommand "public" {} ''
+        cd ${./.}
+        ${pkgs.lib.getExe pkgs.zola} build --drafts -o $out
+      '';
 
-          packages = with pkgs; [
-            nixd
-            alejandra
-            statix
-            deadnix
+      devShells.default = pkgs.mkShell rec {
+        name = "webnya";
 
-            zola
-            lolcat
-            figlet
-          ];
+        packages = with pkgs; [
+          # Hail Nix
+          nixd
+          alejandra
+          statix
+          deadnix
 
-          shellHook =
-            let
-              icon = "f121";
-            in
-            ''
-              export PS1="$(echo -e '\u${icon}') {\[$(tput sgr0)\]\[\033[38;5;228m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]} (${name}) \\$ \[$(tput sgr0)\]"
-
-              # Show some nyanny text
-              figlet -f slant "${name}" | lolcat
-              printf "\n\n"
-
-              # zola serve &
-              # SERVER_PID=$!
-
-              # finish()
-              # {
-              #   printf "\nTime to say goodbye, Nya!\n" | lolcat
-
-              #   # Kill the server
-              #   kill $SERVER_PID
-              # }
-
-              # trap finish EXIT
-            '';
-        };
-      });
+          # Zola
+          zola
+        ];
+      };
+    });
 }

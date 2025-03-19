@@ -21,12 +21,17 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install Nix on da machine
+        uses: DeterminateSystems/nix-installer-action@main
+
+      - name: Use nix cache via GitHub
+        uses: DeterminateSystems/magic-nix-cache-action@main
 
       - name: Build website
-        uses: shalzz/zola-deploy-action@v0.19.1
-        env:
-          BUILD_ONLY: true
-          # BUILD_FLAGS: --drafts
+        run: nix run nixpkgs#zola -- build --drafts
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

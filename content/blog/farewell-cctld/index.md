@@ -12,11 +12,16 @@ tags = ["Work", "Uzinfocom"]
 [extra]
 # banner = "banner.webp"
 toc = true
+
+[extra.comments]
+host = "toot.community"
+user = "sungsphinx"
+id = "111789185826519979"
 +++
 
 ## The phone call
 
-It's **April 22nd, 2022**, if I'm not mistaken, it was afternoon. I was doing some open source stuff at home living of my passive incomes. Out of nowhere, I
+It's **April 22nd, 2022**, if I'm not mistaken, it was afternoon. I was doing some open source stuff at home living off of my passive incomes. Out of nowhere, I
 got a call from an unknown phone number. Well, I was busy that time, so delayed it and kept doing it until I got some free time and called that number back.
 She took the phone and oh men, I still remember her saying: "I'm calling from Uzinfocom, would you like to get a job at our company?". The thing is, I was
 running a whole Linux community by the time and I was actively seeking for someone or a company to leave my community at and later move to other country

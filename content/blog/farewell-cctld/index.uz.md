@@ -12,6 +12,11 @@ tags = ["Work", "Uzinfocom"]
 [extra]
 # banner = "banner.webp"
 toc = true
+
+[extra.comments]
+host = "toot.community"
+user = "sungsphinx"
+id = "111789185826519979"
 +++
 
 ## The phone call
