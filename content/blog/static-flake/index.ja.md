@@ -12,6 +12,11 @@ tags = ["Nix", "Flake", "DevOps"]
 [extra]
 banner = "banner.webp"
 toc = true
+
+# [extra.comments]
+# host = "toot.community"
+# user = "sungsphinx"
+# id = "111789185826519979"
 +++
 
 ## To docker, or not to docker
