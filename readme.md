@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-    <img align="center" src="https://img.shields.io/github/languages/top/orzklv/website?style=flat&logo=nixos&logoColor=ffffff&labelColor=242424&color=242424" alt="Top Used Language">
-    <a href="https://github.com/orzklv/website/actions/workflows/deploy.yml"><img align="center" src="https://img.shields.io/github/actions/workflow/status/orzklv/website/deploy.yml?style=flat&logo=github&logoColor=ffffff&labelColor=242424&color=242424" alt="Deploy CI"></a>
+    <img align="center" src="https://img.shields.io/github/languages/top/orzklv/web?style=flat&logo=nixos&logoColor=ffffff&labelColor=242424&color=242424" alt="Top Used Language">
+    <a href="https://github.com/orzklv/web/actions/workflows/deploy.yml"><img align="center" src="https://img.shields.io/github/actions/workflow/status/orzklv/web/deploy.yml?style=flat&logo=github&logoColor=ffffff&labelColor=242424&color=242424" alt="Deploy CI"></a>
 </p>
 
 ## About
