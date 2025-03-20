@@ -14,8 +14,8 @@ banner = "banner.webp"
 toc = true
 
 # [extra.comments]
-# host = "toot.community"
-# user = "sungsphinx"
+# host = "social.floss.uz"
+# user = "orzklv"
 # id = "111789185826519979"
 +++
 

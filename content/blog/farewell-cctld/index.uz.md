@@ -1,50 +1,64 @@
 +++
 authors = ["Orzklv"]
-title = "Farewell ccTLD RnD"
-description = "Experiences and story of mine working at ccTLD Uzinfocom"
+title = "Alvido, ccTLD RnD"
+description = "Uzinfocom ccTLD'dagi ish tajribam va hikoyalarim"
 date = 2024-09-27
-updated = "2024-09-27"
+updated = "2025-03-20"
 draft = true
 
 [taxonomies]
 tags = ["Work", "Uzinfocom"]
 
 [extra]
-# banner = "banner.webp"
+banner = "banner.webp"
 toc = true
 
 # [extra.comments]
-# host = "toot.community"
-# user = "sungsphinx"
+# host = "social.floss.uz"
+# user = "orzklv"
 # id = "111789185826519979"
 +++
 
-## The phone call
+## Qo'ng'iroq
 
-It's **April 22nd, 2022**, if I'm not mistaken, it was afternoon. I was doing some open source stuff at home living of my passive incomes. Out of nowhere, I
-got a call from an unknown phone number. Well, I was busy that time, so delayed it and kept doing it until I got some free time and called that number back.
-She took the phone and oh men, I still remember her saying: "I'm calling from Uzinfocom, would you like to get a job at our company?". The thing is, I was
-running a whole Linux community by the time and I was actively seeking for someone or a company to leave my community at and later move to other country
-without any worry, so her offer got me interested. I responded: "Intersting, alright!" afterwards she said: "Can you come to our office at %#&^%$#@#$"
-aaaand... yeah... this call was the the beginning of everything.
+Adashmasam, 2022-yilning 22-aprel kuni tushdan keyin edi, uyda passiv daromadlarim hisobiga yashab, open source loyihalar bilan shug‘ullanib yurgan paytim edi. Birdan noma'lum raqamdan qo'ng'iroq bo'ldi. O'sha paytda band bo‘lganim uchun javob bermay, keyinroq bo‘sh vaqtimda qayta qo'ng'iroq qildim. Telefonni olgan ayolning aytgan so'zlari hozir ham esimda: "Men Uzinfocom’dan qo'ng'iroq qilyapman, bizning kompaniyamizda ishlashni xohlaysizmi?" O'sha paytda Linux hamjamiyatini boshqarardim va boshqa mamlakatga ko'chish haqida o‘ylab yurganim sababli, o‘z jamoamni kimdir yoki kompaniyaga topshirishni rejalashtirayotgan edim. Shu sababli bu taklif meni juda qiziqtirdi va men: "Qiziq, mayli!" deb javob berdim. Shundan so'ng u aytdi: "Ofisimizga kelolasizmi, manzilimiz %#&^%$#@#$" va… ha… aynan shu qo'ng'iroq bilan hammasi boshlandi.
 
-## It's job interview, isn't it?
+## Bu intervyu-ku, to‘g‘rimi?
 
-Right after that, I got a message telling me to come to office right after that day. The day passed and I was getting prepared for the interview. Asked for
-a location on Telegram and drove my good old Nexia 3 to the location. It took me additional hour to find the place after getting there, cuz I mistook the
-turn late and ended up at the other side of company. Called to her and somehow reached to the destination. I was greated there by [Galina], **the best HR woman
-I've ever seen**. She led me to HR room and introduced the company, after that, she told me that we will be waiting for the CEO of the company to finish the
-session. Got my mac and started doing my own thing without even noticing how 5 hours flew away until he crossed the corridor and called us to his room.
-I'm gonna be honest that it was for me the first time when I fathom how CEO himself spoke to people whom they were hiring. Personally, it felt for me as _if
-company was trying to be very careful whom they were hiring to the point that even CEO was participating the process_.
+Shundan keyin darhol menga ertasi kuni ofisga kelishim haqida xabar yuborildi. Kun o'tdi va men intervyuga tayyorgarlik ko‘ra boshladim. Telegram orqali manzilni so'rab olib, o'zimni yaxshigina Nexia 3 avtomobilimda yo'lga chiqdim. Yetib borgach, burilishni o'tkazib yuborganim sabab yana bir soat atrofida aylanib yurib, joyni izlashimga to‘g‘ri keldi va keyin bilsam, kompaniyaning boshqa tomonidan chiqib qolgan ekanman. Unga qo'ng'iroq qilib, nihoyat manzilni topdim va u yerda meni – [Galina] ismli, tajribamda ko'rgan eng zo'r HR iliq kutib oldi. U meni HR xonasiga olib bordi va kompaniya haqida tanishtirdi, keyin kompaniya CEO'sining uchrashuvi boshlanishini kutishimizni aytdi. MacBook'imni olib, o'z ishlarim bilan band bo‘lganimda, CEO koridordan o'tib, bizni xonasiga chaqirgungacha qanday qilib 5 soat o'tganini sezmay qoldim. Men uchun bu holat hayratlanarli edi, chunki CEO darajasidagi odamning ishga olinayotgan xodimlar bilan shaxsan gaplashishi juda kam uchraydigan holat edi. Nazarimda, kompaniya ishga qabul qilishda shu qadar ehtiyotkor ediki, jarayonga CEO ham shaxsan o'zi ishtirok etayotganday edi.
 
-> Before Uzinfocom, the highest position person I spoke to on HR screening was either HR person him/her self or team lead whom they were looking developer for.
+> Uzinfocom’dan oldin HR intervyusida gaplashgan eng yuqori lavozimli odam yoki HRning o‘zi, yoki dasturchi izlayotgan jamoaning rahbari bo‘lardi.
 
-The dialogue context reached to salary and I got hired at Uzinfocom and I was like: **"That's it?! Technical interview where?! Why it was so DAMN FAST???"**.
+Suhbat ish haqiga yetib keldi va keyin meni Uzinfocom'ga qabul qilishdi. Ichimda: **"Tamommi?! Texnik intervyu qayerda?! Nega bunchalik TEZ bo'ldi???"** degan fikr meni tinch qo'ymas edi.
 
-## First day
+## Birinchi kun
 
-I've been asked to start working as soon as I bring necessary documents. 3 or 4 days passed by and I came to office after getting introduced to a group of
-people at room 223. They all were friendly and greeted me warmly. I even mistook tech lead as the head of department, you know... shit happens, he-he :D.
+Kerakli hujjatlarni tayyorlashim bilan darhol ish boshlashimni aytishdi. 3-4 kun o'tdi va 223-xonadagi odamlar bilan tanishtirilish uchun ofisga keldim. Ularning hammasi do'stona va iliq kutib olishdi. Men texnik yetakchini bo‘lim boshlig‘i bilan adashtirib yubordim, bilasiz-ku... shunaqa bo‘lib turadi `:D`. Hali qiladigan biror vazifam bo‘lmagani uchun xonaning bir burchagida o‘z loyiham bo‘lgan Xinux'ning kodlarini tekshirib o'tirdim. Bir muddat o'tgach, texnik yetakchi meni qiziqtirib qoldi va tipik dasturchi savollarini bera boshladi:
+
+- Qanday texnologiyalarni bilasiz?
+- Qaysi dasturlash tillarini ishlatasiz?
+- Eng sevimli dasturlash tilingiz nima?
+
+Texnik suhbat davomida odamlar aytganidek mayda-chuyda narsalarni titkilaydigan odamlar emas ekanligini sezdim. Bilasiz-ku, hukumat odamlari zerikarli va sust bo‘ladi, degan stereotiplar mavjud. Ammo bu yerda mening bu fikrlarim butunlay noto'g'ri ekanligini ko‘rdim va juda hayron qoldim.
+
+## RDAP
+
+**Ushbu bo‘lim maxvfiylik talablariga muvofiq ma'muriyat tomonidan tasdiqlanishi kerak**
+
+## Quyosh chiqishi!
+
+**Ushbu bo‘lim maxvfiylik talablariga muvofiq ma'muriyat tomonidan tasdiqlanishi kerak**
+
+## Qayerda xato qildik?
+
+**Ushbu bo‘lim maxvfiylik talablariga muvofiq ma'muriyat tomonidan tasdiqlanishi kerak**
+
+## Vay... Ming bor uzr...
+
+**Ushbu bo‘lim maxvfiylik talablariga muvofiq ma'muriyat tomonidan tasdiqlanishi kerak**
+
+## Tirik murda
+
+**Ushbu bo‘lim maxvfiylik talablariga muvofiq ma'muriyat tomonidan tasdiqlanishi kerak**
 
 [Galina]: https://www.linkedin.com/in/galina-ahmedova-76b901231

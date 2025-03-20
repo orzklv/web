@@ -1,50 +1,71 @@
 +++
 authors = ["Orzklv"]
-title = "Farewell ccTLD RnD"
-description = "Experiences and story of mine working at ccTLD Uzinfocom"
+title = "さようなら ccTLD RnD"
+description = "Uzinfocom の ccTLD で働いた経験と物語"
 date = 2024-09-27
-updated = "2024-09-27"
+updated = "2025-03-20"
 draft = true
 
 [taxonomies]
 tags = ["Work", "Uzinfocom"]
 
 [extra]
-# banner = "banner.webp"
+banner = "banner.webp"
 toc = true
 
 # [extra.comments]
-# host = "toot.community"
-# user = "sungsphinx"
+# host = "social.floss.uz"
+# user = "orzklv"
 # id = "111789185826519979"
 +++
 
-## The phone call
+## 電話
 
-It's **April 22nd, 2022**, if I'm not mistaken, it was afternoon. I was doing some open source stuff at home living of my passive incomes. Out of nowhere, I
-got a call from an unknown phone number. Well, I was busy that time, so delayed it and kept doing it until I got some free time and called that number back.
-She took the phone and oh men, I still remember her saying: "I'm calling from Uzinfocom, would you like to get a job at our company?". The thing is, I was
-running a whole Linux community by the time and I was actively seeking for someone or a company to leave my community at and later move to other country
-without any worry, so her offer got me interested. I responded: "Intersting, alright!" afterwards she said: "Can you come to our office at %#&^%$#@#$"
-aaaand... yeah... this call was the the beginning of everything.
+間違いなければ、それは 2022年4月22日 の午後だった。当時私は自宅でオープンソース関連の作業をしており、パッシブインカムで生活していた。突然、知らない番号から電話がかかってきた。当時忙しかったため、
+その場では取らず、後で空いた時間に掛け直した。その時電話に出た彼女が言った言葉を今でもはっきり覚えている。「こちらUzinfocomですが、当社で働きませんか？」。当時私はLinuxコミュニティを運営していて、
+海外に引っ越すことを考えていたため、自分が管理するコミュニティを誰かに引き継ぎたいと思っていた。そのため、このオファーに興味を持った私は「面白そうですね！」と答えた。その後、彼女は「
+オフィスにお越しいただけますか？住所は %#&^%$#@#$ です」と伝えてくれた。そして……そう、この電話がすべての始まりだった。
 
-## It's job interview, isn't it?
+面接ですよね？
 
-Right after that, I got a message telling me to come to office right after that day. The day passed and I was getting prepared for the interview. Asked for
-a location on Telegram and drove my good old Nexia 3 to the location. It took me additional hour to find the place after getting there, cuz I mistook the
-turn late and ended up at the other side of company. Called to her and somehow reached to the destination. I was greated there by [Galina], **the best HR woman
-I've ever seen**. She led me to HR room and introduced the company, after that, she told me that we will be waiting for the CEO of the company to finish the
-session. Got my mac and started doing my own thing without even noticing how 5 hours flew away until he crossed the corridor and called us to his room.
-I'm gonna be honest that it was for me the first time when I fathom how CEO himself spoke to people whom they were hiring. Personally, it felt for me as _if
-company was trying to be very careful whom they were hiring to the point that even CEO was participating the process_.
+そのすぐ後に、翌日オフィスに来るようメッセージが届いた。一日が経ち、私は面接の準備を整え、Telegramで場所を尋ね、懐かしいNexia 3に乗って指定された場所へ向かった。しかし到着後、道を間違えてしまい、
+会社の反対側に出てしまった。彼女に電話を掛けてなんとか辿り着くと、そこでさん――これまで話したHR担当の中で最高の女性――が私を温かく迎えてくれた。彼女は私をHRルームへ案内し、会社の説明をした後、
+「CEOのミーティングが終わるのを待つことになります」と言った。私はMacを取り出して自分の作業を始めたが、CEOが廊下を横切り、部屋に呼ばれるまでの5時間があっという間に過ぎていた。CEO自らが面接に参加するのを見て、
+私は非常に驚いた。それまでHRの面接はHR担当者かチームリーダー程度しか関わらないものだと思っていたためだ。会社が非常に慎重に採用を行っていると感じさせられた。
 
-> Before Uzinfocom, the highest position person I spoke to on HR screening was either HR person him/her self or team lead whom they were looking developer for.
+> Uzinfocomに来る前は、HR面接で話した最も役職の高い人はHR担当者自身か、募集していたチームリーダーだった。
 
-The dialogue context reached to salary and I got hired at Uzinfocom and I was like: **"That's it?! Technical interview where?! Why it was so DAMN FAST???"**.
+会話が給与の話に及び、すぐに採用が決定した。私は「これで終わり？技術面接はどこ？なぜこんなに早いんだ？」という気持ちだった。
 
-## First day
+初日
 
-I've been asked to start working as soon as I bring necessary documents. 3 or 4 days passed by and I came to office after getting introduced to a group of
-people at room 223. They all were friendly and greeted me warmly. I even mistook tech lead as the head of department, you know... shit happens, he-he :D.
+必要書類を揃えたらすぐに勤務を開始するよう言われ、3、4日後に223号室に行き、チームのメンバーに紹介された。皆フレンドリーで温かく迎えてくれた。技術リーダーを部門長と勘違いするミスもしてしまったが、まあ、
+そんなこともあるだろう :D。まだ特にタスクがなかったため、自分のプロジェクトであるXinuxのコードレビューを静かに行っていた。しばらくすると、技術リーダーが私に興味を持ち、典型的なプログラマーへの質問をしてきた。
+
+- どんな技術を知っていますか？
+- どんな言語を使っていますか？
+- 好きなプログラミング言語は何ですか？
+
+いろいろな技術の話をしているうちに、政府関連の人々にありがちな「退屈で情熱がない」というステレオタイプが覆されたことに驚いた。
+
+## RDAP
+
+この部分はNDAにより、管理者からの確認が必要
+
+## 昇る太陽！
+
+この部分はNDAにより、管理者からの確認が必要
+
+## どこで間違えたのか？
+
+この部分はNDAにより、管理者からの確認が必要
+
+## あちゃ… おっと… ごめんなさい…
+
+この部分はNDAにより、管理者からの確認が必要
+
+## 死んだゾンビ
+
+この部分はNDAにより、管理者からの確認が必要
 
 [Galina]: https://www.linkedin.com/in/galina-ahmedova-76b901231
