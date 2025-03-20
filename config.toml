@@ -160,7 +160,7 @@ show_feed = true
 # Whether to show the manual theme switcher in the nav
 show_theme_switcher = true
 # Whether to show the link to the source repository in the nav
-show_repo = true
+show_repo = false
 # Links used in the nav.
 # For local files use same link format as in Markdown,
 # i.e. "@/blog/_index.md".
@@ -169,6 +169,7 @@ links = [
   { url = "@/blog/_index.md", name = "Blog" },
   { name = "Links", menu = [
     { url = "https://live.orzklv.uz", name = "Live" },
+    { url = "https://github.com/orzklv", name = "GitHub" },
     { url = "https://github.com/sponsors/orzklv", name = "Sponsor" },
   ] },
   { name = "Socials", menu = [
