@@ -14,9 +14,9 @@ date_locale = "ja_JP"
 # Menu items.
 # Should match the names in config.extra.nav.links and config.extra.footer.links.
 Blog = "ブログ"
-Links = "Links"
-Live = "Live"
-Socials = "Socials"
+Links = "リンク"
+Live = "ライブ"
+Socials = "ソーシャル"
 Repo = "リポジトリ"
 Sponsor = "スポンサー"
 
