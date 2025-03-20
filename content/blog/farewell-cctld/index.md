@@ -13,10 +13,10 @@ tags = ["Work", "Uzinfocom"]
 banner = "banner.webp"
 toc = true
 
-# [extra.comments]
-# host = "social.floss.uz"
-# user = "orzklv"
-# id = "111789185826519979"
+[extra.comments]
+host = "social.floss.uz"
+user = "orzklv"
+id = "114192060911621604"
 +++
 
 ## The phone call
