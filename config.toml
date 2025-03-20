@@ -175,6 +175,7 @@ links = [
     { url = "https://social.floss.uz/home", name = "Mastodon" },
     { url = "https://matrix.to/#/@orzklv:floss.uz", name = "Matrix" },
     { url = "https://discord.gg/JkXFQpScFj", name = "Discord" },
+    { url = "https://www.linkedin.com/in/orzklv/", name = "LinkedIn" },
   ] },
 ]
 
