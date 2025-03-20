@@ -171,7 +171,11 @@ links = [
     { url = "https://live.orzklv.uz", name = "Live" },
     { url = "https://github.com/sponsors/orzklv", name = "Sponsor" },
   ] },
-
+  { name = "Socials", menu = [
+    { url = "https://social.floss.uz/home", name = "Mastodon" },
+    { url = "https://matrix.to/#/@orzklv:floss.uz", name = "Matrix" },
+    { url = "https://discord.gg/JkXFQpScFj", name = "Discord" },
+  ] },
 ]
 
 [extra.footer]
