@@ -290,7 +290,7 @@ pkgs.stdenvNoCC.mkDerivation {
 }
 ```
 
-すでに NixOS が動作していて、nginx の設定もあると仮定しましょう。nginx に、特定のドメイン名のもとでこの静的ウェブサイトをホスティングさせたい場合、基本的なテンプレートは以下のようになります**（nixos.wiki から引用）**：
+すでに NixOS が動作していて、nginx の設定もあると仮定しましょう。nginx に、特定のドメイン名のもとでこの静的ウェブサイトをホスティングさせたい場合、基本的なテンプレートは以下のようになります **（nixos.wiki から引用）**：
 
 ```nix
 services.nginx.virtualHosts."myhost.org" = {
