@@ -13,6 +13,10 @@ tags = ["Nix", "Flake", "DevOps"]
 banner = "banner.webp"
 toc = true
 
+disclaimer = """
+- This tutorial expects from reader to have some experience on NixOS.
+"""
+
 [extra.comments]
 host = "social.floss.uz"
 user = "orzklv"
@@ -266,20 +270,20 @@ pkgs.stdenvNoCC.mkDerivation {
 }
 ```
 
-Build it again and it will finish it very fast!
+Build it again and it will finish very fast!
 
 ## Usage
 
-As this tutorial expects you to have some experience on NixOS and on production NixOS configuration used by a server, you may want to go through [Nginx wiki page](https://nixos.wiki/wiki/Nginx) at [nixos.wiki](https://nixos.wiki) to get more idea on hosting websites on NixOS via Nginx.
+As this tutorial expects you to have some experience on NixOS and a production NixOS configuration used by a server, you may want to go through [Nginx wiki page](https://nixos.wiki/wiki/Nginx) at [nixos.wiki](https://nixos.wiki) to get more idea on hosting websites on NixOS via Nginx.
 
-First, we need to add our static website repository to the inputs section of our working nixos configurations. Remember adding `flake-utils` to inputs? The process is pretty same, but we need to change link to repo here:
+First, we need to add our static website repository to the inputs section of our working nixos configurations. Remember adding `flake-utils` to inputs? The process is pretty same, but we need to change link to the repo here:
 
 ```nix
 {
   description = "My NixOS configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
 
     # Yup, just like that
     our-website.url = "github:someone/ourweb";
@@ -289,33 +293,33 @@ First, we need to add our static website repository to the inputs section of our
 }
 ```
 
-Assuming you have a working NixOS machine with some nginx config in it. We want to tell nginx to host our static website under a certain domain name, so basic template for this would be:
+Assuming you have a working NixOS machine with some nginx config in it, we want to tell nginx to host our static website under a certain domain name, so basic template for this would be like this **(borrowed from nixos.wiki)**:
 
 ```nix
 services.nginx.virtualHosts."myhost.org" = {
-    addSSL = true;
-    enableACME = true;
-    root = "/var/www/myhost.org";
+  addSSL = true;
+  enableACME = true;
+  root = "/var/www/myhost.org";
 };
 ```
 
-So, now we need to change domain of our website to something else like `myblog.com` and tell nix that `root` is packaged version of our website that looks something like this:
+So, now we need to change domain of our website to something else, like `myblog.com` and tell nix that `root` is packaged version of our website that looks something like this:
 
 ```nix
 # Assuming you have `pkgs` and `inputs` exposed in this part of configuration
 services.nginx.virtualHosts."myblog.com" = {
-    addSSL = true;
-    enableACME = true;
-    root = inputs.our-website.packages.${pkgs.stdenv.hostPlatform.system}.default;
+  addSSL = true;
+  enableACME = true;
+  root = inputs.our-website.packages.${pkgs.stdenv.hostPlatform.system}.default;
 };
 ```
 
 This will build our package and store contents inside `/nix/store/blablasomehashsum-ourweb-0.1.0` and then nix will point root for our `myblog.com` website to the very same location automatically.
 
-Next, we apply the configuration, you may mention nix generation some `acme-myblog.com` services as nixos automatically handles all certification generation itself and make sure it works just as expected. Upon completion, open your browser with `myblog.com` address and you'll see your website.
+Next, we apply the configuration, you may mention nix generating `acme-myblog.com.service` like services as nixos automatically handles all certification generation by itself and make sure everything works just as expected without having to touch anything. Upon completion, open your browser with `myblog.com` address and you'll see your website.
 
 ## Conclusion
 
-This tutorial also includes very basics of packaging on nix, so I can assure you that you got fundamentals after completing this tutorial. I'll write more of these posts as soon as I'll have more time. Writing a post is quite fun and not a problem for me, its just I have hard time translating every post to 2 other language after finishing it which ends up taking waaaaay lotta time. If only I had someone to help with that, I could have published more posts as soon as possible.
+This tutorial also includes very basics of packaging on nix, so I can assure you that you got fundamentals after completing this tutorial. I'll write more of these posts as soon as I'll have more time. Writing a post is quite fun and not a problem for me, its just I have hard time translating every post to 2 other languages after finishing it which ends up taking waaaaay lotta time. If only I had someone to help with that, I could have published more posts as soon as possible.
 
 With that being said, I wish you all good luck in your NixOS journey and hopefully this guide will become beginning of your great packaging journey!
