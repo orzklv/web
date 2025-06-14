@@ -1,7 +1,7 @@
 +++
-authors = ["Orzklv"]
 title = "Farewell ccTLD RnD"
 description = "Experiences and story of mine working at ccTLD Uzinfocom"
+authors = ["Orzklv"]
 date = 2024-09-27
 updated = "2025-03-20"
 draft = true

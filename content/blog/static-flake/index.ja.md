@@ -1,7 +1,7 @@
 +++
-authors = ["Orzklv"]
 title = "Static website via flake"
 description = "Using docker for hosting static website is overkill, so why not give nix flake a chance?"
+authors = ["Orzklv"]
 date = 2024-09-27
 updated = "2024-09-27"
 draft = true
@@ -13,10 +13,10 @@ tags = ["Nix", "Flake", "DevOps"]
 banner = "banner.webp"
 toc = true
 
-# [extra.comments]
-# host = "social.floss.uz"
-# user = "orzklv"
-# id = "111789185826519979"
+[extra.comments]
+host = "social.floss.uz"
+user = "orzklv"
+id = "114683093625327778"
 +++
 
 ## To docker, or not to docker
