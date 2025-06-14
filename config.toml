@@ -168,25 +168,24 @@ show_repo = false
 links = [
   { url = "@/blog/_index.md", name = "Blog" },
   { name = "Links", menu = [
-    { url = "https://live.orzklv.uz", name = "Live" },
     { url = "https://github.com/orzklv", name = "GitHub" },
     { url = "https://github.com/sponsors/orzklv", name = "Sponsor" },
   ] },
   { name = "Socials", menu = [
     { url = "https://social.floss.uz/home", name = "Mastodon" },
     { url = "https://matrix.to/#/@orzklv:floss.uz", name = "Matrix" },
-    { url = "https://discord.gg/JkXFQpScFj", name = "Discord" },
     { url = "https://www.linkedin.com/in/orzklv/", name = "LinkedIn" },
   ] },
+  { url = "https://github.com/orzklv/resume/releases/download/2025.06.04/resume.pdf", name = "Resume" },
 ]
 
 [extra.footer]
+links = [
+  { url = "https://github.com/sponsors/orzklv", name = "Sponsor" },
+  { url = "https://github.com/orzklv/resume/releases/download/2025.06.04/resume.pdf", name = "Resume" },
+]
 # Links used in the footer.
 # Same as the nav ones.
-links = [
-  { url = "https://live.orzklv.uz", name = "Live" },
-  { url = "https://github.com/sponsors/orzklv", name = "Sponsor" },
-]
 # Social links in the footer.
 # Any URL-encoded SVG can be used as an icon.
 # https://simpleicons.org is recommended source of SVG icons.

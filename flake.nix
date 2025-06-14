@@ -28,19 +28,6 @@
         ${pkgs.lib.getExe pkgs.zola} build --drafts -o $out
       '';
 
-      devShells.default = pkgs.mkShell rec {
-        name = "webnya";
-
-        packages = with pkgs; [
-          # Hail Nix
-          nixd
-          alejandra
-          statix
-          deadnix
-
-          # Zola
-          zola
-        ];
-      };
+      devShells.default = import ./shell.nix {inherit pkgs;};
     });
 }

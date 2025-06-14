@@ -4,3 +4,6 @@ result
 # Zola
 public/
 static/processed_images
+
+# Direnv
+.direnv
