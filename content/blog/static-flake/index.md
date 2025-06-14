@@ -318,6 +318,8 @@ This will build our package and store contents inside `/nix/store/blablasomehash
 
 Next, we apply the configuration, you may mention nix generating `acme-myblog.com.service` like services as nixos automatically handles all certification generation by itself and make sure everything works just as expected without having to touch anything. Upon completion, open your browser with `myblog.com` address and you'll see your website.
 
+I have my own working production at [kolyma.uz](https://kolyma.uz) if you want to check out.
+
 ## Conclusion
 
 This tutorial also includes very basics of packaging on nix, so I can assure you that you got fundamentals after completing this tutorial. I'll write more of these posts as soon as I'll have more time. Writing a post is quite fun and not a problem for me, its just I have hard time translating every post to 2 other languages after finishing it which ends up taking waaaaay lotta time. If only I had someone to help with that, I could have published more posts as soon as possible.
