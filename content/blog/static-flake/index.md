@@ -316,6 +316,6 @@ Next, we apply the configuration, you may mention nix generation some `acme-mybl
 
 ## Conclusion
 
-This tutorial also includes very basics of packaging on nix, so I can assure you that you know fundamentals after completion of this tutorial. I'll write more of these posts as soon as I'll find more time. Writing a post is quite fun and easy for me, its just I find hard to translate every post to 2 other language after finishing it which ends up taking way a lot time. If only I had someone to help with that, I could have published more posts as soon as possible.
+This tutorial also includes very basics of packaging on nix, so I can assure you that you got fundamentals after completing this tutorial. I'll write more of these posts as soon as I'll have more time. Writing a post is quite fun and not a problem for me, its just I have hard time translating every post to 2 other language after finishing it which ends up taking waaaaay lotta time. If only I had someone to help with that, I could have published more posts as soon as possible.
 
 With that being said, I wish you all good luck in your NixOS journey and hopefully this guide will become beginning of your great packaging journey!
