@@ -3,7 +3,7 @@ title = "Static website via flake"
 description = "Using docker for hosting static website is overkill, so why not give nix flake a chance?"
 authors = ["Orzklv"]
 date = 2024-09-27
-updated = "2024-09-27"
+updated = "2025-06-14"
 draft = false
 
 [taxonomies]
@@ -12,6 +12,10 @@ tags = ["Nix", "Flake", "DevOps"]
 [extra]
 banner = "banner.webp"
 toc = true
+
+disclaimer = """
+- This tutorial expects from reader to have some experience on NixOS.
+"""
 
 [extra.comments]
 host = "social.floss.uz"

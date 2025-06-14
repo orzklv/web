@@ -85,7 +85,7 @@ As you can see, nix generated for us an entry flake.nix which will be used to re
 
 ### Flake Utils
 
-We will be using a helpful library named `flake-utils` which will make our code have less boilerplate. The easiest way to mention it is, if you look at the current packages list, you may see something like `x86_64-linux` which means only `x86_64-linux` machines can build and run this package. However, we don't want such limitations as static page isn't something platform bounded or repetetively declare packages for every type of platform. Thefefore, we will be making use of specific helpful functions delivered in `flake-utils` for such things.
+We will be using a helpful library named `flake-utils` which will make our code have less boilerplate. The easiest way to mention it is, if you look at the current packages list, you may see something like `x86_64-linux` which means only `x86_64-linux` machines can build and run this package. However, we don't want such limitations as static page isn't something platform bounded or repetetively declare packages for every type of platform. Thefefore, we will be making use of specific helpful functions delivered by `flake-utils` for such things.
 
 First, we need to add `flake-utils` repository to inputs as following:
 
@@ -121,7 +121,7 @@ outputs =
   });
 ```
 
-Here, we are using `eachDefaultSystem` delivered from `flake-utils` to generate `default` package for every defaulted package. If we fire up `nix repl` and check out what it has done, we will see something like this:
+Here, we are using `eachDefaultSystem` delivered from `flake-utils` to generate `default` package for every defaulted platform. If we fire up `nix repl` and check out what it has done, we will see something like this:
 
 ```
 $ nix repl
@@ -154,7 +154,7 @@ All we need to do here, is to explain nix to take whatever inside `src` and copy
 - Refer to it as a `package` that has instructions to build it inside.
 - Execute this `build` instructions and present the package.
 
-So, as you may have guessed, we need to create a file at the root of our project named `default.nix`. Afterwards, we need to declare whatever about our package. You see, nix is a functional language and is all about declarativeness, so, our package is a function which will produce an set of attributions (think of it as object or json). Our function follows this sample syntax:
+So, as you may have guessed, we need to create a file at the root of our project named `default.nix`. Afterwards, we need to declare whatever about our package. You see, nix is a functional language and is all about declarativeness, so, our package is a function which will produce a set of attributions (think of it as an object or json). Our function follows this sample syntax:
 
 ```nix
 { arg1, arg2 ? "defaulted-value" }:
@@ -177,7 +177,7 @@ I very very hope you get the idea of it. And now, we will start writing our pack
 }:
 ```
 
-This translates to: "expect an argument named `pkgs` passed to this function that's registry of packages which holds all packages and helpful other functions, in case this parameter is missing or not passed, use system's package registry by default". We will need functions delivered inside package's registry while packaging. So, next step is to say that our function will return a `package` as a result which is translated to:
+This translates to: "expect an argument named `pkgs` passed to this function that's a registry of packages which holds all packages and helpful functions, in case this parameter is missing or not passed, use system's package registry by default". We will need functions delivered inside package's registry while packaging. So, next step is to say that our function will return a `package` as a result which is translated to:
 
 ```nix, hl_lines=4-5
 {
@@ -187,7 +187,7 @@ pkgs.stdenv.mkDerivation {
 }
 ```
 
-Now, nix knows that this function returns a package, but package's properties are missing and it doesn't still know tha name, version or build steps of this package. We will start right off by stating package's name and version like this:
+Now, nix knows that this function returns a package, but package's properties are missing and it doesn't still know the name, version or build steps of this package. We will start right off by stating package's name and version like this:
 
 ```nix, hl_lines=5-6
 {
@@ -199,7 +199,7 @@ pkgs.stdenv.mkDerivation {
 }
 ```
 
-Alright, looks good! Now, let's say to Nix where it should locate all source codes of our static website. Well, as I've shown you before above, I got my website inside `src` folder at the root of our project. So, this will be my source code location for nix package:
+Alright, looks good! Now, let's say to Nix where it should locate all source code of our static website. Well, as I've shown you before, I got my website inside `src` folder at the root of our project. So, this will be my path for source code:
 
 ```nix, hl_lines=8
 {
@@ -213,7 +213,7 @@ pkgs.stdenv.mkDerivation {
 }
 ```
 
-Now, nix knows where to get the source code, but still it has no idea what to do with them. Therefore, the next thing is going to be explaining what to do with them:
+Now, nix knows where to get the source code from, but still it has no idea what to do with it. Therefore, the next thing is going to be explaining what to do with it:
 
 ```nix, hl_lines=10-13
 {
@@ -232,9 +232,9 @@ pkgs.stdenv.mkDerivation {
 }
 ```
 
-If you have some experience on packaging for nix, you may have expected me to define `buildPhase`, but I straight proceeded to `installPhase`. Our website is static and doesn't need to be built. We only need to say nix to take all source code and place it inside package. `$out` in install phase refers to path where our package is initiated, we don't know exact location as nix decides it, so we will refer to it via `$out` variable and move all contents of our website to inside package. Phases are merely bash scripts with necessary values passed as envrionmental variables, not some magic voo-doo.
+If you have some experience on packaging for nix, you may have expected me to define `buildPhase`, but I straight proceeded to `installPhase`. Our website is static and doesn't need to be built. We only need to say nix to take all source code and place it inside package. `$out` in install phase refers to path where our package will be initiated by nix, we don't know exact location as nix decides it, so we will refer to it via `$out` variable and move all contents of our website to inside package. Phases are merely bash scripts with necessary values passed as envrionmental variables, not some magic voo-doo.
 
-Noooow, let's attempt to build our package! Just call build command of nix for this and wait till it finished:
+Noooow, let's attempt to build our package! Just call build command of nix for this and wait till it finishes:
 
 ```bash
 nix build .#default
@@ -247,11 +247,11 @@ nix build
 # both are default values, so no need to indicate it
 ```
 
-Upon finishing it, a new directory will popup at the root path of our project namely `result` and if you open it, you'll see content of your website. Yay, buuuut it took some very long time to do it... Why?!
+Upon finishing it, a new directory will popup at the root path of our project namely `result` and if you open it, you'll see contents of your website. Yay, buuuut it took some very long time to do it... Why?!
 
 ### Optimizing tricks
 
-The thing is, `pkgs.stdenv.mkDerivation` loads whole c/c++ toolchain by default which weighs quite a lot just for building a package, in order to tell nix not to do that, we need to use another specific function which doesn't load `cc` toolchain which is `pkgs.stdenvNoCC.mkDerivation`.
+The thing is, `pkgs.stdenv.mkDerivation` loads whole c/c++ toolchain by default which weighs quite a lot just for building a static website package, in order to tell nix not to do that, we need to use another specific function which doesn't load `cc` toolchain which is `pkgs.stdenvNoCC.mkDerivation`.
 
 ```nix, hl_lines=4
 {
@@ -303,7 +303,7 @@ services.nginx.virtualHosts."myhost.org" = {
 };
 ```
 
-So, now we need to change domain of our website to something else, like `myblog.com` and tell nix that `root` is packaged version of our website that looks something like this:
+So, now we need to change domain name of our future website to something else, let's say `myblog.com` and tell nix that `root` is packaged version of our website that looks something like this:
 
 ```nix
 # Assuming you have `pkgs` and `inputs` exposed in this part of configuration
@@ -314,7 +314,7 @@ services.nginx.virtualHosts."myblog.com" = {
 };
 ```
 
-This will build our package and store contents inside `/nix/store/blablasomehashsum-ourweb-0.1.0` and then nix will point root for our `myblog.com` website to the very same location automatically.
+This will build our package and store contents at `/nix/store/blablasomehashsum-ourweb-0.1.0` and then nix will point root for our `myblog.com` website to the very same location automatically.
 
 Next, we apply the configuration, you may mention nix generating `acme-myblog.com.service` like services as nixos automatically handles all certification generation by itself and make sure everything works just as expected without having to touch anything. Upon completion, open your browser with `myblog.com` address and you'll see your website.
 
@@ -322,6 +322,6 @@ I have my own working production at [kolyma.uz](https://kolyma.uz) if you want t
 
 ## Conclusion
 
-This tutorial also includes very basics of packaging on nix, so I can assure you that you got fundamentals after completing this tutorial. I'll write more of these posts as soon as I'll have more time. Writing a post is quite fun and not a problem for me, its just I have hard time translating every post to 2 other languages after finishing it which ends up taking waaaaay lotta time. If only I had someone to help with that, I could have published more posts as soon as possible.
+This tutorial also includes very basics of packaging on nix, so I can assure you that you got fundamentals after completing this tutorial. I'll write more of these posts as soon as I'll have more time. Writing a post is quite fun and not a problem for me, its just I have hard times translating every post to 2 other languages after finishing it which ends up taking waaaaay lotta time, not to mention re-reading it to fix typos later. If only I had someone to help with that, I could have published more posts.
 
-With that being said, I wish you all good luck in your NixOS journey and hopefully this guide will become beginning of your great packaging journey!
+With that being said, I wish you all good luck in your NixOS voyage and hopefully this guide will become beginning of your great packaging journey!
