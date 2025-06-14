@@ -4,7 +4,7 @@ description = "Using docker for hosting static website is overkill, so why not g
 authors = ["Orzklv"]
 date = 2024-09-27
 updated = "2024-09-27"
-draft = true
+draft = false
 
 [taxonomies]
 tags = ["Nix", "Flake", "DevOps"]
