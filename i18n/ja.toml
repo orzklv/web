@@ -19,6 +19,7 @@ Live = "ライブ"
 Socials = "ソーシャル"
 Repo = "リポジトリ"
 Sponsor = "スポンサー"
+Resume = "ポートフォリオ"
 
 all_tags = "すべてのタグを見る"
 archived = "アーカイブ済み"
