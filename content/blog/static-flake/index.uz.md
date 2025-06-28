@@ -1,6 +1,6 @@
 +++
 title = "Flake orqali statik veb-sayt"
-description = “Statik veb-saytlarni host qilish uchun dockerʼdan foydalanish ortiqcha ish, shu sababdan, nix flakeʼga imkon berib koʻrmaymizmi?”
+description = "Statik veb-saytlarni host qilish uchun dockerʼdan foydalanish ortiqcha ish, shu sababdan, nix flakeʼga imkon berib koʻrmaymizmi?"
 authors = ["Orzklv"]
 date = 2024-09-27
 updated = "2024-09-27"
