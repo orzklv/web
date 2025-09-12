@@ -15,7 +15,7 @@ toc = true
 
 disclaimer = """
 - Ushbu qoʻllanma oʻquvchidan NixOS-da biroz tajribaga ega boʻlishini kutadi.
-- """
+"""
 
 [extra.comments]
 host = "social.floss.uz"
@@ -25,7 +25,7 @@ id = "114683093625327778"
 
 ## Dockerʼni ishlatish yo ishlatmaslik
 
-Agar siz bu postni o'qiyotgan bo'lsangiz, katta ehtimol bilan docker nima ekanligini bilishingiz va uni real ilovalaringizda, shaxsiy loyihalaringizda yoki hatto statik veb-saytni docker konteynerida host qilish kabi oddiy narsalarni bajarishda foydalanayotgan boʻlishingiz mumkin. Insonlar dockerʼni virtualizatsiyaga solishtirib yengil deb aytishadi, lekin u baribir konteynerizatsiya asosidagi virtualizatsiyani ishlatmoqda, bu esa baʼzi nuqtalarda virtualizatsiya hisoblanadi. Docker konteynerlaridan foydalanish uchun, siz konteyneringiz uchun asos sifatida maʼlum bir linux distro bilan borishingiz kerak, shunda siz oxirgi natijangizni biror narsaga asoslangan holda joʻnata olasiz. Biroq, bu har doim **ubuntu** yoki **debian** kabi distroʼlar bilan ishlatish anʼanasiga aylana boshladi, bu koʻpincha keraksiz ortiqchaliklarni oʻz ichiga oladi. Qiziq tomoni shundaki, kun oxirida sizda 500mb qiymatidagi tasvir qoladi, holbuki sizning statik veb-saytingiz faqat 5mb atrofida va “caddy” proksisi ustida yana bitta “nginx” ishlatish gʻalati fikrga o'xshaydi. 
+Agar siz bu postni o'qiyotgan bo'lsangiz, katta ehtimol bilan docker nima ekanligini bilishingiz va uni real ilovalaringizda, shaxsiy loyihalaringizda yoki hatto statik veb-saytni docker konteynerida host qilish kabi oddiy narsalarni bajarishda foydalanayotgan boʻlishingiz mumkin. Insonlar dockerʼni virtualizatsiyaga solishtirib yengil deb aytishadi, lekin u baribir konteynerizatsiya asosidagi virtualizatsiyani ishlatmoqda, bu esa baʼzi nuqtalarda virtualizatsiya hisoblanadi. Docker konteynerlaridan foydalanish uchun, siz konteyneringiz uchun asos sifatida maʼlum bir linux distro bilan borishingiz kerak, shunda siz oxirgi natijangizni biror narsaga asoslangan holda joʻnata olasiz. Biroq, bu har doim **ubuntu** yoki **debian** kabi distroʼlar bilan ishlatish anʼanasiga aylana boshladi, bu koʻpincha keraksiz ortiqchaliklarni oʻz ichiga oladi. Qiziq tomoni shundaki, kun oxirida sizda 500mb qiymatidagi tasvir qoladi, holbuki sizning statik veb-saytingiz faqat 5mb atrofida va “caddy” proksisi ustida yana bitta “nginx” ishlatish gʻalati fikrga o'xshaydi.
 
 ## Mening “docker” bilan muammom
 
@@ -88,6 +88,7 @@ Koʻrayotganingizdek, nix biz uchun flake.nix nomli yozuvni yaratdi, bu loyiha u
 `flake-utils` nomli foydali kutubxonadan foydalanamiz, bu bizning kodimizning boilerplate qismini kamaytirishga yordam beradi. Buni aytishning eng oson yoʻli shundaki, agar siz hozirgi paketlar roʻyxatiga qarasangiz, `x86_64-linux` kabi biror narsani ko'rishingiz mumkin, bu esa faqat `x86_64-linux` mashinalari ushbu paketi qurish va ishga tushirishlari mumkinligini anglatadi. Biroq, biz bunday cheklovlarni xohlamaymiz, chunki statik sahifa platforma bilan bogʻliq emas yoki har bir turdagi platforma uchun takroran paketlarni eʼlon qilish emas. Shuning uchun biz bunday narsalar uchun `flake-utils` tomonidan taqdim etilgan maxsus foydali funksiyalardan foydalanamiz.
 
 Birinchidan, biz `flake-utils` repositoriyasini quyidagicha `inputs`-ga qo'shishimiz kerak:
+
 ```nix
 {
   description = "Bizning vebsaytimiz";
@@ -324,4 +325,3 @@ I have my own working production at [kolyma.uz](https://kolyma.uz) if you want t
 This tutorial also includes very basics of packaging on nix, so I can assure you that you got fundamentals after completing this tutorial. I'll write more of these posts as soon as I'll have more time. Writing a post is quite fun and not a problem for me, its just I have hard times translating every post to 2 other languages after finishing it which ends up taking waaaaay lotta time, not to mention re-reading it to fix typos later. If only I had someone to help with that, I could have published more posts.
 
 With that being said, I wish you all good luck in your NixOS voyage and hopefully this guide will become beginning of your great packaging journey!
-
