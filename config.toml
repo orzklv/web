@@ -167,22 +167,21 @@ show_repo = false
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
   { url = "@/blog/_index.md", name = "Blog" },
-  { name = "Links", menu = [
+  { name = "Open Source", menu = [
     { url = "https://github.com/orzklv", name = "GitHub" },
     { url = "https://github.com/sponsors/orzklv", name = "Sponsor" },
   ] },
   { name = "Socials", menu = [
-    { url = "https://social.floss.uz/home", name = "Mastodon" },
+    { url = "https://social.floss.uz/@orzklv", name = "Mastodon" },
     { url = "https://matrix.to/#/@orzklv:floss.uz", name = "Matrix" },
-    { url = "https://www.linkedin.com/in/orzklv/", name = "LinkedIn" },
   ] },
-  { url = "https://github.com/orzklv/resume/releases/download/2025.06.04/resume.pdf", name = "Resume" },
+  { url = "https://github.com/orzklv/resume/releases/download/2025.09.12/resume.pdf", name = "Resume" },
 ]
 
 [extra.footer]
 links = [
   { url = "https://github.com/sponsors/orzklv", name = "Sponsor" },
-  { url = "https://github.com/orzklv/resume/releases/download/2025.06.04/resume.pdf", name = "Resume" },
+  { url = "https://github.com/orzklv/resume/releases/download/2025.09.12/resume.pdf", name = "Resume" },
 ]
 # Links used in the footer.
 # Same as the nav ones.
@@ -201,7 +200,7 @@ show_powered_by = false
 # Whether to show link to website source
 show_source = false
 # Custom copyright text
-copyright = "© **Orzklv** from [**Khakimov's Family**](https://khakimovs.uz), `2024`"
+copyright = "© **Orzklv** from [**Khakimov's Family**](https://khakimovs.uz), `2025`"
 
 # Based on https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
 #
