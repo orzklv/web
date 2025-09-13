@@ -44,14 +44,3 @@ I mean, that's a statement, not a promise, you know what I'm sayin' :D Ye, I'm s
 ## What's this blog about?
 
 Mainly my tech career stuff and experiments that I document after ending up wasting hours of time on it. I hope it's gonna be useful at some point for people and humble learners. I'll try to recover my old posts from old blogs but can't promise anything. Also, I decided to add uzbek localization support to create more resources for fellow developers with language barrier~ **Uzbek Developers life matter!**.
-
-## Credits
-
-- [Zola](https://www.getzola.org) for making my life easier and not suffer with frontend hell.
-- [Duckquill](https://duckquill.daudix.one) & [daudix](https://daudix.one) for this website's theme and inspiration.
-
-## Thanks To
-
-- [Crypton](https://t.me/CryPTON32) - for motivating me to focus on more of personal stuff.
-- [Shakhzod Kudratov](https://t.me/shakhzodme) for letting me to have some free time at work and motivating me to work on this.
-- Everyone who supported me and said good stuff (ﾉ´ з `)ノ <3
