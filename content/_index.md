@@ -38,7 +38,7 @@ Long story short, I came up with this personality thing back in 2016-17 'ish due
 However, things got serious in mid 2022's. The more personality I created, the more I suffered morally and more close relatives & friends were getting worried, so I had to eventually stop forever in my current personality (yes, sadly, there won't be new personality switches anymore).
 
 {% alert(note=true) %}
-I mean, that's a statement, not a promise, you know what I'm sayin' :D Ye, I'm sorry for being unstable (⌒_⌒;)
+I mean, that's a statement, not a promise, you know what I'm sayin'. Ye, I'm sorry for being unstable
 {% end %}
 
 ## What's this blog about?
