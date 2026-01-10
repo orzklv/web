@@ -175,7 +175,7 @@ links = [
     { url = "https://social.floss.uz/@orzklv", name = "Mastodon" },
     { url = "https://matrix.to/#/@orzklv:floss.uz", name = "Matrix" },
   ] },
-  { url = "https://github.com/orzklv/resume/releases/download/2025.09.12/resume.pdf", name = "Resume" },
+  { url = "https://github.com/orzklv/resume/releases/download/2026.01.10/resume.pdf", name = "Resume" },
 ]
 
 [extra.footer]
