@@ -27,10 +27,13 @@ default_language = "en"
 taxonomies = [{ name = "tags", feed = true }]
 
 [markdown]
-highlight_code = true
-highlight_theme = "1337"
 smart_punctuation = true
 bottom_footnotes = true
+
+[markdown.highlighting]
+light_theme = "github-dark"
+dark_theme = "github-light"
+
 
 [search]
 # index_format = "elasticlunr_json"
