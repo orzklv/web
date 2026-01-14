@@ -2,32 +2,40 @@
   description = "Orzklv's web development environment";
 
   inputs = {
+    # Nixpkgs
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
+
+    # Flake-parts utilities
+    flake-parts.url = "github:hercules-ci/flake-parts";
   };
 
-  outputs = {
-    nixpkgs,
-    flake-utils,
-    ...
-  }:
-    flake-utils.lib.eachDefaultSystem (system: let
-      pkgs = import nixpkgs {
-        inherit system;
-        overlays = [];
-        config.allowUnfree = true;
-      };
-    in {
-      # Nix script formatter
-      formatter = pkgs.alejandra;
+  outputs =
+    { flake-parts, ... }@inputs:
+    flake-parts.lib.mkFlake { inherit inputs; } (
+      { ... }:
+      {
+        systems = [
+          "x86_64-linux"
+          "aarch64-linux"
+          "aarch64-darwin"
+        ];
+        perSystem =
+          { pkgs, ... }:
+          {
+            # Formatter for your nix files, available through 'nix fmt'
+            formatter = pkgs.nixfmt-tree;
 
-      # Output compiled website
-      # nix build ".?submodules=1#" -L
-      packages.default = pkgs.runCommand "public" {} ''
-        cd ${./.}
-        ${pkgs.lib.getExe pkgs.zola} build --drafts -o $out
-      '';
+            # Output compiled website
+            # nix build ".?submodules=1#" -L
+            packages.default = pkgs.runCommand "public" { } ''
+              cd ${./.}
+              ${pkgs.lib.getExe pkgs.zola} build --drafts -o $out
+            '';
 
-      devShells.default = import ./shell.nix {inherit pkgs;};
-    });
+            # Development shells
+            devShells.default = import ./shell.nix { inherit pkgs; };
+          };
+      }
+    );
+
 }

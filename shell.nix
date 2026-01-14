@@ -1,15 +1,12 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 pkgs.mkShell rec {
-  name = "webnya";
-
   packages = with pkgs; [
-    # Hail Nix
     nixd
-    alejandra
+    nixfmt
     statix
     deadnix
 
-    # Zola
     zola
+    taplo
   ];
 }
