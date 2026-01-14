@@ -34,7 +34,6 @@ bottom_footnotes = true
 light_theme = "github-dark"
 dark_theme = "github-light"
 
-
 [search]
 # index_format = "elasticlunr_json"
 index_format = "fuse_json"
