@@ -37,10 +37,6 @@ Qisqasi, 2016-17 yillarda shaxsiyat va xavfsizlik tufayli bu shaxsiyatlar yarati
 
 Biroq, ishlar 2022 yilning o’rtalarida anchagina jiddiylashdi. Qancha ko’p shaxsiyat yaratganim sari, ham moral jihatdan ko’proq azob chekdim va ham yaqin qarindoshlar va do’stlar ham ko’proq tashvishlana boshlashdi, shu sababdan oxirgi shaxsiyatimda butunlay to’xtashimga to’g’ri keldi (ha, afsuski endi yangi shaxsiyatlar bo’lmaydi).
 
-{% alert(note=true) %}
-Aytmoqchiman-ki, bu e'lon, va'da emas. Nima deyayotganimni tushungadirsiz-a. Nostabil bo'lganim uchun uzr.
-{% end %}
-
 ## Bu blog o'zi nima haqida?
 
 Asosan texnologik karyeram va bir necha soatlab vaqtimni har xil eksperimentlar qilib natijasini yozib borishim haqida. Bir maromda bu odamlar va qiziquvchan o’rganuvchilar uchun foydali bo’ladi deb umid qilaman. Eski bloglarimdagi eski postlarimni tiklashga harakat qilaman, lekin hech narsaga va’da berolmayman. Shuningdek, til bariyeri bor dasturchilar uchun ko’proq manbalar yaratish uchun o’zbekcha lokalizatsiya qo’shishga qaror qildim. O’zbek dasturchilari ham muhim!

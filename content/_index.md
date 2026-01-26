@@ -37,10 +37,6 @@ Long story short, I came up with this personality thing back in 2016-17 'ish due
 
 However, things got serious in mid 2022's. The more personality I created, the more I suffered morally and more close relatives & friends were getting worried, so I had to eventually stop forever in my current personality (yes, sadly, there won't be new personality switches anymore).
 
-{% alert(note=true) %}
-I mean, that's a statement, not a promise, you know what I'm sayin'. Ye, I'm sorry for being unstable
-{% end %}
-
 ## What's this blog about?
 
 Mainly my tech career stuff and experiments that I document after ending up wasting hours of time on it. I hope it's gonna be useful at some point for people and humble learners. I'll try to recover my old posts from old blogs but can't promise anything. Also, I decided to add uzbek localization support to create more resources for fellow developers with language barrier~ **Uzbek Developers life matter!**.
