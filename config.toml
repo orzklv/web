@@ -60,9 +60,10 @@ default_theme = "dark"
 accent_color = "#595959"
 # Same as primary_color, but with 20% opacity
 accent_color_dark = "#868686"
-# Use emoji as a favicon.
-# Only one emoji is being rendered, everything else is truncated.
-emoji_favicon = "⬛️"
+# Favicon of the website
+favicon = "favicon.ico"
+# OpenGraph card
+card = "card.png"
 # URL to website's issue tracker
 issues_url = "https://github.com/orzklv/web/issues"
 # URL to website's source code
