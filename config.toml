@@ -29,6 +29,7 @@ taxonomies = [{ name = "tags", feed = true }]
 [markdown]
 smart_punctuation = true
 bottom_footnotes = true
+render_emoji = true
 
 [markdown.highlighting]
 light_theme = "github-dark"
