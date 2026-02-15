@@ -173,6 +173,8 @@ links = [
   { url = "@/blog/_index.md", name = "Blog" },
   { name = "Floss", menu = [
     { url = "https://github.com/orzklv", name = "GitHub" },
+    { url = "https://git.floss.uz/orzklv", name = "Floss Uzbekistan" },
+    { url = "https://git.oss.uzinfocom.uz/orzklv", name = "Uzinfocom" },
   ] },
   { name = "Socials", menu = [
     { url = "https://matrix.to/#/@orzklv:floss.uz", name = "Matrix" },

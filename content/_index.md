@@ -22,21 +22,14 @@ title = "Home"
 
 {% end %}
 
-I tend to keep personal blog but most of the time I end up forgetting about it and later I come back to rewrite it from scratch and keep it going. However, this time, I decided to make it different to minimze hustle to focus more on content instead of website itself (hopefully). Yes, no more Nextjs cancer and over engineered stuff. Just my pure & raw thoughts of mine in a simple static site generator.
+Hi, I'm hobbyist developer from Uzbekistan. Sometimes I do some tech stuff, write nix and rust for fun
+or get into politics when I get too bored.
 
-Well, my current name is not the only one I used in my entire career. They are a lot and some of them are quite popular and some of them were just doing their thang. Well, they are:
+This website has things that I document or write about after I try/come up with/discover/etc with/around
+something. It won't be always about tech stuff, there might be other hobby related things as well. Might
+serve as a notebook for myself to come back memorize stuff.
 
-- **Mr. @%@%@% OOO** (redacted for privacy)
-- **Biitsu Yoshikage** (a.k.a @biitsu)
-- **Geno Ferollo** (a.k.a @genemator)
-- **UwUssimo Robinson** (a.k.a @uwussimo)
-- **Yuri Katsuki** (a.k.a @katsuki-yuri)
-- **Orzklv** (a.k.a @orzklv)
-
-Long story short, I came up with this personality thing back in 2016-17 'ish due to concerns about my privacy and security. Also, this served me as an easy rescue button which would help me to get out of heavy fuck ups, so people would memorize old personality of mine if I did something really that bad. Sounds similar? Yup, that's like having VTuber career, but when you fuck up, you just graduate and then come in another form with another type of approach/take.
-
-However, things got serious in mid 2022's. The more personality I created, the more I suffered morally and more close relatives & friends were getting worried, so I had to eventually stop forever in my current personality (yes, sadly, there won't be new personality switches anymore).
-
-## What's this blog about?
-
-Mainly my tech career stuff and experiments that I document after ending up wasting hours of time on it. I hope it's gonna be useful at some point for people and humble learners. I'll try to recover my old posts from old blogs but can't promise anything. Also, I decided to add uzbek localization support to create more resources for fellow developers with language barrier~ **Uzbek Developers life matter!**.
+If you have questions, feel free to mail me at
+<a href="mailto:public@orzklv.uz?subject=From%20a%20website%20viewer%2Fvisitor&body=Hello%20there%2C%0D%0A%0D%0AI%20came%20across%20your%20website%20and%20saw%20your%20email%20address.%20I%20have%20something%20to%20ask%20if%20you%20don't%20mind%2C%20...">public@orzklv.uz</a>
+or matrix if it's THAT urgent at
+<a href="https://matrix.to/#/@orzklv:floss.uz">@orzklv:floss.uz</a>.
