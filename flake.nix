@@ -10,7 +10,7 @@
   };
 
   outputs =
-    { flake-parts, ... }@inputs:
+    { self, flake-parts, ... }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } (
       { ... }:
       {
@@ -19,6 +19,10 @@
           "aarch64-linux"
           "aarch64-darwin"
         ];
+        flake = {
+          # NixOS module (deployment)
+          nixosModules.server = import ./module.nix self;
+        };
         perSystem =
           { pkgs, ... }:
           {
@@ -26,12 +30,7 @@
             formatter = pkgs.nixfmt-tree;
 
             # Output compiled website
-            # nix build ".?submodules=1#" -L
             packages.default = pkgs.callPackage ./. { };
-            # pkgs.runCommand "public" { } ''
-            #   cd ${./.}
-            #   ${pkgs.lib.getExe pkgs.zola} build --drafts -o $out
-            # '';
 
             # Development shells
             devShells.default = import ./shell.nix { inherit pkgs; };
