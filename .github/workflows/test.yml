@@ -1,0 +1,17 @@
+name: Deploy CI
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: native
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v6
+
+      - name: Build website
+        run: nix build
