@@ -33,7 +33,7 @@ in
     services.nginx.virtualHosts =
       lib.debug.traceIf (isNull cfg.domain) "domain can't be null, please specicy it properly!"
         {
-          "${cfg.proxy-reverse.domain}" = {
+          "${cfg.domain}" = {
             addSSL = true;
             enableACME = true;
             root = cfg.package;
