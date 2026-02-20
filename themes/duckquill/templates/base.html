@@ -1,0 +1,39 @@
+{% import "macros/rel_attributes.html" as macros_rel_attributes %}
+{% import "macros/translate.html" as macros_translate %}
+
+{%- set language_strings = load_data(path="i18n/" ~ lang ~ '.toml', required=false) -%}
+{%- if not language_strings -%}
+    {%- set language_strings = load_data(path="themes/duckquill/i18n/" ~ lang ~ ".toml", required=false) -%}
+{%- endif -%}
+{%- set rtl_languages = ["ar", "arc", "az", "dv", "ff", "he", "ku", "nqo", "fa", "rhg", "syc", "ur"] -%}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" {% if lang in rtl_languages %}dir="rtl"{% endif %} lang="{{ lang }}" {% include "partials/default_theme.html" %}>
+{% include "partials/head.html" %}
+<body>
+{% block body %}
+	{%- if config.extra.nav.links %}
+		{% include "partials/nav.html" %}
+	{%- endif %}
+	{%- if page.extra.toc_sidebar or section.extra.toc_sidebar -%}
+		<div id="sidebar">
+			<div>
+				{%- include "partials/toc.html" -%}
+			</div>
+		</div>
+	{%- endif -%}
+	<main id="main-content">
+		{% block custom %}{% endblock custom %}
+		{%- if page.extra.go_to_top or section.extra.go_to_top -%}
+			<div id="buttons-container">
+				<a id="go-to-top" href="#top" title="{{ macros_translate::translate(key='go_to_top', default='Go to Top', language_strings=language_strings) }}"><i class="icon"></i></a>
+			</div>
+		{%- endif -%}
+		{% block content %}{% endblock content %}
+	</main>
+	{% include "partials/footer.html" %}
+	{% include "partials/extra_features.html" %}
+	{% include "partials/strings.html" %}
+{% endblock body %}
+</body>
+</html>

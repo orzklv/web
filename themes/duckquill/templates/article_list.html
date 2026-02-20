@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block content %}
+{%- set date_format = macros_translate::translate(key="date_format", default="%B %d, %Y", language_strings=language_strings) -%}
+{%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
+
+{%- if paginator.pages -%}
+	{%- set number_of_posts = paginator.total_pages -%}
+{%- elif section.pages -%}
+	{%- set number_of_posts = section.pages | length -%}
+{%- else -%}
+	{%- set number_of_posts = 0 -%}
+{%- endif -%}
+
+<h1>{{ section.title }}</h1>
+
+{{ section.content | safe }}
+
+{# <div class="sparkline">
+	{%- if paginator.pages -%}
+		{%- set pages = paginator.pages -%}
+	{%- elif section.pages -%}
+		{%- set pages = section.pages -%}
+	{%- else -%}
+		{%- set pages = term.pages -%}
+	{%- endif -%}
+
+	{%- for month, pages in pages | group_by(attribute="month") -%}
+		{%- set posts_per_bar = pages | length -%}
+		{%- set bar_height = pages | length * 10 -%}
+		<div style="--bar-height: {{ bar_height ~ '%' }}" title="{{ macros_translate::translate(key='posts', number=posts_per_bar, default='$NUMBER posts in total', language_strings=language_strings) }}"></div>
+	{%- endfor -%}
+</div> #}
+
+<p>
+	<small>
+		{%- if config.taxonomies | length > 0 -%}
+		    {%- for taxon in config.taxonomies -%}
+			    {%- set taxon_name = taxon.name -%}
+			    <a href="{{- get_url(path='$TAXON', lang=lang) | replace(from="$TAXON", to=taxon.name) | lower -}}">
+					{{ macros_translate::translate(key='filter_by_taxon', default='Filter by $TAXON', language_strings=language_strings) | replace(from="$TAXON", to=taxon.name) }}
+			    </a>
+			    <br />
+			{%- endfor %}
+		{%- endif %}
+		{{ macros_translate::translate(key='posts', number=number_of_posts, default='$NUMBER posts in total', language_strings=language_strings) }}
+	</small>
+</p>
+
+{% include "partials/articles.html" %}
+
+{%- if paginator.pages -%}
+	<nav id="paginator">
+		{%- if paginator.first != current_url -%}
+			<a id="paginator-first" href="{{ paginator.first }}" title="{{ macros_translate::translate(key='first', default='First', language_strings=language_strings) }}">
+				<i class="icon"></i>
+			</a>
+		{% else %}
+			<span id="paginator-first" title="{{ macros_translate::translate(key='first', default='First', language_strings=language_strings) }}">
+				<i class="icon"></i>
+			</span>
+		{%- endif -%}
+
+		{%- if paginator.previous -%}
+			<a id="paginator-previous" href="{{ paginator.previous }}" title="{{ macros_translate::translate(key='previous', default='Previous', language_strings=language_strings) }}">
+				<i class="icon"></i>
+			</a>
+		{% else %}
+			<span id="paginator-previous" title="{{ macros_translate::translate(key='previous', default='Previous', language_strings=language_strings) }}">
+				<i class="icon"></i>
+			</span>
+		{%- endif -%}
+
+		<span id="paginator-counter">{{ paginator.current_index }}/{{ paginator.number_pagers }}</span>
+
+		{%- if paginator.next -%}
+			<a id="paginator-next" href="{{ paginator.next }}" title="{{ macros_translate::translate(key='next', default='Next', language_strings=language_strings) }}">
+				<i class="icon"></i>
+			</a>
+		{%- else -%}
+			<span id="paginator-next" title="{{ macros_translate::translate(key='next', default='Next', language_strings=language_strings) }}">
+				<i class="icon"></i>
+			</span>
+		{%- endif -%}
+
+		{%- if paginator.last != current_url -%}
+			<a id="paginator-last" href="{{ paginator.last }}" title="{{ macros_translate::translate(key='last', default='Last', language_strings=language_strings) }}">
+				<i class="icon"></i>
+			</a>
+		{% else %}
+			<span id="paginator-last" title="{{ macros_translate::translate(key='last', default='Last', language_strings=language_strings) }}">
+				<i class="icon"></i>
+			</span>
+		{%- endif -%}
+	</nav>
+{%- endif -%}
+{% endblock content %}

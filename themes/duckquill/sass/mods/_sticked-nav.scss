@@ -1,0 +1,28 @@
+#site-nav {
+	margin-block-start: 0;
+	inset-block-start: 0;
+	border-radius: 0 0 calc(var(--rounded-corner) + 0.5rem)
+		calc(var(--rounded-corner) + 0.5rem);
+
+	&::before {
+		box-shadow: var(--shadow-glass);
+		border-radius: 0 0 calc(var(--rounded-corner) + 0.5rem)
+			calc(var(--rounded-corner) + 0.5rem);
+	}
+
+	nav ul li {
+		a,
+		summary,
+		&#search button,
+		&#language-switcher details summary,
+		&#theme-switcher details summary {
+			border-radius: var(--rounded-corner);
+		}
+	}
+
+	#search-container {
+		#search-bar {
+			border-radius: var(--rounded-corner);
+		}
+	}
+}

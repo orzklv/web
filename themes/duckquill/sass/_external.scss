@@ -1,0 +1,17 @@
+a.external::after {
+	-webkit-mask-image: var(--icon-external);
+	display: inline-block;
+	opacity: var(--dim-opacity);
+	mask-image: var(--icon-external);
+	mask-size: cover;
+	-webkit-mask-size: cover;
+	margin-inline-start: 0.25rem;
+	background-color: currentColor;
+	width: max(0.75rem, 0.75em);
+	height: max(0.75rem, 0.75em);
+	content: "";
+
+	:root[dir*="rtl"] & {
+		transform: scaleX(-1);
+	}
+}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{%- set number_of_terms = terms | length -%}
+	{%- set taxon_name = taxonomy.name -%}
+	<h1>{{- macros_translate::translate(key=taxon_name ~ "_title", default=taxonomy.name | capitalize, language_strings=language_strings) -}}</h1>
+
+	<p>
+		<small>{{ macros_translate::translate(key=taxonomy.name, number=number_of_terms, default="$NUMBER " ~ taxonomy.name, language_strings=language_strings) }}</small>
+	</p>
+
+	<ul class="tags">
+		{%- for term in terms -%}
+			<li>
+				<a href="{{ current_url }}{{ term.slug }}">
+					<span class="tag">{{ term.name }}</span>
+					<span class="count">{{ term.pages | length }}</span>
+				</a>
+			</li>
+		{%- endfor -%}
+	</ul>
+
+	{% block details %}{% endblock details %}
+{% endblock content %}

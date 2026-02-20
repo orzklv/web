@@ -7,9 +7,6 @@
 
     # Flake-parts utilities
     flake-parts.url = "github:hercules-ci/flake-parts";
-
-    # Self instance
-    self.submodules = true;
   };
 
   outputs =
@@ -30,10 +27,11 @@
 
             # Output compiled website
             # nix build ".?submodules=1#" -L
-            packages.default = pkgs.runCommand "public" { } ''
-              cd ${./.}
-              ${pkgs.lib.getExe pkgs.zola} build --drafts -o $out
-            '';
+            packages.default = pkgs.callPackage ./. { };
+            # pkgs.runCommand "public" { } ''
+            #   cd ${./.}
+            #   ${pkgs.lib.getExe pkgs.zola} build --drafts -o $out
+            # '';
 
             # Development shells
             devShells.default = import ./shell.nix { inherit pkgs; };

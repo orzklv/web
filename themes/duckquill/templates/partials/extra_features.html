@@ -1,0 +1,8 @@
+{%- if config.extra.show_copy_button %}
+	<span id="copy-code-text" class="hidden">{{ macros_translate::translate(key="copy_code", default="Copy Code", language_strings=language_strings) }}</span>
+{%- endif %}
+
+{%- if config.build_search_index %}
+	<span id="search-index" class="hidden">{{ config.base_url | trim_end_matches(pat="/") }}/search_index.{{ lang }}.json</span>
+	<span id="more-matches-text" class="hidden">{{ macros_translate::translate(key="more_matches", default="$MATCHES more matches", language_strings=language_strings) }}</span>
+{%- endif %}

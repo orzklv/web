@@ -1,0 +1,42 @@
+#site-nav {
+	margin-block-start: 0;
+	inset-block-start: 0;
+	border-radius: 0;
+	width: 100%;
+	max-width: 100%;
+
+	&::before {
+		box-shadow: var(--shadow-glass);
+		border-radius: 0;
+	}
+
+	nav,
+	#search-container {
+		margin: 0 auto;
+		width: min(var(--container-width), 90%);
+	}
+
+	nav ul li {
+		a,
+		summary,
+		&#search button,
+		&#language-switcher details summary,
+		&#theme-switcher details summary {
+			border-radius: var(--rounded-corner);
+		}
+	}
+
+	#home {
+		margin-inline-end: auto;
+	}
+
+	.divider {
+		display: none;
+	}
+
+	#search-container {
+		#search-bar {
+			border-radius: var(--rounded-corner);
+		}
+	}
+}

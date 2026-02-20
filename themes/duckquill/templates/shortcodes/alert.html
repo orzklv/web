@@ -1,0 +1,19 @@
+{%- if note -%}
+	{%- set alert_type = "note" -%}
+{%- elif tip -%}
+	{%- set alert_type = "tip" -%}
+{%- elif important -%}
+	{%- set alert_type = "important" -%}
+{%- elif warning -%}
+	{%- set alert_type = "warning" -%}
+{%- elif caution -%}
+	{%- set alert_type = "caution" -%}
+{%- elif edit -%}
+	{%- set alert_type = "edit" -%}
+{%- elif fact -%}
+	{%- set alert_type = "fact" -%}
+{%- endif -%}
+
+<blockquote class="markdown-alert-{{ alert_type }}">
+	{{ body | markdown | safe }}
+</blockquote>

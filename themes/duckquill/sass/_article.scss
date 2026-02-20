@@ -1,0 +1,248 @@
+#banner-container {
+	--mask: linear-gradient(black, transparent);
+	-webkit-user-select: none;
+	-webkit-mask-image: var(--mask);
+	position: absolute;
+	z-index: -1;
+	mask-image: var(--mask);
+	inset-block-start: 0;
+	inset-inline-start: 0;
+	aspect-ratio: 2 / 1;
+	width: 100%;
+	user-select: none;
+
+	#banner {
+		position: fixed;
+		transition: none;
+		margin: 0;
+		inset-block-start: 0;
+		inset-inline-start: 0;
+	}
+
+	& + #heading {
+		margin-block-start: calc(50vw - 7rem);
+	}
+
+	@media only screen and (max-width: 480px) {
+		body:has(&) #site-nav:not(#handle + #site-nav) {
+			margin-block-start: calc(50vw + 1rem);
+		}
+	}
+
+}
+
+#heading {
+	margin: 2rem 0 1rem;
+	text-align: center;
+
+	h1 {
+		-webkit-background-clip: text;
+		margin: 0;
+		background-image: linear-gradient(
+			to right,
+			var(--fg-muted-4),
+			var(--fg-color),
+			var(--fg-muted-4)
+		);
+		background-clip: text;
+		color: transparent;
+
+		& + p {
+			display: inline;
+		}
+	}
+
+	.tags {
+		display: inline-flex;
+		justify-content: center;
+		margin-block-start: 1rem;
+	}
+}
+
+#buttons-container {
+	display: flex;
+	position: fixed;
+	flex-direction: column;
+	gap: 0.5rem;
+	inset-block-end: 1rem;
+	inset-inline-end: 1rem;
+
+	@media only screen and (max-width: 720px) {
+		position: static;
+		flex-direction: row-reverse;
+		// justify-content: center;
+		margin-block-start: 2rem;
+	}
+
+	summary,
+	#go-to-top,
+	#share,
+	#issue {
+		display: inline-block;
+		transition: var(--transition);
+		box-shadow: var(--edge-highlight);
+		border-radius: 999px;
+		background-color: var(--fg-muted-1);
+		padding: 0.5rem;
+		color: var(--fg-muted-4);
+		line-height: 0;
+
+		&:hover {
+			background-color: var(--fg-muted-2);
+			color: var(--fg-muted-5);
+		}
+
+		&:active {
+			transform: var(--active);
+		}
+
+		.icon {
+			transition: var(--transition);
+		}
+	}
+
+	details {
+		position: relative;
+		box-shadow: none;
+		border-radius: 0;
+		background-color: transparent;
+		padding: 0;
+
+		&[open] summary ~ * {
+			transform-origin: bottom right;
+			animation: button-dropdown-open var(--transition);
+
+			:root[dir*="rtl"] & {
+				transform-origin: bottom left;
+				animation: button-dropdown-open-rtl var(--transition);
+			}
+
+			@keyframes button-dropdown-open {
+				from {
+					transform: scale(0.5) translate(1rem, 1rem);
+					opacity: 0;
+				}
+			}
+
+			@keyframes button-dropdown-open-rtl {
+				from {
+					transform: scale(0.5) translate(-1rem, 1rem);
+					opacity: 0;
+				}
+			}
+		}
+
+		summary {
+			&::before {
+				display: none;
+			}
+		}
+	}
+
+	summary + div {
+		-webkit-backdrop-filter: var(--blur);
+		display: flex;
+		position: absolute;
+		flex-direction: column;
+		z-index: 1;
+		backdrop-filter: var(--blur);
+		inset-block-end: 0;
+		inset-inline-end: 3rem;
+		box-shadow: var(--edge-highlight), var(--shadow-glass);
+		border-radius: var(--rounded-corner);
+		background-color: var(--glass-bg);
+		padding: 1rem;
+		width: min(calc(var(--container-width) / 3), calc(90vw - 3rem));
+		max-height: 50vh;
+
+		@media only screen and (max-width: 720px) {
+			inset-inline-end: 2.5rem;
+			width: min(calc(var(--container-width) / 3), calc(90vw - 2.5rem));
+		}
+
+		strong.title {
+			color: var(--fg-muted-4);
+		}
+
+		div {
+			--mask: linear-gradient(
+				to bottom,
+				transparent,
+				black 1rem,
+				black calc(100% - 1rem),
+				transparent
+			);
+			-webkit-mask-image: var(--mask);
+			flex: 1;
+			mask-image: var(--mask);
+			margin: 0 -1rem -1rem;
+			padding: 1rem;
+			padding-block-start: 0;
+			overflow: auto;
+		}
+
+		ol,
+		ul {
+			margin: 0;
+			padding-inline-start: 0.75rem;
+			font-size: var(--font-size-small);
+
+			&:first-child {
+				margin-block-start: 0.75rem;
+			}
+
+			li::marker {
+				color: var(--fg-muted-5);
+			}
+
+			a {
+				color: var(--fg-muted-5);
+			}
+		}
+	}
+
+	#toc .icon {
+		-webkit-mask-image: var(--icon-toc);
+		mask-image: var(--icon-toc);
+
+		:root[dir*="rtl"] & {
+			transform: scaleX(-1);
+		}
+	}
+
+	#backlinks {
+		.icon {
+			-webkit-mask-image: var(--icon-backlink);
+			mask-image: var(--icon-backlink);
+
+			:root[dir*="rtl"] & {
+				transform: scaleX(-1);
+			}
+		}
+
+		summary + div {
+			width: min(calc(var(--container-width) / 3), calc(90vw - 5rem));
+		}
+	}
+
+	#go-to-top {
+		@media only screen and (max-width: 720px) {
+			display: none;
+		}
+
+		.icon {
+			-webkit-mask-image: var(--icon-top);
+			mask-image: var(--icon-top);
+		}
+	}
+
+	#share .icon {
+		-webkit-mask-image: var(--icon-share);
+		mask-image: var(--icon-share);
+	}
+
+	#issue .icon {
+		-webkit-mask-image: var(--icon-bug);
+		mask-image: var(--icon-bug);
+	}
+}

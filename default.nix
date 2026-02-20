@@ -8,6 +8,11 @@ pkgs.stdenv.mkDerivation {
   nativeBuildInputs = with pkgs; [ zola ];
 
   buildPhase = ''
+    zola build
+  '';
 
+  installPhase = ''
+    mkdir -p $out
+    mv ./public/{*,.*} $out
   '';
 }

@@ -1,0 +1,2 @@
+[files]
+extend-exclude = ["*.js", "i18n/ar.toml", "i18n/es.toml", "i18n/fa.toml", "i18n/ms.toml", "i18n/ru.toml", "i18n/zh-Hans.toml"]

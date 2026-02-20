@@ -1,0 +1,39 @@
+{# Taken from https://github.com/welpo/tabi/blob/69713c973c11d7646c8fe56476261d96cc1978d8/templates/partials/title.html #}
+
+{#- Setup -#}
+{%- if config.title -%}
+	{%- set suffix = config.title | safe -%}
+{%- else -%}
+	{{- throw(message='Title has not been set in config.toml, Please set one.') -}}
+{%- endif -%}
+{%- set custom_separator = config.extra.title_separator | default(value="-") -%}
+{%- set separator = " " ~ custom_separator ~ " " -%}
+
+{#- Get the base path for the current language -#}
+{%- if lang != config.default_language %}
+	{%- set base_path = "/" ~ lang ~ "/" %}
+{%- else -%}
+	{%- set base_path = "/" %}
+{%- endif %}
+
+{%- if current_path and current_path == base_path -%}
+	{%- set prefix = "" -%}
+	{%- set separator = "" -%}
+{% elif title %}
+	{%- set prefix =  title -%}
+{% elif section.title -%}
+	{%- set prefix = section.title -%}
+{% elif page.title %}
+	{%- set prefix = page.title -%}
+{% elif term.name %}
+	{#- Individual tags -#}
+	{%- set prefix = term.name -%}
+{% elif taxonomy.name %}
+	{#- List of tags -#}
+	{%- set prefix = macros_translate::translate(key=taxonomy.name, language_strings=language_strings) | capitalize -%}
+{% else %}
+	{%- set prefix = "404" %}
+{%- endif -%}
+
+{#- Return the final concatenated string -#}
+{{- prefix ~ separator ~ suffix -}}
