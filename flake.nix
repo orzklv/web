@@ -21,7 +21,7 @@
         ];
         flake = {
           # NixOS module (deployment)
-          nixosModules.server = import ./module.nix self;
+          nixosModules.static = import ./module.nix self;
         };
         perSystem =
           { pkgs, ... }:

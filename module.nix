@@ -7,12 +7,12 @@ flake:
 }:
 let
   # Options
-  cfg = config.services.orzklv-web;
+  cfg = config.services.orzklv-website;
 in
 {
   # Available user options
   options = with lib; {
-    services.orzklv-web = {
+    services.orzklv-website = {
       enable = mkEnableOption "Deploy orzklv's website.";
 
       domain = mkOption {
