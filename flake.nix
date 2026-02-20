@@ -7,6 +7,9 @@
 
     # Flake-parts utilities
     flake-parts.url = "github:hercules-ci/flake-parts";
+
+    # Self instance
+    self.submodules = true;
   };
 
   outputs =
